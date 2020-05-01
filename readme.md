@@ -11,9 +11,16 @@ Using `auth.NewEnvProvider()` requires the following environment variables:
 
 Setup the api once:
 ```go
-api, err := NewWithEnvironmentDebug(auth.NewEnvProvider(), "production", true)
-if err != nil {
-	// handle error (eg environment variable missing)
+import (
+	businesscentral "github.com/tcorp-bv/business-central-api-go"
+	"github.com/tcorp-bv/business-central-api-go/auth"
+)
+
+func main() {
+    api, err := businesscentral.NewWithEnvironmentDebug(auth.NewEnvProvider())
+    if err != nil {
+	    // handle error (eg environment variable missing)
+    }
 }
 ```
 
