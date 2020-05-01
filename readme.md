@@ -9,14 +9,17 @@ Using `auth.NewEnvProvider()` requires the following environment variables:
 * `BC_TENANT_ID`: The azure active directory app TenantId (should be same as your bc tenantId)
 
 
+Setup the api once:
 ```go
-// Setup the api (you only have to do this one)
 credentials := auth.NewEnvProvider()
 api, err := NewWithEnvironmentDebug(&credentials, "production", true)
 if err != nil {
 	// handle error (eg environment variable missing)
 }
-// Call the api
+```
+
+Example of calling the api:
+```go
 ctx, _ := context.WithTimeout(context.Background(), 10 * time.Second)
 res, _,  err := api.CompanyApi.ListCompanies(ctx, &openapi.ListCompaniesOpts{})
 if err != nil {
