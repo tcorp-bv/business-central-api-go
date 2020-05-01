@@ -11,8 +11,7 @@ Using `auth.NewEnvProvider()` requires the following environment variables:
 
 Setup the api once:
 ```go
-credentials := auth.NewEnvProvider()
-api, err := NewWithEnvironmentDebug(&credentials, "production", true)
+api, err := NewWithEnvironmentDebug(auth.NewEnvProvider(), "production", true)
 if err != nil {
 	// handle error (eg environment variable missing)
 }
@@ -32,7 +31,7 @@ for _, c := range res.Value {
 
 and in your `go.mod`:
 ```shell script
-github.com/tcorp-bv/business-central-api-go v1.0.0
+github.com/tcorp-bv/business-central-api-go v1.0.1
 ```
 
 ## Generating the client 

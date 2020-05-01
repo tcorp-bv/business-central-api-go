@@ -74,8 +74,8 @@ type FileProvider struct {
 	TenantFile string
 }
 
-func NewEnvProvider() EnvironmentProvider {
-	return EnvironmentProvider{
+func NewEnvProvider() *EnvironmentProvider {
+	return &EnvironmentProvider{
 		ClientIdKey: "BC_CLIENT_ID",
 		UsernameKey: "BC_USERNAME",
 		PasswordKey: "BC_PASSWORD",
@@ -83,7 +83,7 @@ func NewEnvProvider() EnvironmentProvider {
 	}
 }
 
-func NewFileProvider() CredentialProvider {
+func NewFileProvider() *FileProvider {
 	return &FileProvider{Dir: defaultDir, ClientIdFile: defaultClientIdFile, UsernameFile: defaultUsernameFile, PasswordFile: defaultPasswordFile, TenantFile: defaultTenantFile}
 }
 
