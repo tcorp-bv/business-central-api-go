@@ -31,7 +31,7 @@ for _, c := range res.Value {
 
 and in your `go.mod`:
 ```shell script
-github.com/tcorp-bv/business-central-api-go v1.0.1
+github.com/tcorp-bv/business-central-api-go v1.1.0
 ```
 
 ## Generating the client 
