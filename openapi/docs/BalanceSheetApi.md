@@ -1,0 +1,102 @@
+# \BalanceSheetApi
+
+All URIs are relative to *https://api.businesscentral.dynamics.com/v2.0/sandbox/api/v1.0*
+
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**GetBalanceSheet**](BalanceSheetApi.md#GetBalanceSheet) | **Get** /companies({company_id})/balanceSheet({balanceSheet_lineNumber}) | Retrieve the properties and relationships of an object of type balanceSheet for Dynamics 365 Business Central.
+[**ListBalanceSheet**](BalanceSheetApi.md#ListBalanceSheet) | **Get** /companies({company_id})/balanceSheet | Returns a list of balanceSheet
+
+
+
+## GetBalanceSheet
+
+> BalanceSheet GetBalanceSheet(ctx, companyId, balanceSheetLineNumber, optional)
+
+Retrieve the properties and relationships of an object of type balanceSheet for Dynamics 365 Business Central.
+
+### Required Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**companyId** | [**string**](.md)| id for company | 
+**balanceSheetLineNumber** | **int32**| lineNumber for balanceSheet | 
+ **optional** | ***GetBalanceSheetOpts** | optional parameters | nil if no parameters
+
+### Optional Parameters
+
+Optional parameters are passed through a pointer to a GetBalanceSheetOpts struct
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+
+ **select_** | [**optional.Interface of []string**](string.md)| Selected properties to be retrieved | 
+
+### Return type
+
+[**BalanceSheet**](balanceSheet.md)
+
+### Authorization
+
+[oAuth](../README.md#oAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ListBalanceSheet
+
+> InlineResponse20037 ListBalanceSheet(ctx, companyId, optional)
+
+Returns a list of balanceSheet
+
+### Required Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**companyId** | [**string**](.md)| id for company | 
+ **optional** | ***ListBalanceSheetOpts** | optional parameters | nil if no parameters
+
+### Optional Parameters
+
+Optional parameters are passed through a pointer to a ListBalanceSheetOpts struct
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **top** | **optional.Int32**| Number of items to return from the top of the list | 
+ **skip** | **optional.Int32**| Number of items to skip from the list | 
+ **limit** | **optional.Int32**| Number of items to return from the list | 
+ **filter** | **optional.String**| Filtering expression | 
+ **select_** | [**optional.Interface of []string**](string.md)| Selected properties to be retrieved | 
+
+### Return type
+
+[**InlineResponse20037**](inline_response_200_37.md)
+
+### Authorization
+
+[oAuth](../README.md#oAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
