@@ -1,8 +1,12 @@
 # Business central go api
-Generated client for the Business Central API
+Generated client for the Microsoft Dynamics [Business Central API](https://docs.microsoft.com/en-us/dynamics-nav/api-reference/v1.0/).
 
 ## Getting started
-Require environment variables BC_CLIENT_ID, BC_USERNAME, BC_PASSWORD and BC_TENANT_ID.
+Using `auth.NewEnvProvider()` requires the following environment variables:
+* `BC_CLIENT_ID`: The Azure active directory app ClientId (app has delegated user BC permission)
+* `BC_USERNAME`: Your microsoft username (email), this user should be a BC admin
+* `BC_PASSWORD`: Your microsoft password
+* `BC_TENANT_ID`: The azure active directory app TenantId (should be same as your bc tenantId)
 
 
 ```go
@@ -30,7 +34,7 @@ github.com/tcorp-bv/business-central-api-go v1.0.0
 
 ## Generating the client 
 
-To generate the swagger client from it we use the openapi-generator-cli.
+To regenerate the swagger client ([openapi/](./openapi)) execute the following command:
 
 ```shell script
 docker run --rm -v ${PWD}:/local openapitools/openapi-generator-cli generate -i https://docs.microsoft.com/en-us/dynamics-nav/api-reference/v1.0/contracts/bcoas1.0.yaml -g go -o /local/openapi
@@ -42,9 +46,7 @@ As we've wasted a lot of time getting to authenticate with the oauth for busines
 I'll document the process here.
 
 The API uses delegated AAD permissions. This means you must actually authenticate as a user.
-
-Because microsoft does not allow the creation of client secrets for this, you need to use the oauth "password" grant_type.
-
+https://docs.microsoft.com/en-us/dynamics-nav/api-reference/v1.0/Because microsoft does not allow the creation of client secrets for this, you need to use the oauth "password" grant_type.
 This means the application will actually manage your username and password.
 
 The app registry requires the `https://dynamics.microsoft.com/business-central/overview/user_impersonation` permission.
