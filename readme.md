@@ -41,12 +41,51 @@ and in your `go.mod`:
 github.com/tcorp-bv/business-central-api-go v1.1.0
 ```
 
+## Documentation
+To see many examples of how to use the API, please see our [integration tests](api_integration_test.go).
+
+
+### Creating a new entity
+Because the API is generated, any POST operation with a body takes a `body interface{}` parameter.
+You can simply pass the expected resource in here.
+
+To create a customer for example:
+```go
+customer := swagger.Customer{
+	Number: testCustomerNumber,
+	DisplayName: "Test Customer",
+	Email: "asd@asd.be",
+	PhoneNumber: "0412320312",
+	Type_: "Person",
+}
+// You also need to provide "application/json" as the Content-Type
+c, _, err := api.CustomerApi.PostCustomer(ctx, customer, "application/json", compId)
+```
+
+### Filtering
+The API resources (invoices, customers, companies...) use their own unique identifier (different from the number identifier).
+This identifier is called **Id**. 
+
+Usually you want to find a resource by some other identifier (customer number...).
+To do that, you will need to use the list operation with a filter.
+
+Here is an example:
+```go
+filter := fmt.Sprintf("number eq '%s'", testCustomerNumber)
+res, _, err := api.CustomerApi.ListCustomers(ctx, compId, &swagger.CustomerApiListCustomersOpts{Filter: optional.NewString(filter)})
+for _, c := range res.Value {
+	api.CustomerApi.DeleteCustomer(ctx, compId, c.Id) // we ignore the result of this, as it is just a cleanup
+}
+```
+
+For more information on all the possible filters, see the [Microsoft API guidelines](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#97-filtering).
+
 ## Generating the client 
 
 To regenerate the swagger client ([openapi/](./openapi)) execute the following command:
 
 ```shell script
-docker run --rm -v ${PWD}:/local openapitools/openapi-generator-cli generate -i https://docs.microsoft.com/en-us/dynamics-nav/api-reference/v1.0/contracts/bcoas1.0.yaml -g go -o /local/openapi
+make generate
 ```
 
 
