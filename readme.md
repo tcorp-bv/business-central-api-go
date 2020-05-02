@@ -38,7 +38,7 @@ for _, c := range res.Value {
 
 and in your `go.mod`:
 ```shell script
-github.com/tcorp-bv/business-central-api-go v1.1.0
+github.com/tcorp-bv/business-central-api-go v2.0.0
 ```
 
 ## Documentation
