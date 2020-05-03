@@ -48,7 +48,7 @@ func AlreadyExists(toParse error) bool {
 	if err != nil {
 		return false
 	}
-	return apiErr.Code == "ErrorCodeInternal_EntityWithSameKeyExists"
+	return apiErr.Code == ErrorCodeInternal_EntityWithSameKeyExists
 }
 
 // Parse a golang error to an APIError
