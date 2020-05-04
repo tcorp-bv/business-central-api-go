@@ -38,7 +38,7 @@ for _, c := range res.Value {
 
 and in your `go.mod`:
 ```shell script
-github.com/tcorp-bv/business-central-api-go v1.3.0
+github.com/tcorp-bv/business-central-api-go v1.6.0
 ```
 
 ## Documentation
@@ -61,6 +61,8 @@ customer := swagger.Customer{
 // You also need to provide "application/json" as the Content-Type
 c, _, err := api.CustomerApi.PostCustomer(ctx, customer, "application/json", compId)
 ```
+### Date format
+String dates should be formatted as `YYYY-MM-DD`.
 
 ### Filtering
 The API resources (invoices, customers, companies...) use their own unique identifier (different from the number identifier).
