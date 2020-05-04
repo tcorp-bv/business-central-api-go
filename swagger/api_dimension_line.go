@@ -210,7 +210,7 @@ DimensionLineApiService Returns a list of dimensionLines
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Expand" (optional.Interface of []string) -  Entities to expand
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse20025
+@return InlineResponse20018
 */
 
 type DimensionLineApiListDimensionLinesOpts struct { 
@@ -222,13 +222,13 @@ type DimensionLineApiListDimensionLinesOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *DimensionLineApiService) ListDimensionLines(ctx context.Context, companyId string, localVarOptionals *DimensionLineApiListDimensionLinesOpts) (InlineResponse20025, *http.Response, error) {
+func (a *DimensionLineApiService) ListDimensionLines(ctx context.Context, companyId string, localVarOptionals *DimensionLineApiListDimensionLinesOpts) (InlineResponse20018, *http.Response, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Get")
 		localVarPostBody   interface{}
 		localVarFileName   string
 		localVarFileBytes  []byte
-		localVarReturnValue InlineResponse20025
+		localVarReturnValue InlineResponse20018
 	)
 
 	// create path and map variables
@@ -304,7 +304,7 @@ func (a *DimensionLineApiService) ListDimensionLines(ctx context.Context, compan
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse20025
+			var v InlineResponse20018
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
 				if err != nil {
 					newErr.error = err.Error()

@@ -12,36 +12,36 @@ import (
 )
 
 type CustomerPayment struct {
-	// The id property for the Dynamics 365 Business Central customerPayment entity
-	Id string `json:"id,omitempty"`
-	// The journalDisplayName property for the Dynamics 365 Business Central customerPayment entity
-	JournalDisplayName string `json:"journalDisplayName,omitempty"`
-	// The lineNumber property for the Dynamics 365 Business Central customerPayment entity
-	LineNumber int32 `json:"lineNumber,omitempty"`
-	// The customerId property for the Dynamics 365 Business Central customerPayment entity
-	CustomerId string `json:"customerId,omitempty"`
-	// The customerNumber property for the Dynamics 365 Business Central customerPayment entity
-	CustomerNumber string `json:"customerNumber,omitempty"`
-	// The contactId property for the Dynamics 365 Business Central customerPayment entity
-	ContactId string `json:"contactId,omitempty"`
-	// The postingDate property for the Dynamics 365 Business Central customerPayment entity
-	PostingDate time.Time `json:"postingDate,omitempty"`
-	// The documentNumber property for the Dynamics 365 Business Central customerPayment entity
-	DocumentNumber string `json:"documentNumber,omitempty"`
-	// The externalDocumentNumber property for the Dynamics 365 Business Central customerPayment entity
-	ExternalDocumentNumber string `json:"externalDocumentNumber,omitempty"`
 	// The amount property for the Dynamics 365 Business Central customerPayment entity
 	Amount float64 `json:"amount,omitempty"`
 	// The appliesToInvoiceId property for the Dynamics 365 Business Central customerPayment entity
 	AppliesToInvoiceId string `json:"appliesToInvoiceId,omitempty"`
 	// The appliesToInvoiceNumber property for the Dynamics 365 Business Central customerPayment entity
 	AppliesToInvoiceNumber string `json:"appliesToInvoiceNumber,omitempty"`
-	// The description property for the Dynamics 365 Business Central customerPayment entity
-	Description string `json:"description,omitempty"`
 	// The comment property for the Dynamics 365 Business Central customerPayment entity
 	Comment string `json:"comment,omitempty"`
+	// The contactId property for the Dynamics 365 Business Central customerPayment entity
+	ContactId string `json:"contactId,omitempty"`
+	Customer *Customer `json:"customer,omitempty"`
+	// The customerId property for the Dynamics 365 Business Central customerPayment entity
+	CustomerId string `json:"customerId,omitempty"`
+	// The customerNumber property for the Dynamics 365 Business Central customerPayment entity
+	CustomerNumber string `json:"customerNumber,omitempty"`
+	// The description property for the Dynamics 365 Business Central customerPayment entity
+	Description string `json:"description,omitempty"`
 	Dimensions []Dimensiontype `json:"dimensions,omitempty"`
+	// The documentNumber property for the Dynamics 365 Business Central customerPayment entity
+	DocumentNumber string `json:"documentNumber,omitempty"`
+	// The externalDocumentNumber property for the Dynamics 365 Business Central customerPayment entity
+	ExternalDocumentNumber string `json:"externalDocumentNumber,omitempty"`
+	// The id property for the Dynamics 365 Business Central customerPayment entity
+	Id string `json:"id,omitempty"`
+	// The journalDisplayName property for the Dynamics 365 Business Central customerPayment entity
+	JournalDisplayName string `json:"journalDisplayName,omitempty"`
 	// The lastModifiedDateTime property for the Dynamics 365 Business Central customerPayment entity
 	LastModifiedDateTime time.Time `json:"lastModifiedDateTime,omitempty"`
-	Customer *Customer `json:"customer,omitempty"`
+	// The lineNumber property for the Dynamics 365 Business Central customerPayment entity
+	LineNumber int32 `json:"lineNumber,omitempty"`
+	// The postingDate property for the Dynamics 365 Business Central customerPayment entity
+	PostingDate string `json:"postingDate,omitempty"`
 }

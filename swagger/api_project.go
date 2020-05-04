@@ -200,7 +200,7 @@ ProjectApiService Returns a list of projects
      * @param "Limit" (optional.Int32) -  Number of items to return from the list
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse20048
+@return InlineResponse20033
 */
 
 type ProjectApiListProjectsOpts struct { 
@@ -211,13 +211,13 @@ type ProjectApiListProjectsOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *ProjectApiService) ListProjects(ctx context.Context, companyId string, localVarOptionals *ProjectApiListProjectsOpts) (InlineResponse20048, *http.Response, error) {
+func (a *ProjectApiService) ListProjects(ctx context.Context, companyId string, localVarOptionals *ProjectApiListProjectsOpts) (InlineResponse20033, *http.Response, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Get")
 		localVarPostBody   interface{}
 		localVarFileName   string
 		localVarFileBytes  []byte
-		localVarReturnValue InlineResponse20048
+		localVarReturnValue InlineResponse20033
 	)
 
 	// create path and map variables
@@ -290,7 +290,7 @@ func (a *ProjectApiService) ListProjects(ctx context.Context, companyId string, 
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse20048
+			var v InlineResponse20033
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
 				if err != nil {
 					newErr.error = err.Error()

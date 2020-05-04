@@ -44,7 +44,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListAccounts**
-> InlineResponse20013 ListAccounts(ctx, companyId, optional)
+> InlineResponse2001 ListAccounts(ctx, companyId, optional)
 Returns a list of accounts
 
 ### Required Parameters
@@ -68,7 +68,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20013**](inline_response_200_13.md)
+[**InlineResponse2001**](inline_response_200_1.md)
 
 ### Authorization
 

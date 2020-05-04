@@ -45,7 +45,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListGeneralLedgerEntries**
-> InlineResponse20020 ListGeneralLedgerEntries(ctx, companyId, optional)
+> InlineResponse20023 ListGeneralLedgerEntries(ctx, companyId, optional)
 Returns a list of generalLedgerEntries
 
 ### Required Parameters
@@ -70,7 +70,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20020**](inline_response_200_20.md)
+[**InlineResponse20023**](inline_response_200_23.md)
 
 ### Authorization
 

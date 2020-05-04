@@ -75,7 +75,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListCustomerPaymentJournals**
-> InlineResponse20011 ListCustomerPaymentJournals(ctx, companyId, optional)
+> InlineResponse20012 ListCustomerPaymentJournals(ctx, companyId, optional)
 Returns a list of customerPaymentJournals
 
 ### Required Parameters
@@ -100,7 +100,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20011**](inline_response_200_11.md)
+[**InlineResponse20012**](inline_response_200_12.md)
 
 ### Authorization
 

@@ -38,7 +38,8 @@ const (
 	productionEnvironment = "production"
 	endpointFmt           = "https://api.businesscentral.dynamics.com/v2.0/%s/api/v1.0"
 	// The company ID for TCorp (really not so smart to hardcode this but whatever)
-	TCorp = "253a6f6a-d6cf-4ee6-a9c4-86d18e7c397f"
+	TCorp              = "253a6f6a-d6cf-4ee6-a9c4-86d18e7c397f"
+	DefaultContentType = "application/json"
 )
 
 // Get a new business central api instance pointing to the "production" environment.
@@ -83,6 +84,5 @@ func NewWithEnvironmentDebug(credentials auth.CredentialProvider, environment st
 	config.HTTPClient = httpClient
 	config.UserAgent = ""
 	config.BasePath = fmt.Sprintf(endpointFmt, environment)
-
 	return swagger.NewAPIClient(config), nil
 }

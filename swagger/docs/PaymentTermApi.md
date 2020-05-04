@@ -74,7 +74,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListPaymentTerms**
-> InlineResponse20026 ListPaymentTerms(ctx, companyId, optional)
+> InlineResponse20031 ListPaymentTerms(ctx, companyId, optional)
 Returns a list of paymentTerms
 
 ### Required Parameters
@@ -98,7 +98,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20026**](inline_response_200_26.md)
+[**InlineResponse20031**](inline_response_200_31.md)
 
 ### Authorization
 

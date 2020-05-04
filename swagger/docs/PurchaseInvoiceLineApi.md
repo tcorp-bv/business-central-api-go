@@ -147,7 +147,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListPurchaseInvoiceLines**
-> InlineResponse20047 ListPurchaseInvoiceLines(ctx, companyId, optional)
+> InlineResponse20034 ListPurchaseInvoiceLines(ctx, companyId, optional)
 Returns a list of purchaseInvoiceLines
 
 ### Required Parameters
@@ -172,7 +172,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20047**](inline_response_200_47.md)
+[**InlineResponse20034**](inline_response_200_34.md)
 
 ### Authorization
 
@@ -186,7 +186,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListPurchaseInvoiceLinesForPurchaseInvoice**
-> InlineResponse20047 ListPurchaseInvoiceLinesForPurchaseInvoice(ctx, companyId, purchaseInvoiceId, optional)
+> InlineResponse20034 ListPurchaseInvoiceLinesForPurchaseInvoice(ctx, companyId, purchaseInvoiceId, optional)
 Returns a list of purchaseInvoiceLines
 
 ### Required Parameters
@@ -213,7 +213,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20047**](inline_response_200_47.md)
+[**InlineResponse20034**](inline_response_200_34.md)
 
 ### Authorization
 

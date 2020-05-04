@@ -147,7 +147,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListSalesOrderLines**
-> InlineResponse20032 ListSalesOrderLines(ctx, companyId, optional)
+> InlineResponse20041 ListSalesOrderLines(ctx, companyId, optional)
 Returns a list of salesOrderLines
 
 ### Required Parameters
@@ -172,7 +172,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20032**](inline_response_200_32.md)
+[**InlineResponse20041**](inline_response_200_41.md)
 
 ### Authorization
 
@@ -186,7 +186,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListSalesOrderLinesForSalesOrder**
-> InlineResponse20032 ListSalesOrderLinesForSalesOrder(ctx, companyId, salesOrderId, optional)
+> InlineResponse20041 ListSalesOrderLinesForSalesOrder(ctx, companyId, salesOrderId, optional)
 Returns a list of salesOrderLines
 
 ### Required Parameters
@@ -213,7 +213,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20032**](inline_response_200_32.md)
+[**InlineResponse20041**](inline_response_200_41.md)
 
 ### Authorization
 

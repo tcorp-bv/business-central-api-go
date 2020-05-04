@@ -131,7 +131,7 @@ IncomeStatementApiService Returns a list of incomeStatement
      * @param "Limit" (optional.Int32) -  Number of items to return from the list
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse20039
+@return InlineResponse20025
 */
 
 type IncomeStatementApiListIncomeStatementOpts struct { 
@@ -142,13 +142,13 @@ type IncomeStatementApiListIncomeStatementOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *IncomeStatementApiService) ListIncomeStatement(ctx context.Context, companyId string, localVarOptionals *IncomeStatementApiListIncomeStatementOpts) (InlineResponse20039, *http.Response, error) {
+func (a *IncomeStatementApiService) ListIncomeStatement(ctx context.Context, companyId string, localVarOptionals *IncomeStatementApiListIncomeStatementOpts) (InlineResponse20025, *http.Response, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Get")
 		localVarPostBody   interface{}
 		localVarFileName   string
 		localVarFileBytes  []byte
-		localVarReturnValue InlineResponse20039
+		localVarReturnValue InlineResponse20025
 	)
 
 	// create path and map variables
@@ -221,7 +221,7 @@ func (a *IncomeStatementApiService) ListIncomeStatement(ctx context.Context, com
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse20039
+			var v InlineResponse20025
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
 				if err != nil {
 					newErr.error = err.Error()

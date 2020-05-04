@@ -523,7 +523,7 @@ PdfDocumentApiService Returns a list of pdfDocument
      * @param "Limit" (optional.Int32) -  Number of items to return from the list
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse20010
+@return InlineResponse20032
 */
 
 type PdfDocumentApiListPdfDocumentOpts struct { 
@@ -534,13 +534,13 @@ type PdfDocumentApiListPdfDocumentOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *PdfDocumentApiService) ListPdfDocument(ctx context.Context, companyId string, localVarOptionals *PdfDocumentApiListPdfDocumentOpts) (InlineResponse20010, *http.Response, error) {
+func (a *PdfDocumentApiService) ListPdfDocument(ctx context.Context, companyId string, localVarOptionals *PdfDocumentApiListPdfDocumentOpts) (InlineResponse20032, *http.Response, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Get")
 		localVarPostBody   interface{}
 		localVarFileName   string
 		localVarFileBytes  []byte
-		localVarReturnValue InlineResponse20010
+		localVarReturnValue InlineResponse20032
 	)
 
 	// create path and map variables
@@ -613,7 +613,7 @@ func (a *PdfDocumentApiService) ListPdfDocument(ctx context.Context, companyId s
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse20010
+			var v InlineResponse20032
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
 				if err != nil {
 					newErr.error = err.Error()
@@ -638,7 +638,7 @@ PdfDocumentApiService Returns a list of pdfDocument
      * @param "Limit" (optional.Int32) -  Number of items to return from the list
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse20010
+@return InlineResponse20032
 */
 
 type PdfDocumentApiListPdfDocumentForPurchaseInvoiceOpts struct { 
@@ -649,13 +649,13 @@ type PdfDocumentApiListPdfDocumentForPurchaseInvoiceOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *PdfDocumentApiService) ListPdfDocumentForPurchaseInvoice(ctx context.Context, companyId string, purchaseInvoiceId string, localVarOptionals *PdfDocumentApiListPdfDocumentForPurchaseInvoiceOpts) (InlineResponse20010, *http.Response, error) {
+func (a *PdfDocumentApiService) ListPdfDocumentForPurchaseInvoice(ctx context.Context, companyId string, purchaseInvoiceId string, localVarOptionals *PdfDocumentApiListPdfDocumentForPurchaseInvoiceOpts) (InlineResponse20032, *http.Response, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Get")
 		localVarPostBody   interface{}
 		localVarFileName   string
 		localVarFileBytes  []byte
-		localVarReturnValue InlineResponse20010
+		localVarReturnValue InlineResponse20032
 	)
 
 	// create path and map variables
@@ -729,7 +729,7 @@ func (a *PdfDocumentApiService) ListPdfDocumentForPurchaseInvoice(ctx context.Co
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse20010
+			var v InlineResponse20032
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
 				if err != nil {
 					newErr.error = err.Error()
@@ -754,7 +754,7 @@ PdfDocumentApiService Returns a list of pdfDocument
      * @param "Limit" (optional.Int32) -  Number of items to return from the list
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse20010
+@return InlineResponse20032
 */
 
 type PdfDocumentApiListPdfDocumentForSalesCreditMemoOpts struct { 
@@ -765,13 +765,13 @@ type PdfDocumentApiListPdfDocumentForSalesCreditMemoOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *PdfDocumentApiService) ListPdfDocumentForSalesCreditMemo(ctx context.Context, companyId string, salesCreditMemoId string, localVarOptionals *PdfDocumentApiListPdfDocumentForSalesCreditMemoOpts) (InlineResponse20010, *http.Response, error) {
+func (a *PdfDocumentApiService) ListPdfDocumentForSalesCreditMemo(ctx context.Context, companyId string, salesCreditMemoId string, localVarOptionals *PdfDocumentApiListPdfDocumentForSalesCreditMemoOpts) (InlineResponse20032, *http.Response, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Get")
 		localVarPostBody   interface{}
 		localVarFileName   string
 		localVarFileBytes  []byte
-		localVarReturnValue InlineResponse20010
+		localVarReturnValue InlineResponse20032
 	)
 
 	// create path and map variables
@@ -845,7 +845,7 @@ func (a *PdfDocumentApiService) ListPdfDocumentForSalesCreditMemo(ctx context.Co
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse20010
+			var v InlineResponse20032
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
 				if err != nil {
 					newErr.error = err.Error()
@@ -870,7 +870,7 @@ PdfDocumentApiService Returns a list of pdfDocument
      * @param "Limit" (optional.Int32) -  Number of items to return from the list
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse20010
+@return InlineResponse20032
 */
 
 type PdfDocumentApiListPdfDocumentForSalesInvoiceOpts struct { 
@@ -881,13 +881,13 @@ type PdfDocumentApiListPdfDocumentForSalesInvoiceOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *PdfDocumentApiService) ListPdfDocumentForSalesInvoice(ctx context.Context, companyId string, salesInvoiceId string, localVarOptionals *PdfDocumentApiListPdfDocumentForSalesInvoiceOpts) (InlineResponse20010, *http.Response, error) {
+func (a *PdfDocumentApiService) ListPdfDocumentForSalesInvoice(ctx context.Context, companyId string, salesInvoiceId string, localVarOptionals *PdfDocumentApiListPdfDocumentForSalesInvoiceOpts) (InlineResponse20032, *http.Response, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Get")
 		localVarPostBody   interface{}
 		localVarFileName   string
 		localVarFileBytes  []byte
-		localVarReturnValue InlineResponse20010
+		localVarReturnValue InlineResponse20032
 	)
 
 	// create path and map variables
@@ -961,7 +961,7 @@ func (a *PdfDocumentApiService) ListPdfDocumentForSalesInvoice(ctx context.Conte
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse20010
+			var v InlineResponse20032
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
 				if err != nil {
 					newErr.error = err.Error()
@@ -986,7 +986,7 @@ PdfDocumentApiService Returns a list of pdfDocument
      * @param "Limit" (optional.Int32) -  Number of items to return from the list
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse20010
+@return InlineResponse20032
 */
 
 type PdfDocumentApiListPdfDocumentForSalesQuoteOpts struct { 
@@ -997,13 +997,13 @@ type PdfDocumentApiListPdfDocumentForSalesQuoteOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *PdfDocumentApiService) ListPdfDocumentForSalesQuote(ctx context.Context, companyId string, salesQuoteId string, localVarOptionals *PdfDocumentApiListPdfDocumentForSalesQuoteOpts) (InlineResponse20010, *http.Response, error) {
+func (a *PdfDocumentApiService) ListPdfDocumentForSalesQuote(ctx context.Context, companyId string, salesQuoteId string, localVarOptionals *PdfDocumentApiListPdfDocumentForSalesQuoteOpts) (InlineResponse20032, *http.Response, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Get")
 		localVarPostBody   interface{}
 		localVarFileName   string
 		localVarFileBytes  []byte
-		localVarReturnValue InlineResponse20010
+		localVarReturnValue InlineResponse20032
 	)
 
 	// create path and map variables
@@ -1077,7 +1077,7 @@ func (a *PdfDocumentApiService) ListPdfDocumentForSalesQuote(ctx context.Context
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse20010
+			var v InlineResponse20032
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
 				if err != nil {
 					newErr.error = err.Error()

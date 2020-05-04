@@ -12,18 +12,18 @@ import (
 )
 
 type Currency struct {
-	// The id property for the Dynamics 365 Business Central currency entity
-	Id string `json:"id,omitempty"`
-	// The code property for the Dynamics 365 Business Central currency entity
-	Code string `json:"code,omitempty"`
-	// The displayName property for the Dynamics 365 Business Central currency entity
-	DisplayName string `json:"displayName,omitempty"`
-	// The symbol property for the Dynamics 365 Business Central currency entity
-	Symbol string `json:"symbol,omitempty"`
 	// The amountDecimalPlaces property for the Dynamics 365 Business Central currency entity
 	AmountDecimalPlaces string `json:"amountDecimalPlaces,omitempty"`
 	// The amountRoundingPrecision property for the Dynamics 365 Business Central currency entity
 	AmountRoundingPrecision float64 `json:"amountRoundingPrecision,omitempty"`
+	// The code property for the Dynamics 365 Business Central currency entity
+	Code string `json:"code,omitempty"`
+	// The displayName property for the Dynamics 365 Business Central currency entity
+	DisplayName string `json:"displayName,omitempty"`
+	// The id property for the Dynamics 365 Business Central currency entity
+	Id string `json:"id,omitempty"`
 	// The lastModifiedDateTime property for the Dynamics 365 Business Central currency entity
 	LastModifiedDateTime time.Time `json:"lastModifiedDateTime,omitempty"`
+	// The symbol property for the Dynamics 365 Business Central currency entity
+	Symbol string `json:"symbol,omitempty"`
 }

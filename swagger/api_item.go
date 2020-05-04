@@ -206,7 +206,7 @@ ItemApiService Returns a list of items
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Expand" (optional.Interface of []string) -  Entities to expand
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse2001
+@return InlineResponse20027
 */
 
 type ItemApiListItemsOpts struct { 
@@ -218,13 +218,13 @@ type ItemApiListItemsOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *ItemApiService) ListItems(ctx context.Context, companyId string, localVarOptionals *ItemApiListItemsOpts) (InlineResponse2001, *http.Response, error) {
+func (a *ItemApiService) ListItems(ctx context.Context, companyId string, localVarOptionals *ItemApiListItemsOpts) (InlineResponse20027, *http.Response, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Get")
 		localVarPostBody   interface{}
 		localVarFileName   string
 		localVarFileBytes  []byte
-		localVarReturnValue InlineResponse2001
+		localVarReturnValue InlineResponse20027
 	)
 
 	// create path and map variables
@@ -300,7 +300,7 @@ func (a *ItemApiService) ListItems(ctx context.Context, companyId string, localV
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse2001
+			var v InlineResponse20027
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
 				if err != nil {
 					newErr.error = err.Error()

@@ -45,7 +45,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListCompanyInformation**
-> InlineResponse2007 ListCompanyInformation(ctx, companyId, optional)
+> InlineResponse2008 ListCompanyInformation(ctx, companyId, optional)
 Returns a list of companyInformation
 
 ### Required Parameters
@@ -69,7 +69,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2007**](inline_response_200_7.md)
+[**InlineResponse2008**](inline_response_200_8.md)
 
 ### Authorization
 

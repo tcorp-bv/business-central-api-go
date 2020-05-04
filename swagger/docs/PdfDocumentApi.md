@@ -204,7 +204,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListPdfDocument**
-> InlineResponse20010 ListPdfDocument(ctx, companyId, optional)
+> InlineResponse20032 ListPdfDocument(ctx, companyId, optional)
 Returns a list of pdfDocument
 
 ### Required Parameters
@@ -228,7 +228,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20010**](inline_response_200_10.md)
+[**InlineResponse20032**](inline_response_200_32.md)
 
 ### Authorization
 
@@ -242,7 +242,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListPdfDocumentForPurchaseInvoice**
-> InlineResponse20010 ListPdfDocumentForPurchaseInvoice(ctx, companyId, purchaseInvoiceId, optional)
+> InlineResponse20032 ListPdfDocumentForPurchaseInvoice(ctx, companyId, purchaseInvoiceId, optional)
 Returns a list of pdfDocument
 
 ### Required Parameters
@@ -268,7 +268,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20010**](inline_response_200_10.md)
+[**InlineResponse20032**](inline_response_200_32.md)
 
 ### Authorization
 
@@ -282,7 +282,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListPdfDocumentForSalesCreditMemo**
-> InlineResponse20010 ListPdfDocumentForSalesCreditMemo(ctx, companyId, salesCreditMemoId, optional)
+> InlineResponse20032 ListPdfDocumentForSalesCreditMemo(ctx, companyId, salesCreditMemoId, optional)
 Returns a list of pdfDocument
 
 ### Required Parameters
@@ -308,7 +308,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20010**](inline_response_200_10.md)
+[**InlineResponse20032**](inline_response_200_32.md)
 
 ### Authorization
 
@@ -322,7 +322,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListPdfDocumentForSalesInvoice**
-> InlineResponse20010 ListPdfDocumentForSalesInvoice(ctx, companyId, salesInvoiceId, optional)
+> InlineResponse20032 ListPdfDocumentForSalesInvoice(ctx, companyId, salesInvoiceId, optional)
 Returns a list of pdfDocument
 
 ### Required Parameters
@@ -348,7 +348,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20010**](inline_response_200_10.md)
+[**InlineResponse20032**](inline_response_200_32.md)
 
 ### Authorization
 
@@ -362,7 +362,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListPdfDocumentForSalesQuote**
-> InlineResponse20010 ListPdfDocumentForSalesQuote(ctx, companyId, salesQuoteId, optional)
+> InlineResponse20032 ListPdfDocumentForSalesQuote(ctx, companyId, salesQuoteId, optional)
 Returns a list of pdfDocument
 
 ### Required Parameters
@@ -388,7 +388,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20010**](inline_response_200_10.md)
+[**InlineResponse20032**](inline_response_200_32.md)
 
 ### Authorization
 

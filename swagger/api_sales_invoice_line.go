@@ -380,7 +380,7 @@ SalesInvoiceLineApiService Returns a list of salesInvoiceLines
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Expand" (optional.Interface of []string) -  Entities to expand
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse2009
+@return InlineResponse20039
 */
 
 type SalesInvoiceLineApiListSalesInvoiceLinesOpts struct { 
@@ -392,13 +392,13 @@ type SalesInvoiceLineApiListSalesInvoiceLinesOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *SalesInvoiceLineApiService) ListSalesInvoiceLines(ctx context.Context, companyId string, localVarOptionals *SalesInvoiceLineApiListSalesInvoiceLinesOpts) (InlineResponse2009, *http.Response, error) {
+func (a *SalesInvoiceLineApiService) ListSalesInvoiceLines(ctx context.Context, companyId string, localVarOptionals *SalesInvoiceLineApiListSalesInvoiceLinesOpts) (InlineResponse20039, *http.Response, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Get")
 		localVarPostBody   interface{}
 		localVarFileName   string
 		localVarFileBytes  []byte
-		localVarReturnValue InlineResponse2009
+		localVarReturnValue InlineResponse20039
 	)
 
 	// create path and map variables
@@ -474,7 +474,7 @@ func (a *SalesInvoiceLineApiService) ListSalesInvoiceLines(ctx context.Context, 
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse2009
+			var v InlineResponse20039
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
 				if err != nil {
 					newErr.error = err.Error()
@@ -500,7 +500,7 @@ SalesInvoiceLineApiService Returns a list of salesInvoiceLines
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Expand" (optional.Interface of []string) -  Entities to expand
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse2009
+@return InlineResponse20039
 */
 
 type SalesInvoiceLineApiListSalesInvoiceLinesForSalesInvoiceOpts struct { 
@@ -512,13 +512,13 @@ type SalesInvoiceLineApiListSalesInvoiceLinesForSalesInvoiceOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *SalesInvoiceLineApiService) ListSalesInvoiceLinesForSalesInvoice(ctx context.Context, companyId string, salesInvoiceId string, localVarOptionals *SalesInvoiceLineApiListSalesInvoiceLinesForSalesInvoiceOpts) (InlineResponse2009, *http.Response, error) {
+func (a *SalesInvoiceLineApiService) ListSalesInvoiceLinesForSalesInvoice(ctx context.Context, companyId string, salesInvoiceId string, localVarOptionals *SalesInvoiceLineApiListSalesInvoiceLinesForSalesInvoiceOpts) (InlineResponse20039, *http.Response, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Get")
 		localVarPostBody   interface{}
 		localVarFileName   string
 		localVarFileBytes  []byte
-		localVarReturnValue InlineResponse2009
+		localVarReturnValue InlineResponse20039
 	)
 
 	// create path and map variables
@@ -595,7 +595,7 @@ func (a *SalesInvoiceLineApiService) ListSalesInvoiceLinesForSalesInvoice(ctx co
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse2009
+			var v InlineResponse20039
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
 				if err != nil {
 					newErr.error = err.Error()

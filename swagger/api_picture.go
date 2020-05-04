@@ -876,7 +876,7 @@ PictureApiService Returns a list of picture
      * @param "Limit" (optional.Int32) -  Number of items to return from the list
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse2002
+@return InlineResponse20017
 */
 
 type PictureApiListPictureOpts struct { 
@@ -887,13 +887,13 @@ type PictureApiListPictureOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *PictureApiService) ListPicture(ctx context.Context, companyId string, localVarOptionals *PictureApiListPictureOpts) (InlineResponse2002, *http.Response, error) {
+func (a *PictureApiService) ListPicture(ctx context.Context, companyId string, localVarOptionals *PictureApiListPictureOpts) (InlineResponse20017, *http.Response, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Get")
 		localVarPostBody   interface{}
 		localVarFileName   string
 		localVarFileBytes  []byte
-		localVarReturnValue InlineResponse2002
+		localVarReturnValue InlineResponse20017
 	)
 
 	// create path and map variables
@@ -966,7 +966,7 @@ func (a *PictureApiService) ListPicture(ctx context.Context, companyId string, l
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse2002
+			var v InlineResponse20017
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
 				if err != nil {
 					newErr.error = err.Error()
@@ -991,7 +991,7 @@ PictureApiService Returns a list of picture
      * @param "Limit" (optional.Int32) -  Number of items to return from the list
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse2002
+@return InlineResponse20017
 */
 
 type PictureApiListPictureForCustomerOpts struct { 
@@ -1002,13 +1002,13 @@ type PictureApiListPictureForCustomerOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *PictureApiService) ListPictureForCustomer(ctx context.Context, companyId string, customerId string, localVarOptionals *PictureApiListPictureForCustomerOpts) (InlineResponse2002, *http.Response, error) {
+func (a *PictureApiService) ListPictureForCustomer(ctx context.Context, companyId string, customerId string, localVarOptionals *PictureApiListPictureForCustomerOpts) (InlineResponse20017, *http.Response, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Get")
 		localVarPostBody   interface{}
 		localVarFileName   string
 		localVarFileBytes  []byte
-		localVarReturnValue InlineResponse2002
+		localVarReturnValue InlineResponse20017
 	)
 
 	// create path and map variables
@@ -1082,7 +1082,7 @@ func (a *PictureApiService) ListPictureForCustomer(ctx context.Context, companyI
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse2002
+			var v InlineResponse20017
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
 				if err != nil {
 					newErr.error = err.Error()
@@ -1107,7 +1107,7 @@ PictureApiService Returns a list of picture
      * @param "Limit" (optional.Int32) -  Number of items to return from the list
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse2002
+@return InlineResponse20017
 */
 
 type PictureApiListPictureForEmployeeOpts struct { 
@@ -1118,13 +1118,13 @@ type PictureApiListPictureForEmployeeOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *PictureApiService) ListPictureForEmployee(ctx context.Context, companyId string, employeeId string, localVarOptionals *PictureApiListPictureForEmployeeOpts) (InlineResponse2002, *http.Response, error) {
+func (a *PictureApiService) ListPictureForEmployee(ctx context.Context, companyId string, employeeId string, localVarOptionals *PictureApiListPictureForEmployeeOpts) (InlineResponse20017, *http.Response, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Get")
 		localVarPostBody   interface{}
 		localVarFileName   string
 		localVarFileBytes  []byte
-		localVarReturnValue InlineResponse2002
+		localVarReturnValue InlineResponse20017
 	)
 
 	// create path and map variables
@@ -1198,7 +1198,7 @@ func (a *PictureApiService) ListPictureForEmployee(ctx context.Context, companyI
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse2002
+			var v InlineResponse20017
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
 				if err != nil {
 					newErr.error = err.Error()
@@ -1223,7 +1223,7 @@ PictureApiService Returns a list of picture
      * @param "Limit" (optional.Int32) -  Number of items to return from the list
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse2002
+@return InlineResponse20017
 */
 
 type PictureApiListPictureForItemOpts struct { 
@@ -1234,13 +1234,13 @@ type PictureApiListPictureForItemOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *PictureApiService) ListPictureForItem(ctx context.Context, companyId string, itemId string, localVarOptionals *PictureApiListPictureForItemOpts) (InlineResponse2002, *http.Response, error) {
+func (a *PictureApiService) ListPictureForItem(ctx context.Context, companyId string, itemId string, localVarOptionals *PictureApiListPictureForItemOpts) (InlineResponse20017, *http.Response, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Get")
 		localVarPostBody   interface{}
 		localVarFileName   string
 		localVarFileBytes  []byte
-		localVarReturnValue InlineResponse2002
+		localVarReturnValue InlineResponse20017
 	)
 
 	// create path and map variables
@@ -1314,7 +1314,7 @@ func (a *PictureApiService) ListPictureForItem(ctx context.Context, companyId st
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse2002
+			var v InlineResponse20017
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
 				if err != nil {
 					newErr.error = err.Error()
@@ -1339,7 +1339,7 @@ PictureApiService Returns a list of picture
      * @param "Limit" (optional.Int32) -  Number of items to return from the list
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse2002
+@return InlineResponse20017
 */
 
 type PictureApiListPictureForVendorOpts struct { 
@@ -1350,13 +1350,13 @@ type PictureApiListPictureForVendorOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *PictureApiService) ListPictureForVendor(ctx context.Context, companyId string, vendorId string, localVarOptionals *PictureApiListPictureForVendorOpts) (InlineResponse2002, *http.Response, error) {
+func (a *PictureApiService) ListPictureForVendor(ctx context.Context, companyId string, vendorId string, localVarOptionals *PictureApiListPictureForVendorOpts) (InlineResponse20017, *http.Response, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Get")
 		localVarPostBody   interface{}
 		localVarFileName   string
 		localVarFileBytes  []byte
-		localVarReturnValue InlineResponse2002
+		localVarReturnValue InlineResponse20017
 	)
 
 	// create path and map variables
@@ -1430,7 +1430,7 @@ func (a *PictureApiService) ListPictureForVendor(ctx context.Context, companyId 
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse2002
+			var v InlineResponse20017
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
 				if err != nil {
 					newErr.error = err.Error()

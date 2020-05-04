@@ -74,7 +74,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListShipmentMethods**
-> InlineResponse20027 ListShipmentMethods(ctx, companyId, optional)
+> InlineResponse20045 ListShipmentMethods(ctx, companyId, optional)
 Returns a list of shipmentMethods
 
 ### Required Parameters
@@ -98,7 +98,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20027**](inline_response_200_27.md)
+[**InlineResponse20045**](inline_response_200_45.md)
 
 ### Authorization
 

@@ -200,7 +200,7 @@ ItemCategoryApiService Returns a list of itemCategories
      * @param "Limit" (optional.Int32) -  Number of items to return from the list
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse20028
+@return InlineResponse20026
 */
 
 type ItemCategoryApiListItemCategoriesOpts struct { 
@@ -211,13 +211,13 @@ type ItemCategoryApiListItemCategoriesOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *ItemCategoryApiService) ListItemCategories(ctx context.Context, companyId string, localVarOptionals *ItemCategoryApiListItemCategoriesOpts) (InlineResponse20028, *http.Response, error) {
+func (a *ItemCategoryApiService) ListItemCategories(ctx context.Context, companyId string, localVarOptionals *ItemCategoryApiListItemCategoriesOpts) (InlineResponse20026, *http.Response, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Get")
 		localVarPostBody   interface{}
 		localVarFileName   string
 		localVarFileBytes  []byte
-		localVarReturnValue InlineResponse20028
+		localVarReturnValue InlineResponse20026
 	)
 
 	// create path and map variables
@@ -290,7 +290,7 @@ func (a *ItemCategoryApiService) ListItemCategories(ctx context.Context, company
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse20028
+			var v InlineResponse20026
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
 				if err != nil {
 					newErr.error = err.Error()

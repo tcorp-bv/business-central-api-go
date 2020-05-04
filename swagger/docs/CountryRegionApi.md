@@ -74,7 +74,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListCountriesRegions**
-> InlineResponse20030 ListCountriesRegions(ctx, companyId, optional)
+> InlineResponse2009 ListCountriesRegions(ctx, companyId, optional)
 Returns a list of countriesRegions
 
 ### Required Parameters
@@ -98,7 +98,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20030**](inline_response_200_30.md)
+[**InlineResponse2009**](inline_response_200_9.md)
 
 ### Authorization
 

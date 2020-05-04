@@ -137,7 +137,7 @@ GeneralLedgerEntryApiService Returns a list of generalLedgerEntries
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Expand" (optional.Interface of []string) -  Entities to expand
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse20020
+@return InlineResponse20023
 */
 
 type GeneralLedgerEntryApiListGeneralLedgerEntriesOpts struct { 
@@ -149,13 +149,13 @@ type GeneralLedgerEntryApiListGeneralLedgerEntriesOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *GeneralLedgerEntryApiService) ListGeneralLedgerEntries(ctx context.Context, companyId string, localVarOptionals *GeneralLedgerEntryApiListGeneralLedgerEntriesOpts) (InlineResponse20020, *http.Response, error) {
+func (a *GeneralLedgerEntryApiService) ListGeneralLedgerEntries(ctx context.Context, companyId string, localVarOptionals *GeneralLedgerEntryApiListGeneralLedgerEntriesOpts) (InlineResponse20023, *http.Response, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Get")
 		localVarPostBody   interface{}
 		localVarFileName   string
 		localVarFileBytes  []byte
-		localVarReturnValue InlineResponse20020
+		localVarReturnValue InlineResponse20023
 	)
 
 	// create path and map variables
@@ -231,7 +231,7 @@ func (a *GeneralLedgerEntryApiService) ListGeneralLedgerEntries(ctx context.Cont
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse20020
+			var v InlineResponse20023
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
 				if err != nil {
 					newErr.error = err.Error()

@@ -206,7 +206,7 @@ EmployeeApiService Returns a list of employees
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Expand" (optional.Interface of []string) -  Entities to expand
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse20018
+@return InlineResponse20021
 */
 
 type EmployeeApiListEmployeesOpts struct { 
@@ -218,13 +218,13 @@ type EmployeeApiListEmployeesOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *EmployeeApiService) ListEmployees(ctx context.Context, companyId string, localVarOptionals *EmployeeApiListEmployeesOpts) (InlineResponse20018, *http.Response, error) {
+func (a *EmployeeApiService) ListEmployees(ctx context.Context, companyId string, localVarOptionals *EmployeeApiListEmployeesOpts) (InlineResponse20021, *http.Response, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Get")
 		localVarPostBody   interface{}
 		localVarFileName   string
 		localVarFileBytes  []byte
-		localVarReturnValue InlineResponse20018
+		localVarReturnValue InlineResponse20021
 	)
 
 	// create path and map variables
@@ -300,7 +300,7 @@ func (a *EmployeeApiService) ListEmployees(ctx context.Context, companyId string
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse20018
+			var v InlineResponse20021
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
 				if err != nil {
 					newErr.error = err.Error()

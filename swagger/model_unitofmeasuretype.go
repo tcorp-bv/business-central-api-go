@@ -11,12 +11,12 @@ package swagger
 type Unitofmeasuretype struct {
 	// The code property for the Dynamics 365 Business Central unitofmeasuretype entity
 	Code string `json:"code,omitempty"`
+	DefaultDimensions []DefaultDimensions `json:"defaultDimensions,omitempty"`
 	// The displayName property for the Dynamics 365 Business Central unitofmeasuretype entity
 	DisplayName string `json:"displayName,omitempty"`
+	ItemCategory *ItemCategory `json:"itemCategory,omitempty"`
+	Picture []Picture `json:"picture,omitempty"`
 	// The symbol property for the Dynamics 365 Business Central unitofmeasuretype entity
 	Symbol string `json:"symbol,omitempty"`
 	UnitConversion *Itemunitofmeasureconversiontype `json:"unitConversion,omitempty"`
-	Picture []Picture `json:"picture,omitempty"`
-	DefaultDimensions []DefaultDimensions `json:"defaultDimensions,omitempty"`
-	ItemCategory *ItemCategory `json:"itemCategory,omitempty"`
 }

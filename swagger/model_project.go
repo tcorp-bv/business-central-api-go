@@ -9,10 +9,10 @@
 package swagger
 
 type Project struct {
+	// The displayName property for the Dynamics 365 Business Central project entity
+	DisplayName string `json:"displayName,omitempty"`
 	// The id property for the Dynamics 365 Business Central project entity
 	Id string `json:"id,omitempty"`
 	// The number property for the Dynamics 365 Business Central project entity
 	Number string `json:"number,omitempty"`
-	// The displayName property for the Dynamics 365 Business Central project entity
-	DisplayName string `json:"displayName,omitempty"`
 }

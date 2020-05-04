@@ -74,7 +74,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListCurrencies**
-> InlineResponse20021 ListCurrencies(ctx, companyId, optional)
+> InlineResponse20010 ListCurrencies(ctx, companyId, optional)
 Returns a list of currencies
 
 ### Required Parameters
@@ -98,7 +98,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20021**](inline_response_200_21.md)
+[**InlineResponse20010**](inline_response_200_10.md)
 
 ### Authorization
 

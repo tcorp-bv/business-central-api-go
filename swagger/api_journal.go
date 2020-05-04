@@ -206,7 +206,7 @@ JournalApiService Returns a list of journals
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Expand" (optional.Interface of []string) -  Entities to expand
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse20015
+@return InlineResponse20029
 */
 
 type JournalApiListJournalsOpts struct { 
@@ -218,13 +218,13 @@ type JournalApiListJournalsOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *JournalApiService) ListJournals(ctx context.Context, companyId string, localVarOptionals *JournalApiListJournalsOpts) (InlineResponse20015, *http.Response, error) {
+func (a *JournalApiService) ListJournals(ctx context.Context, companyId string, localVarOptionals *JournalApiListJournalsOpts) (InlineResponse20029, *http.Response, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Get")
 		localVarPostBody   interface{}
 		localVarFileName   string
 		localVarFileBytes  []byte
-		localVarReturnValue InlineResponse20015
+		localVarReturnValue InlineResponse20029
 	)
 
 	// create path and map variables
@@ -300,7 +300,7 @@ func (a *JournalApiService) ListJournals(ctx context.Context, companyId string, 
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse20015
+			var v InlineResponse20029
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
 				if err != nil {
 					newErr.error = err.Error()

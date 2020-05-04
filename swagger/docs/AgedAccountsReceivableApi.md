@@ -44,7 +44,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListAgedAccountsReceivable**
-> InlineResponse20035 ListAgedAccountsReceivable(ctx, companyId, optional)
+> InlineResponse2003 ListAgedAccountsReceivable(ctx, companyId, optional)
 Returns a list of agedAccountsReceivable
 
 ### Required Parameters
@@ -68,7 +68,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20035**](inline_response_200_35.md)
+[**InlineResponse2003**](inline_response_200_3.md)
 
 ### Authorization
 

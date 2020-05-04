@@ -12,14 +12,14 @@ import (
 )
 
 type CountryRegion struct {
-	// The id property for the Dynamics 365 Business Central countryRegion entity
-	Id string `json:"id,omitempty"`
+	// The addressFormat property for the Dynamics 365 Business Central countryRegion entity
+	AddressFormat string `json:"addressFormat,omitempty"`
 	// The code property for the Dynamics 365 Business Central countryRegion entity
 	Code string `json:"code,omitempty"`
 	// The displayName property for the Dynamics 365 Business Central countryRegion entity
 	DisplayName string `json:"displayName,omitempty"`
-	// The addressFormat property for the Dynamics 365 Business Central countryRegion entity
-	AddressFormat string `json:"addressFormat,omitempty"`
+	// The id property for the Dynamics 365 Business Central countryRegion entity
+	Id string `json:"id,omitempty"`
 	// The lastModifiedDateTime property for the Dynamics 365 Business Central countryRegion entity
 	LastModifiedDateTime time.Time `json:"lastModifiedDateTime,omitempty"`
 }

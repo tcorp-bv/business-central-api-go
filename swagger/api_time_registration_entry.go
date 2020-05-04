@@ -380,7 +380,7 @@ TimeRegistrationEntryApiService Returns a list of timeRegistrationEntries
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Expand" (optional.Interface of []string) -  Entities to expand
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse20019
+@return InlineResponse20022
 */
 
 type TimeRegistrationEntryApiListTimeRegistrationEntriesOpts struct { 
@@ -392,13 +392,13 @@ type TimeRegistrationEntryApiListTimeRegistrationEntriesOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *TimeRegistrationEntryApiService) ListTimeRegistrationEntries(ctx context.Context, companyId string, localVarOptionals *TimeRegistrationEntryApiListTimeRegistrationEntriesOpts) (InlineResponse20019, *http.Response, error) {
+func (a *TimeRegistrationEntryApiService) ListTimeRegistrationEntries(ctx context.Context, companyId string, localVarOptionals *TimeRegistrationEntryApiListTimeRegistrationEntriesOpts) (InlineResponse20022, *http.Response, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Get")
 		localVarPostBody   interface{}
 		localVarFileName   string
 		localVarFileBytes  []byte
-		localVarReturnValue InlineResponse20019
+		localVarReturnValue InlineResponse20022
 	)
 
 	// create path and map variables
@@ -474,7 +474,7 @@ func (a *TimeRegistrationEntryApiService) ListTimeRegistrationEntries(ctx contex
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse20019
+			var v InlineResponse20022
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
 				if err != nil {
 					newErr.error = err.Error()
@@ -500,7 +500,7 @@ TimeRegistrationEntryApiService Returns a list of timeRegistrationEntries
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Expand" (optional.Interface of []string) -  Entities to expand
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse20019
+@return InlineResponse20022
 */
 
 type TimeRegistrationEntryApiListTimeRegistrationEntriesForEmployeeOpts struct { 
@@ -512,13 +512,13 @@ type TimeRegistrationEntryApiListTimeRegistrationEntriesForEmployeeOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *TimeRegistrationEntryApiService) ListTimeRegistrationEntriesForEmployee(ctx context.Context, companyId string, employeeId string, localVarOptionals *TimeRegistrationEntryApiListTimeRegistrationEntriesForEmployeeOpts) (InlineResponse20019, *http.Response, error) {
+func (a *TimeRegistrationEntryApiService) ListTimeRegistrationEntriesForEmployee(ctx context.Context, companyId string, employeeId string, localVarOptionals *TimeRegistrationEntryApiListTimeRegistrationEntriesForEmployeeOpts) (InlineResponse20022, *http.Response, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Get")
 		localVarPostBody   interface{}
 		localVarFileName   string
 		localVarFileBytes  []byte
-		localVarReturnValue InlineResponse20019
+		localVarReturnValue InlineResponse20022
 	)
 
 	// create path and map variables
@@ -595,7 +595,7 @@ func (a *TimeRegistrationEntryApiService) ListTimeRegistrationEntriesForEmployee
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse20019
+			var v InlineResponse20022
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
 				if err != nil {
 					newErr.error = err.Error()

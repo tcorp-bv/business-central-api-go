@@ -380,7 +380,7 @@ SalesOrderLineApiService Returns a list of salesOrderLines
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Expand" (optional.Interface of []string) -  Entities to expand
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse20032
+@return InlineResponse20041
 */
 
 type SalesOrderLineApiListSalesOrderLinesOpts struct { 
@@ -392,13 +392,13 @@ type SalesOrderLineApiListSalesOrderLinesOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *SalesOrderLineApiService) ListSalesOrderLines(ctx context.Context, companyId string, localVarOptionals *SalesOrderLineApiListSalesOrderLinesOpts) (InlineResponse20032, *http.Response, error) {
+func (a *SalesOrderLineApiService) ListSalesOrderLines(ctx context.Context, companyId string, localVarOptionals *SalesOrderLineApiListSalesOrderLinesOpts) (InlineResponse20041, *http.Response, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Get")
 		localVarPostBody   interface{}
 		localVarFileName   string
 		localVarFileBytes  []byte
-		localVarReturnValue InlineResponse20032
+		localVarReturnValue InlineResponse20041
 	)
 
 	// create path and map variables
@@ -474,7 +474,7 @@ func (a *SalesOrderLineApiService) ListSalesOrderLines(ctx context.Context, comp
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse20032
+			var v InlineResponse20041
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
 				if err != nil {
 					newErr.error = err.Error()
@@ -500,7 +500,7 @@ SalesOrderLineApiService Returns a list of salesOrderLines
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Expand" (optional.Interface of []string) -  Entities to expand
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse20032
+@return InlineResponse20041
 */
 
 type SalesOrderLineApiListSalesOrderLinesForSalesOrderOpts struct { 
@@ -512,13 +512,13 @@ type SalesOrderLineApiListSalesOrderLinesForSalesOrderOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *SalesOrderLineApiService) ListSalesOrderLinesForSalesOrder(ctx context.Context, companyId string, salesOrderId string, localVarOptionals *SalesOrderLineApiListSalesOrderLinesForSalesOrderOpts) (InlineResponse20032, *http.Response, error) {
+func (a *SalesOrderLineApiService) ListSalesOrderLinesForSalesOrder(ctx context.Context, companyId string, salesOrderId string, localVarOptionals *SalesOrderLineApiListSalesOrderLinesForSalesOrderOpts) (InlineResponse20041, *http.Response, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Get")
 		localVarPostBody   interface{}
 		localVarFileName   string
 		localVarFileBytes  []byte
-		localVarReturnValue InlineResponse20032
+		localVarReturnValue InlineResponse20041
 	)
 
 	// create path and map variables
@@ -595,7 +595,7 @@ func (a *SalesOrderLineApiService) ListSalesOrderLinesForSalesOrder(ctx context.
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse20032
+			var v InlineResponse20041
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
 				if err != nil {
 					newErr.error = err.Error()

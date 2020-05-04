@@ -131,7 +131,7 @@ RetainedEarningsStatementApiService Returns a list of retainedEarningsStatement
      * @param "Limit" (optional.Int32) -  Number of items to return from the list
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse20033
+@return InlineResponse20036
 */
 
 type RetainedEarningsStatementApiListRetainedEarningsStatementOpts struct { 
@@ -142,13 +142,13 @@ type RetainedEarningsStatementApiListRetainedEarningsStatementOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *RetainedEarningsStatementApiService) ListRetainedEarningsStatement(ctx context.Context, companyId string, localVarOptionals *RetainedEarningsStatementApiListRetainedEarningsStatementOpts) (InlineResponse20033, *http.Response, error) {
+func (a *RetainedEarningsStatementApiService) ListRetainedEarningsStatement(ctx context.Context, companyId string, localVarOptionals *RetainedEarningsStatementApiListRetainedEarningsStatementOpts) (InlineResponse20036, *http.Response, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Get")
 		localVarPostBody   interface{}
 		localVarFileName   string
 		localVarFileBytes  []byte
-		localVarReturnValue InlineResponse20033
+		localVarReturnValue InlineResponse20036
 	)
 
 	// create path and map variables
@@ -221,7 +221,7 @@ func (a *RetainedEarningsStatementApiService) ListRetainedEarningsStatement(ctx 
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse20033
+			var v InlineResponse20036
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
 				if err != nil {
 					newErr.error = err.Error()

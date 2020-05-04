@@ -45,7 +45,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListDimensions**
-> InlineResponse20023 ListDimensions(ctx, companyId, optional)
+> InlineResponse20020 ListDimensions(ctx, companyId, optional)
 Returns a list of dimensions
 
 ### Required Parameters
@@ -70,7 +70,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20023**](inline_response_200_23.md)
+[**InlineResponse20020**](inline_response_200_20.md)
 
 ### Authorization
 

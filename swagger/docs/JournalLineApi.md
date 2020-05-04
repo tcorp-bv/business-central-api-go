@@ -147,7 +147,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListJournalLines**
-> InlineResponse20016 ListJournalLines(ctx, companyId, optional)
+> InlineResponse20028 ListJournalLines(ctx, companyId, optional)
 Returns a list of journalLines
 
 ### Required Parameters
@@ -172,7 +172,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20016**](inline_response_200_16.md)
+[**InlineResponse20028**](inline_response_200_28.md)
 
 ### Authorization
 
@@ -186,7 +186,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListJournalLinesForJournal**
-> InlineResponse20016 ListJournalLinesForJournal(ctx, companyId, journalId, optional)
+> InlineResponse20028 ListJournalLinesForJournal(ctx, companyId, journalId, optional)
 Returns a list of journalLines
 
 ### Required Parameters
@@ -213,7 +213,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20016**](inline_response_200_16.md)
+[**InlineResponse20028**](inline_response_200_28.md)
 
 ### Authorization
 

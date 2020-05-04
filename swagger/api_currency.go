@@ -200,7 +200,7 @@ CurrencyApiService Returns a list of currencies
      * @param "Limit" (optional.Int32) -  Number of items to return from the list
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse20021
+@return InlineResponse20010
 */
 
 type CurrencyApiListCurrenciesOpts struct { 
@@ -211,13 +211,13 @@ type CurrencyApiListCurrenciesOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *CurrencyApiService) ListCurrencies(ctx context.Context, companyId string, localVarOptionals *CurrencyApiListCurrenciesOpts) (InlineResponse20021, *http.Response, error) {
+func (a *CurrencyApiService) ListCurrencies(ctx context.Context, companyId string, localVarOptionals *CurrencyApiListCurrenciesOpts) (InlineResponse20010, *http.Response, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Get")
 		localVarPostBody   interface{}
 		localVarFileName   string
 		localVarFileBytes  []byte
-		localVarReturnValue InlineResponse20021
+		localVarReturnValue InlineResponse20010
 	)
 
 	// create path and map variables
@@ -290,7 +290,7 @@ func (a *CurrencyApiService) ListCurrencies(ctx context.Context, companyId strin
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse20021
+			var v InlineResponse20010
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
 				if err != nil {
 					newErr.error = err.Error()

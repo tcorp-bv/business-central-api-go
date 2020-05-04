@@ -75,7 +75,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListVendors**
-> InlineResponse2006 ListVendors(ctx, companyId, optional)
+> InlineResponse20051 ListVendors(ctx, companyId, optional)
 Returns a list of vendors
 
 ### Required Parameters
@@ -100,7 +100,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2006**](inline_response_200_6.md)
+[**InlineResponse20051**](inline_response_200_51.md)
 
 ### Authorization
 

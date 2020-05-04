@@ -12,20 +12,20 @@ import (
 )
 
 type PaymentTerm struct {
-	// The id property for the Dynamics 365 Business Central paymentTerm entity
-	Id string `json:"id,omitempty"`
+	// The calculateDiscountOnCreditMemos property for the Dynamics 365 Business Central paymentTerm entity
+	CalculateDiscountOnCreditMemos bool `json:"calculateDiscountOnCreditMemos,omitempty"`
 	// The code property for the Dynamics 365 Business Central paymentTerm entity
 	Code string `json:"code,omitempty"`
-	// The displayName property for the Dynamics 365 Business Central paymentTerm entity
-	DisplayName string `json:"displayName,omitempty"`
-	// The dueDateCalculation property for the Dynamics 365 Business Central paymentTerm entity
-	DueDateCalculation string `json:"dueDateCalculation,omitempty"`
 	// The discountDateCalculation property for the Dynamics 365 Business Central paymentTerm entity
 	DiscountDateCalculation string `json:"discountDateCalculation,omitempty"`
 	// The discountPercent property for the Dynamics 365 Business Central paymentTerm entity
 	DiscountPercent float64 `json:"discountPercent,omitempty"`
-	// The calculateDiscountOnCreditMemos property for the Dynamics 365 Business Central paymentTerm entity
-	CalculateDiscountOnCreditMemos bool `json:"calculateDiscountOnCreditMemos,omitempty"`
+	// The displayName property for the Dynamics 365 Business Central paymentTerm entity
+	DisplayName string `json:"displayName,omitempty"`
+	// The dueDateCalculation property for the Dynamics 365 Business Central paymentTerm entity
+	DueDateCalculation string `json:"dueDateCalculation,omitempty"`
+	// The id property for the Dynamics 365 Business Central paymentTerm entity
+	Id string `json:"id,omitempty"`
 	// The lastModifiedDateTime property for the Dynamics 365 Business Central paymentTerm entity
 	LastModifiedDateTime time.Time `json:"lastModifiedDateTime,omitempty"`
 }

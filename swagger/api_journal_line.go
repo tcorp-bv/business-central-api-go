@@ -380,7 +380,7 @@ JournalLineApiService Returns a list of journalLines
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Expand" (optional.Interface of []string) -  Entities to expand
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse20016
+@return InlineResponse20028
 */
 
 type JournalLineApiListJournalLinesOpts struct { 
@@ -392,13 +392,13 @@ type JournalLineApiListJournalLinesOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *JournalLineApiService) ListJournalLines(ctx context.Context, companyId string, localVarOptionals *JournalLineApiListJournalLinesOpts) (InlineResponse20016, *http.Response, error) {
+func (a *JournalLineApiService) ListJournalLines(ctx context.Context, companyId string, localVarOptionals *JournalLineApiListJournalLinesOpts) (InlineResponse20028, *http.Response, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Get")
 		localVarPostBody   interface{}
 		localVarFileName   string
 		localVarFileBytes  []byte
-		localVarReturnValue InlineResponse20016
+		localVarReturnValue InlineResponse20028
 	)
 
 	// create path and map variables
@@ -474,7 +474,7 @@ func (a *JournalLineApiService) ListJournalLines(ctx context.Context, companyId 
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse20016
+			var v InlineResponse20028
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
 				if err != nil {
 					newErr.error = err.Error()
@@ -500,7 +500,7 @@ JournalLineApiService Returns a list of journalLines
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Expand" (optional.Interface of []string) -  Entities to expand
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse20016
+@return InlineResponse20028
 */
 
 type JournalLineApiListJournalLinesForJournalOpts struct { 
@@ -512,13 +512,13 @@ type JournalLineApiListJournalLinesForJournalOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *JournalLineApiService) ListJournalLinesForJournal(ctx context.Context, companyId string, journalId string, localVarOptionals *JournalLineApiListJournalLinesForJournalOpts) (InlineResponse20016, *http.Response, error) {
+func (a *JournalLineApiService) ListJournalLinesForJournal(ctx context.Context, companyId string, journalId string, localVarOptionals *JournalLineApiListJournalLinesForJournalOpts) (InlineResponse20028, *http.Response, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Get")
 		localVarPostBody   interface{}
 		localVarFileName   string
 		localVarFileBytes  []byte
-		localVarReturnValue InlineResponse20016
+		localVarReturnValue InlineResponse20028
 	)
 
 	// create path and map variables
@@ -595,7 +595,7 @@ func (a *JournalLineApiService) ListJournalLinesForJournal(ctx context.Context, 
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse20016
+			var v InlineResponse20028
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
 				if err != nil {
 					newErr.error = err.Error()

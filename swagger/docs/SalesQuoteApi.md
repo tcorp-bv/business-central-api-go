@@ -78,7 +78,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListSalesQuotes**
-> InlineResponse20041 ListSalesQuotes(ctx, companyId, optional)
+> InlineResponse20044 ListSalesQuotes(ctx, companyId, optional)
 Returns a list of salesQuotes
 
 ### Required Parameters
@@ -103,7 +103,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20041**](inline_response_200_41.md)
+[**InlineResponse20044**](inline_response_200_44.md)
 
 ### Authorization
 

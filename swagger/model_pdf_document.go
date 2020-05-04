@@ -9,8 +9,8 @@
 package swagger
 
 type PdfDocument struct {
-	// The id property for the Dynamics 365 Business Central pdfDocument entity
-	Id string `json:"id,omitempty"`
 	// The content property for the Dynamics 365 Business Central pdfDocument entity
 	Content string `json:"content,omitempty"`
+	// The id property for the Dynamics 365 Business Central pdfDocument entity
+	Id string `json:"id,omitempty"`
 }

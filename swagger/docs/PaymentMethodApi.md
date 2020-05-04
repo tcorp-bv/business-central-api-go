@@ -74,7 +74,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListPaymentMethods**
-> InlineResponse20022 ListPaymentMethods(ctx, companyId, optional)
+> InlineResponse20030 ListPaymentMethods(ctx, companyId, optional)
 Returns a list of paymentMethods
 
 ### Required Parameters
@@ -98,7 +98,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20022**](inline_response_200_22.md)
+[**InlineResponse20030**](inline_response_200_30.md)
 
 ### Authorization
 

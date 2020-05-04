@@ -9,10 +9,10 @@
 package swagger
 
 type Documentlineobjectdetailstype struct {
-	// The number property for the Dynamics 365 Business Central documentlineobjectdetailstype entity
-	Number string `json:"number,omitempty"`
+	Account *Account `json:"account,omitempty"`
 	// The displayName property for the Dynamics 365 Business Central documentlineobjectdetailstype entity
 	DisplayName string `json:"displayName,omitempty"`
 	Item *Item `json:"item,omitempty"`
-	Account *Account `json:"account,omitempty"`
+	// The number property for the Dynamics 365 Business Central documentlineobjectdetailstype entity
+	Number string `json:"number,omitempty"`
 }

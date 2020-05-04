@@ -206,7 +206,7 @@ SalesQuoteApiService Returns a list of salesQuotes
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Expand" (optional.Interface of []string) -  Entities to expand
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse20041
+@return InlineResponse20044
 */
 
 type SalesQuoteApiListSalesQuotesOpts struct { 
@@ -218,13 +218,13 @@ type SalesQuoteApiListSalesQuotesOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *SalesQuoteApiService) ListSalesQuotes(ctx context.Context, companyId string, localVarOptionals *SalesQuoteApiListSalesQuotesOpts) (InlineResponse20041, *http.Response, error) {
+func (a *SalesQuoteApiService) ListSalesQuotes(ctx context.Context, companyId string, localVarOptionals *SalesQuoteApiListSalesQuotesOpts) (InlineResponse20044, *http.Response, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Get")
 		localVarPostBody   interface{}
 		localVarFileName   string
 		localVarFileBytes  []byte
-		localVarReturnValue InlineResponse20041
+		localVarReturnValue InlineResponse20044
 	)
 
 	// create path and map variables
@@ -300,7 +300,7 @@ func (a *SalesQuoteApiService) ListSalesQuotes(ctx context.Context, companyId st
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse20041
+			var v InlineResponse20044
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
 				if err != nil {
 					newErr.error = err.Error()

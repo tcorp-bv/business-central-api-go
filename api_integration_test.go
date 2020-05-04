@@ -38,6 +38,7 @@ import (
 )
 
 const (
+	testEmployeeNumber = "TESTING"
 	testCustomerNumber = "BOLTEST123456"
 )
 
@@ -89,6 +90,40 @@ func TestPostCustomer(t *testing.T) {
 	is.Equal(customer.Type_, fetchedCustomer.Type_)
 }
 
+type EmployeeWrapper struct {
+	swagger.Employee
+	EmploymentDate  string `json:"employmentDate,omitempty"`
+	BirthDate       string `json:"birthDate,omitempty"`
+	TerminationDate string `json:"terminationDate,omitempty"`
+}
+
+func TestEmploymentDateField(t *testing.T) {
+	is := is.New(t)
+	api := getAPI(is)
+	ctx, _ := context.WithTimeout(context.Background(), 10*time.Second)
+	compId := getSomeCompanyId(is, api)
+	item := swagger.Employee{Number: testEmployeeNumber, GivenName: "Test", Surname: "Employee", EmploymentDate: "2020-05-01"}
+	cleanupEmployee(is, ctx, api, compId)
+	emp, _, err := api.EmployeeApi.PostEmployee(ctx, item, DefaultContentType, compId)
+	is.NoErr(err) // we want to make sure that employmentdate is postable
+	defer cleanupEmployee(is, ctx, api, compId)
+
+	resEmp, _, err := api.EmployeeApi.GetEmployee(ctx, compId, emp.Id, &swagger.EmployeeApiGetEmployeeOpts{})
+	is.NoErr(err)
+	is.Equal(resEmp.Number, testEmployeeNumber)
+	is.Equal(resEmp.GivenName, "Test")
+	is.Equal(resEmp.Surname, "Employee")
+	is.Equal(resEmp.EmploymentDate, "2020-05-01")
+
+}
+func cleanupEmployee(is *is.I, ctx context.Context, api *swagger.APIClient, companyId string) {
+	filter := optional.NewString(fmt.Sprintf("number eq '%s'", testEmployeeNumber))
+	res, _, err := api.EmployeeApi.ListEmployees(ctx, companyId, &swagger.EmployeeApiListEmployeesOpts{Filter: filter})
+	is.NoErr(err)
+	for _, emp := range res.Value {
+		api.EmployeeApi.DeleteEmployee(ctx, companyId, emp.Id) // Ignore result as this is just a cleanup
+	}
+}
 func getAPI(is *is.I) *swagger.APIClient {
 	api, err := NewWithEnvironmentDebug(auth.NewEnvProvider(), "sandbox", true)
 	is.NoErr(err)

@@ -12,18 +12,18 @@ import (
 )
 
 type Journal struct {
-	// The id property for the Dynamics 365 Business Central journal entity
-	Id string `json:"id,omitempty"`
-	// The code property for the Dynamics 365 Business Central journal entity
-	Code string `json:"code,omitempty"`
-	// The displayName property for the Dynamics 365 Business Central journal entity
-	DisplayName string `json:"displayName,omitempty"`
-	// The lastModifiedDateTime property for the Dynamics 365 Business Central journal entity
-	LastModifiedDateTime time.Time `json:"lastModifiedDateTime,omitempty"`
+	Account *Account `json:"account,omitempty"`
 	// The balancingAccountId property for the Dynamics 365 Business Central journal entity
 	BalancingAccountId string `json:"balancingAccountId,omitempty"`
 	// The balancingAccountNumber property for the Dynamics 365 Business Central journal entity
 	BalancingAccountNumber string `json:"balancingAccountNumber,omitempty"`
+	// The code property for the Dynamics 365 Business Central journal entity
+	Code string `json:"code,omitempty"`
+	// The displayName property for the Dynamics 365 Business Central journal entity
+	DisplayName string `json:"displayName,omitempty"`
+	// The id property for the Dynamics 365 Business Central journal entity
+	Id string `json:"id,omitempty"`
 	JournalLines []JournalLine `json:"journalLines,omitempty"`
-	Account *Account `json:"account,omitempty"`
+	// The lastModifiedDateTime property for the Dynamics 365 Business Central journal entity
+	LastModifiedDateTime time.Time `json:"lastModifiedDateTime,omitempty"`
 }

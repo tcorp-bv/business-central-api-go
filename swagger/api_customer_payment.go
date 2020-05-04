@@ -380,7 +380,7 @@ CustomerPaymentApiService Returns a list of customerPayments
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Expand" (optional.Interface of []string) -  Entities to expand
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse20012
+@return InlineResponse20013
 */
 
 type CustomerPaymentApiListCustomerPaymentsOpts struct { 
@@ -392,13 +392,13 @@ type CustomerPaymentApiListCustomerPaymentsOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *CustomerPaymentApiService) ListCustomerPayments(ctx context.Context, companyId string, localVarOptionals *CustomerPaymentApiListCustomerPaymentsOpts) (InlineResponse20012, *http.Response, error) {
+func (a *CustomerPaymentApiService) ListCustomerPayments(ctx context.Context, companyId string, localVarOptionals *CustomerPaymentApiListCustomerPaymentsOpts) (InlineResponse20013, *http.Response, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Get")
 		localVarPostBody   interface{}
 		localVarFileName   string
 		localVarFileBytes  []byte
-		localVarReturnValue InlineResponse20012
+		localVarReturnValue InlineResponse20013
 	)
 
 	// create path and map variables
@@ -474,7 +474,7 @@ func (a *CustomerPaymentApiService) ListCustomerPayments(ctx context.Context, co
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse20012
+			var v InlineResponse20013
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
 				if err != nil {
 					newErr.error = err.Error()
@@ -500,7 +500,7 @@ CustomerPaymentApiService Returns a list of customerPayments
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Expand" (optional.Interface of []string) -  Entities to expand
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse20012
+@return InlineResponse20013
 */
 
 type CustomerPaymentApiListCustomerPaymentsForCustomerPaymentJournalOpts struct { 
@@ -512,13 +512,13 @@ type CustomerPaymentApiListCustomerPaymentsForCustomerPaymentJournalOpts struct 
 	Select_ optional.Interface
 }
 
-func (a *CustomerPaymentApiService) ListCustomerPaymentsForCustomerPaymentJournal(ctx context.Context, companyId string, customerPaymentJournalId string, localVarOptionals *CustomerPaymentApiListCustomerPaymentsForCustomerPaymentJournalOpts) (InlineResponse20012, *http.Response, error) {
+func (a *CustomerPaymentApiService) ListCustomerPaymentsForCustomerPaymentJournal(ctx context.Context, companyId string, customerPaymentJournalId string, localVarOptionals *CustomerPaymentApiListCustomerPaymentsForCustomerPaymentJournalOpts) (InlineResponse20013, *http.Response, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Get")
 		localVarPostBody   interface{}
 		localVarFileName   string
 		localVarFileBytes  []byte
-		localVarReturnValue InlineResponse20012
+		localVarReturnValue InlineResponse20013
 	)
 
 	// create path and map variables
@@ -595,7 +595,7 @@ func (a *CustomerPaymentApiService) ListCustomerPaymentsForCustomerPaymentJourna
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse20012
+			var v InlineResponse20013
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
 				if err != nil {
 					newErr.error = err.Error()
