@@ -32,6 +32,8 @@ import (
 	"github.com/tcorp-bv/business-central-api-go/swagger"
 	"io/ioutil"
 	"net/http"
+	"os"
+	"strings"
 )
 
 const (
@@ -49,7 +51,8 @@ func New(credentials auth.CredentialProvider) (*swagger.APIClient, error) {
 
 // Get a new api instance for the desired environment (usually "production" or "sandbox")
 func NewWithEnvironment(credentials auth.CredentialProvider, environment string) (*swagger.APIClient, error) {
-	return NewWithEnvironmentDebug(credentials, environment, false)
+	debugEnv := os.Getenv("BC_API_DEBUG")
+	return NewWithEnvironmentDebug(credentials, environment, strings.ToLower(debugEnv) == "true")
 }
 
 type debugRoundTripper struct {

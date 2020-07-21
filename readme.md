@@ -84,7 +84,7 @@ For more information on all the possible filters, see the [Microsoft API guideli
 
 ## Generating the client 
 
-To regenerate the swagger client ([openapi/](./openapi)) execute the following command:
+To regenerate the swagger client ([swagger/](./swagger)) execute the following command:
 
 ```shell script
 make generate
@@ -103,5 +103,5 @@ The app registry requires the `https://dynamics.microsoft.com/business-central/o
 
 
 ## Copyright notice
-Files in the [openapi](./openapi) directory are generated from the [business central api specification](https://docs.microsoft.com/en-us/dynamics-nav/api-reference/v1.0/contracts/bcoas1.0.yaml).
+Files in the [swagger](./swagger) directory are generated from the [business central api specification](https://docs.microsoft.com/en-us/dynamics-nav/api-reference/v1.0/contracts/bcoas1.0.yaml).
 TCorp BV does not hold any rights over this specification and is not associated with Business Central.
