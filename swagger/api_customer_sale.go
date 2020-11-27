@@ -136,7 +136,7 @@ CustomerSaleApiService Returns a list of customerSales
      * @param "Limit" (optional.Int32) -  Number of items to return from the list
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse20050
+@return InlineResponse20014
 */
 
 type CustomerSaleApiListCustomerSalesOpts struct {
@@ -147,13 +147,13 @@ type CustomerSaleApiListCustomerSalesOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *CustomerSaleApiService) ListCustomerSales(ctx context.Context, companyId string, localVarOptionals *CustomerSaleApiListCustomerSalesOpts) (InlineResponse20050, *http.Response, error) {
+func (a *CustomerSaleApiService) ListCustomerSales(ctx context.Context, companyId string, localVarOptionals *CustomerSaleApiListCustomerSalesOpts) (InlineResponse20014, *http.Response, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
-		localVarReturnValue InlineResponse20050
+		localVarReturnValue InlineResponse20014
 	)
 
 	// create path and map variables
@@ -226,7 +226,7 @@ func (a *CustomerSaleApiService) ListCustomerSales(ctx context.Context, companyI
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse20050
+			var v InlineResponse20014
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()

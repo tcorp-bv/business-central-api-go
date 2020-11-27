@@ -9,10 +9,10 @@
 package swagger
 
 type BankAccount struct {
+	// The displayName property for the Dynamics 365 Business Central bankAccount entity
+	DisplayName string `json:"displayName,omitempty"`
 	// The id property for the Dynamics 365 Business Central bankAccount entity
 	Id string `json:"id,omitempty"`
 	// The number property for the Dynamics 365 Business Central bankAccount entity
 	Number string `json:"number,omitempty"`
-	// The displayName property for the Dynamics 365 Business Central bankAccount entity
-	DisplayName string `json:"displayName,omitempty"`
 }

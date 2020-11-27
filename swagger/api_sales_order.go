@@ -206,7 +206,7 @@ SalesOrderApiService Returns a list of salesOrders
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Expand" (optional.Interface of []string) -  Entities to expand
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse20031
+@return InlineResponse20042
 */
 
 type SalesOrderApiListSalesOrdersOpts struct {
@@ -218,13 +218,13 @@ type SalesOrderApiListSalesOrdersOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *SalesOrderApiService) ListSalesOrders(ctx context.Context, companyId string, localVarOptionals *SalesOrderApiListSalesOrdersOpts) (InlineResponse20031, *http.Response, error) {
+func (a *SalesOrderApiService) ListSalesOrders(ctx context.Context, companyId string, localVarOptionals *SalesOrderApiListSalesOrdersOpts) (InlineResponse20042, *http.Response, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
-		localVarReturnValue InlineResponse20031
+		localVarReturnValue InlineResponse20042
 	)
 
 	// create path and map variables
@@ -300,7 +300,7 @@ func (a *SalesOrderApiService) ListSalesOrders(ctx context.Context, companyId st
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse20031
+			var v InlineResponse20042
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()

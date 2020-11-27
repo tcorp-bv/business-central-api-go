@@ -45,7 +45,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListTrialBalance**
-> InlineResponse20038 ListTrialBalance(ctx, companyId, optional)
+> InlineResponse20048 ListTrialBalance(ctx, companyId, optional)
 Returns a list of trialBalance
 
 ### Required Parameters
@@ -70,7 +70,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20038**](inline_response_200_38.md)
+[**InlineResponse20048**](inline_response_200_48.md)
 
 ### Authorization
 

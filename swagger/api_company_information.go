@@ -132,7 +132,7 @@ CompanyInformationApiService Returns a list of companyInformation
      * @param "Limit" (optional.Int32) -  Number of items to return from the list
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse2007
+@return InlineResponse2008
 */
 
 type CompanyInformationApiListCompanyInformationOpts struct {
@@ -143,13 +143,13 @@ type CompanyInformationApiListCompanyInformationOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *CompanyInformationApiService) ListCompanyInformation(ctx context.Context, companyId string, localVarOptionals *CompanyInformationApiListCompanyInformationOpts) (InlineResponse2007, *http.Response, error) {
+func (a *CompanyInformationApiService) ListCompanyInformation(ctx context.Context, companyId string, localVarOptionals *CompanyInformationApiListCompanyInformationOpts) (InlineResponse2008, *http.Response, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
-		localVarReturnValue InlineResponse2007
+		localVarReturnValue InlineResponse2008
 	)
 
 	// create path and map variables
@@ -222,7 +222,7 @@ func (a *CompanyInformationApiService) ListCompanyInformation(ctx context.Contex
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse2007
+			var v InlineResponse2008
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()

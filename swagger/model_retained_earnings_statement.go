@@ -13,16 +13,16 @@ import (
 )
 
 type RetainedEarningsStatement struct {
-	// The lineNumber property for the Dynamics 365 Business Central retainedEarningsStatement entity
-	LineNumber int32 `json:"lineNumber,omitempty"`
-	// The display property for the Dynamics 365 Business Central retainedEarningsStatement entity
-	Display string `json:"display,omitempty"`
-	// The netChange property for the Dynamics 365 Business Central retainedEarningsStatement entity
-	NetChange float64 `json:"netChange,omitempty"`
-	// The lineType property for the Dynamics 365 Business Central retainedEarningsStatement entity
-	LineType string `json:"lineType,omitempty"`
-	// The indentation property for the Dynamics 365 Business Central retainedEarningsStatement entity
-	Indentation int32 `json:"indentation,omitempty"`
 	// The dateFilter property for the Dynamics 365 Business Central retainedEarningsStatement entity
 	DateFilter time.Time `json:"dateFilter,omitempty"`
+	// The display property for the Dynamics 365 Business Central retainedEarningsStatement entity
+	Display string `json:"display,omitempty"`
+	// The indentation property for the Dynamics 365 Business Central retainedEarningsStatement entity
+	Indentation int32 `json:"indentation,omitempty"`
+	// The lineNumber property for the Dynamics 365 Business Central retainedEarningsStatement entity
+	LineNumber int32 `json:"lineNumber,omitempty"`
+	// The lineType property for the Dynamics 365 Business Central retainedEarningsStatement entity
+	LineType string `json:"lineType,omitempty"`
+	// The netChange property for the Dynamics 365 Business Central retainedEarningsStatement entity
+	NetChange float64 `json:"netChange,omitempty"`
 }

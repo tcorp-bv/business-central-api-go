@@ -13,42 +13,42 @@ import (
 )
 
 type Vendor struct {
-	// The id property for the Dynamics 365 Business Central vendor entity
-	Id string `json:"id,omitempty"`
-	// The number property for the Dynamics 365 Business Central vendor entity
-	Number string `json:"number,omitempty"`
-	// The displayName property for the Dynamics 365 Business Central vendor entity
-	DisplayName string             `json:"displayName,omitempty"`
-	Address     *Postaladdresstype `json:"address,omitempty"`
-	// The phoneNumber property for the Dynamics 365 Business Central vendor entity
-	PhoneNumber string `json:"phoneNumber,omitempty"`
-	// The email property for the Dynamics 365 Business Central vendor entity
-	Email string `json:"email,omitempty"`
-	// The website property for the Dynamics 365 Business Central vendor entity
-	Website string `json:"website,omitempty"`
-	// The taxRegistrationNumber property for the Dynamics 365 Business Central vendor entity
-	TaxRegistrationNumber string `json:"taxRegistrationNumber,omitempty"`
-	// The currencyId property for the Dynamics 365 Business Central vendor entity
-	CurrencyId string `json:"currencyId,omitempty"`
-	// The currencyCode property for the Dynamics 365 Business Central vendor entity
-	CurrencyCode string `json:"currencyCode,omitempty"`
-	// The irs1099Code property for the Dynamics 365 Business Central vendor entity
-	Irs1099Code string `json:"irs1099Code,omitempty"`
-	// The paymentTermsId property for the Dynamics 365 Business Central vendor entity
-	PaymentTermsId string `json:"paymentTermsId,omitempty"`
-	// The paymentMethodId property for the Dynamics 365 Business Central vendor entity
-	PaymentMethodId string `json:"paymentMethodId,omitempty"`
-	// The taxLiable property for the Dynamics 365 Business Central vendor entity
-	TaxLiable bool `json:"taxLiable,omitempty"`
-	// The blocked property for the Dynamics 365 Business Central vendor entity
-	Blocked string `json:"blocked,omitempty"`
+	Address *Postaladdresstype `json:"address,omitempty"`
 	// The balance property for the Dynamics 365 Business Central vendor entity
 	Balance float64 `json:"balance,omitempty"`
+	// The blocked property for the Dynamics 365 Business Central vendor entity
+	Blocked  string    `json:"blocked,omitempty"`
+	Currency *Currency `json:"currency,omitempty"`
+	// The currencyCode property for the Dynamics 365 Business Central vendor entity
+	CurrencyCode string `json:"currencyCode,omitempty"`
+	// The currencyId property for the Dynamics 365 Business Central vendor entity
+	CurrencyId        string              `json:"currencyId,omitempty"`
+	DefaultDimensions []DefaultDimensions `json:"defaultDimensions,omitempty"`
+	// The displayName property for the Dynamics 365 Business Central vendor entity
+	DisplayName string `json:"displayName,omitempty"`
+	// The email property for the Dynamics 365 Business Central vendor entity
+	Email string `json:"email,omitempty"`
+	// The id property for the Dynamics 365 Business Central vendor entity
+	Id string `json:"id,omitempty"`
+	// The irs1099Code property for the Dynamics 365 Business Central vendor entity
+	Irs1099Code string `json:"irs1099Code,omitempty"`
 	// The lastModifiedDateTime property for the Dynamics 365 Business Central vendor entity
-	LastModifiedDateTime time.Time           `json:"lastModifiedDateTime,omitempty"`
-	Picture              []Picture           `json:"picture,omitempty"`
-	DefaultDimensions    []DefaultDimensions `json:"defaultDimensions,omitempty"`
-	Currency             *Currency           `json:"currency,omitempty"`
-	PaymentTerm          *PaymentTerm        `json:"paymentTerm,omitempty"`
-	PaymentMethod        *PaymentMethod      `json:"paymentMethod,omitempty"`
+	LastModifiedDateTime time.Time `json:"lastModifiedDateTime,omitempty"`
+	// The number property for the Dynamics 365 Business Central vendor entity
+	Number        string         `json:"number,omitempty"`
+	PaymentMethod *PaymentMethod `json:"paymentMethod,omitempty"`
+	// The paymentMethodId property for the Dynamics 365 Business Central vendor entity
+	PaymentMethodId string       `json:"paymentMethodId,omitempty"`
+	PaymentTerm     *PaymentTerm `json:"paymentTerm,omitempty"`
+	// The paymentTermsId property for the Dynamics 365 Business Central vendor entity
+	PaymentTermsId string `json:"paymentTermsId,omitempty"`
+	// The phoneNumber property for the Dynamics 365 Business Central vendor entity
+	PhoneNumber string    `json:"phoneNumber,omitempty"`
+	Picture     []Picture `json:"picture,omitempty"`
+	// The taxLiable property for the Dynamics 365 Business Central vendor entity
+	TaxLiable bool `json:"taxLiable,omitempty"`
+	// The taxRegistrationNumber property for the Dynamics 365 Business Central vendor entity
+	TaxRegistrationNumber string `json:"taxRegistrationNumber,omitempty"`
+	// The website property for the Dynamics 365 Business Central vendor entity
+	Website string `json:"website,omitempty"`
 }

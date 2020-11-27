@@ -13,12 +13,12 @@ import (
 )
 
 type PaymentMethod struct {
-	// The id property for the Dynamics 365 Business Central paymentMethod entity
-	Id string `json:"id,omitempty"`
 	// The code property for the Dynamics 365 Business Central paymentMethod entity
 	Code string `json:"code,omitempty"`
 	// The displayName property for the Dynamics 365 Business Central paymentMethod entity
 	DisplayName string `json:"displayName,omitempty"`
+	// The id property for the Dynamics 365 Business Central paymentMethod entity
+	Id string `json:"id,omitempty"`
 	// The lastModifiedDateTime property for the Dynamics 365 Business Central paymentMethod entity
 	LastModifiedDateTime time.Time `json:"lastModifiedDateTime,omitempty"`
 }

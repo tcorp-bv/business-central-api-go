@@ -134,7 +134,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListSalesCreditMemos**
-> InlineResponse20043 ListSalesCreditMemos(ctx, companyId, optional)
+> InlineResponse20038 ListSalesCreditMemos(ctx, companyId, optional)
 Returns a list of salesCreditMemos
 
 ### Required Parameters
@@ -159,7 +159,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20043**](inline_response_200_43.md)
+[**InlineResponse20038**](inline_response_200_38.md)
 
 ### Authorization
 

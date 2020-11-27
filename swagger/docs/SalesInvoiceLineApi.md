@@ -147,7 +147,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListSalesInvoiceLines**
-> InlineResponse2009 ListSalesInvoiceLines(ctx, companyId, optional)
+> InlineResponse20039 ListSalesInvoiceLines(ctx, companyId, optional)
 Returns a list of salesInvoiceLines
 
 ### Required Parameters
@@ -172,7 +172,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2009**](inline_response_200_9.md)
+[**InlineResponse20039**](inline_response_200_39.md)
 
 ### Authorization
 
@@ -186,7 +186,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListSalesInvoiceLinesForSalesInvoice**
-> InlineResponse2009 ListSalesInvoiceLinesForSalesInvoice(ctx, companyId, salesInvoiceId, optional)
+> InlineResponse20039 ListSalesInvoiceLinesForSalesInvoice(ctx, companyId, salesInvoiceId, optional)
 Returns a list of salesInvoiceLines
 
 ### Required Parameters
@@ -213,7 +213,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2009**](inline_response_200_9.md)
+[**InlineResponse20039**](inline_response_200_39.md)
 
 ### Authorization
 

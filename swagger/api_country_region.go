@@ -200,7 +200,7 @@ CountryRegionApiService Returns a list of countriesRegions
      * @param "Limit" (optional.Int32) -  Number of items to return from the list
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse20030
+@return InlineResponse2009
 */
 
 type CountryRegionApiListCountriesRegionsOpts struct {
@@ -211,13 +211,13 @@ type CountryRegionApiListCountriesRegionsOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *CountryRegionApiService) ListCountriesRegions(ctx context.Context, companyId string, localVarOptionals *CountryRegionApiListCountriesRegionsOpts) (InlineResponse20030, *http.Response, error) {
+func (a *CountryRegionApiService) ListCountriesRegions(ctx context.Context, companyId string, localVarOptionals *CountryRegionApiListCountriesRegionsOpts) (InlineResponse2009, *http.Response, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
-		localVarReturnValue InlineResponse20030
+		localVarReturnValue InlineResponse2009
 	)
 
 	// create path and map variables
@@ -290,7 +290,7 @@ func (a *CountryRegionApiService) ListCountriesRegions(ctx context.Context, comp
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse20030
+			var v InlineResponse2009
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()

@@ -147,7 +147,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListSalesCreditMemoLines**
-> InlineResponse20044 ListSalesCreditMemoLines(ctx, companyId, optional)
+> InlineResponse20037 ListSalesCreditMemoLines(ctx, companyId, optional)
 Returns a list of salesCreditMemoLines
 
 ### Required Parameters
@@ -172,7 +172,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20044**](inline_response_200_44.md)
+[**InlineResponse20037**](inline_response_200_37.md)
 
 ### Authorization
 
@@ -186,7 +186,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListSalesCreditMemoLinesForSalesCreditMemo**
-> InlineResponse20044 ListSalesCreditMemoLinesForSalesCreditMemo(ctx, companyId, salesCreditMemoId, optional)
+> InlineResponse20037 ListSalesCreditMemoLinesForSalesCreditMemo(ctx, companyId, salesCreditMemoId, optional)
 Returns a list of salesCreditMemoLines
 
 ### Required Parameters
@@ -213,7 +213,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20044**](inline_response_200_44.md)
+[**InlineResponse20037**](inline_response_200_37.md)
 
 ### Authorization
 

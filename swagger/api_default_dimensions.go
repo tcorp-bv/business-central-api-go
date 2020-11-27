@@ -922,7 +922,7 @@ DefaultDimensionsApiService Returns a list of defaultDimensions
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Expand" (optional.Interface of []string) -  Entities to expand
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse2003
+@return InlineResponse20016
 */
 
 type DefaultDimensionsApiListDefaultDimensionsOpts struct {
@@ -934,13 +934,13 @@ type DefaultDimensionsApiListDefaultDimensionsOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *DefaultDimensionsApiService) ListDefaultDimensions(ctx context.Context, companyId string, localVarOptionals *DefaultDimensionsApiListDefaultDimensionsOpts) (InlineResponse2003, *http.Response, error) {
+func (a *DefaultDimensionsApiService) ListDefaultDimensions(ctx context.Context, companyId string, localVarOptionals *DefaultDimensionsApiListDefaultDimensionsOpts) (InlineResponse20016, *http.Response, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
-		localVarReturnValue InlineResponse2003
+		localVarReturnValue InlineResponse20016
 	)
 
 	// create path and map variables
@@ -1016,7 +1016,7 @@ func (a *DefaultDimensionsApiService) ListDefaultDimensions(ctx context.Context,
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse2003
+			var v InlineResponse20016
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()
@@ -1043,7 +1043,7 @@ DefaultDimensionsApiService Returns a list of defaultDimensions
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Expand" (optional.Interface of []string) -  Entities to expand
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse2003
+@return InlineResponse20016
 */
 
 type DefaultDimensionsApiListDefaultDimensionsForCustomerOpts struct {
@@ -1055,13 +1055,13 @@ type DefaultDimensionsApiListDefaultDimensionsForCustomerOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *DefaultDimensionsApiService) ListDefaultDimensionsForCustomer(ctx context.Context, companyId string, customerId string, localVarOptionals *DefaultDimensionsApiListDefaultDimensionsForCustomerOpts) (InlineResponse2003, *http.Response, error) {
+func (a *DefaultDimensionsApiService) ListDefaultDimensionsForCustomer(ctx context.Context, companyId string, customerId string, localVarOptionals *DefaultDimensionsApiListDefaultDimensionsForCustomerOpts) (InlineResponse20016, *http.Response, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
-		localVarReturnValue InlineResponse2003
+		localVarReturnValue InlineResponse20016
 	)
 
 	// create path and map variables
@@ -1138,7 +1138,7 @@ func (a *DefaultDimensionsApiService) ListDefaultDimensionsForCustomer(ctx conte
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse2003
+			var v InlineResponse20016
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()
@@ -1165,7 +1165,7 @@ DefaultDimensionsApiService Returns a list of defaultDimensions
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Expand" (optional.Interface of []string) -  Entities to expand
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse2003
+@return InlineResponse20016
 */
 
 type DefaultDimensionsApiListDefaultDimensionsForEmployeeOpts struct {
@@ -1177,13 +1177,13 @@ type DefaultDimensionsApiListDefaultDimensionsForEmployeeOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *DefaultDimensionsApiService) ListDefaultDimensionsForEmployee(ctx context.Context, companyId string, employeeId string, localVarOptionals *DefaultDimensionsApiListDefaultDimensionsForEmployeeOpts) (InlineResponse2003, *http.Response, error) {
+func (a *DefaultDimensionsApiService) ListDefaultDimensionsForEmployee(ctx context.Context, companyId string, employeeId string, localVarOptionals *DefaultDimensionsApiListDefaultDimensionsForEmployeeOpts) (InlineResponse20016, *http.Response, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
-		localVarReturnValue InlineResponse2003
+		localVarReturnValue InlineResponse20016
 	)
 
 	// create path and map variables
@@ -1260,7 +1260,7 @@ func (a *DefaultDimensionsApiService) ListDefaultDimensionsForEmployee(ctx conte
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse2003
+			var v InlineResponse20016
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()
@@ -1287,7 +1287,7 @@ DefaultDimensionsApiService Returns a list of defaultDimensions
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Expand" (optional.Interface of []string) -  Entities to expand
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse2003
+@return InlineResponse20016
 */
 
 type DefaultDimensionsApiListDefaultDimensionsForItemOpts struct {
@@ -1299,13 +1299,13 @@ type DefaultDimensionsApiListDefaultDimensionsForItemOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *DefaultDimensionsApiService) ListDefaultDimensionsForItem(ctx context.Context, companyId string, itemId string, localVarOptionals *DefaultDimensionsApiListDefaultDimensionsForItemOpts) (InlineResponse2003, *http.Response, error) {
+func (a *DefaultDimensionsApiService) ListDefaultDimensionsForItem(ctx context.Context, companyId string, itemId string, localVarOptionals *DefaultDimensionsApiListDefaultDimensionsForItemOpts) (InlineResponse20016, *http.Response, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
-		localVarReturnValue InlineResponse2003
+		localVarReturnValue InlineResponse20016
 	)
 
 	// create path and map variables
@@ -1382,7 +1382,7 @@ func (a *DefaultDimensionsApiService) ListDefaultDimensionsForItem(ctx context.C
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse2003
+			var v InlineResponse20016
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()
@@ -1409,7 +1409,7 @@ DefaultDimensionsApiService Returns a list of defaultDimensions
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Expand" (optional.Interface of []string) -  Entities to expand
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse2003
+@return InlineResponse20016
 */
 
 type DefaultDimensionsApiListDefaultDimensionsForVendorOpts struct {
@@ -1421,13 +1421,13 @@ type DefaultDimensionsApiListDefaultDimensionsForVendorOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *DefaultDimensionsApiService) ListDefaultDimensionsForVendor(ctx context.Context, companyId string, vendorId string, localVarOptionals *DefaultDimensionsApiListDefaultDimensionsForVendorOpts) (InlineResponse2003, *http.Response, error) {
+func (a *DefaultDimensionsApiService) ListDefaultDimensionsForVendor(ctx context.Context, companyId string, vendorId string, localVarOptionals *DefaultDimensionsApiListDefaultDimensionsForVendorOpts) (InlineResponse20016, *http.Response, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
-		localVarReturnValue InlineResponse2003
+		localVarReturnValue InlineResponse20016
 	)
 
 	// create path and map variables
@@ -1504,7 +1504,7 @@ func (a *DefaultDimensionsApiService) ListDefaultDimensionsForVendor(ctx context
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse2003
+			var v InlineResponse20016
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()

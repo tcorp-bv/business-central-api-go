@@ -132,7 +132,7 @@ BalanceSheetApiService Returns a list of balanceSheet
      * @param "Limit" (optional.Int32) -  Number of items to return from the list
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse20037
+@return InlineResponse2005
 */
 
 type BalanceSheetApiListBalanceSheetOpts struct {
@@ -143,13 +143,13 @@ type BalanceSheetApiListBalanceSheetOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *BalanceSheetApiService) ListBalanceSheet(ctx context.Context, companyId string, localVarOptionals *BalanceSheetApiListBalanceSheetOpts) (InlineResponse20037, *http.Response, error) {
+func (a *BalanceSheetApiService) ListBalanceSheet(ctx context.Context, companyId string, localVarOptionals *BalanceSheetApiListBalanceSheetOpts) (InlineResponse2005, *http.Response, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
-		localVarReturnValue InlineResponse20037
+		localVarReturnValue InlineResponse2005
 	)
 
 	// create path and map variables
@@ -222,7 +222,7 @@ func (a *BalanceSheetApiService) ListBalanceSheet(ctx context.Context, companyId
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse20037
+			var v InlineResponse2005
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()

@@ -132,7 +132,7 @@ CashFlowStatementApiService Returns a list of cashFlowStatement
      * @param "Limit" (optional.Int32) -  Number of items to return from the list
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse20029
+@return InlineResponse2007
 */
 
 type CashFlowStatementApiListCashFlowStatementOpts struct {
@@ -143,13 +143,13 @@ type CashFlowStatementApiListCashFlowStatementOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *CashFlowStatementApiService) ListCashFlowStatement(ctx context.Context, companyId string, localVarOptionals *CashFlowStatementApiListCashFlowStatementOpts) (InlineResponse20029, *http.Response, error) {
+func (a *CashFlowStatementApiService) ListCashFlowStatement(ctx context.Context, companyId string, localVarOptionals *CashFlowStatementApiListCashFlowStatementOpts) (InlineResponse2007, *http.Response, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
-		localVarReturnValue InlineResponse20029
+		localVarReturnValue InlineResponse2007
 	)
 
 	// create path and map variables
@@ -222,7 +222,7 @@ func (a *CashFlowStatementApiService) ListCashFlowStatement(ctx context.Context,
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse20029
+			var v InlineResponse2007
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()

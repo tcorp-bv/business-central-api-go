@@ -138,7 +138,7 @@ DimensionApiService Returns a list of dimensions
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Expand" (optional.Interface of []string) -  Entities to expand
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse20023
+@return InlineResponse20020
 */
 
 type DimensionApiListDimensionsOpts struct {
@@ -150,13 +150,13 @@ type DimensionApiListDimensionsOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *DimensionApiService) ListDimensions(ctx context.Context, companyId string, localVarOptionals *DimensionApiListDimensionsOpts) (InlineResponse20023, *http.Response, error) {
+func (a *DimensionApiService) ListDimensions(ctx context.Context, companyId string, localVarOptionals *DimensionApiListDimensionsOpts) (InlineResponse20020, *http.Response, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
-		localVarReturnValue InlineResponse20023
+		localVarReturnValue InlineResponse20020
 	)
 
 	// create path and map variables
@@ -232,7 +232,7 @@ func (a *DimensionApiService) ListDimensions(ctx context.Context, companyId stri
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse20023
+			var v InlineResponse20020
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()

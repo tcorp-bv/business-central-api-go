@@ -342,7 +342,7 @@ SalesCreditMemoApiService Returns a list of salesCreditMemos
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Expand" (optional.Interface of []string) -  Entities to expand
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse20043
+@return InlineResponse20038
 */
 
 type SalesCreditMemoApiListSalesCreditMemosOpts struct {
@@ -354,13 +354,13 @@ type SalesCreditMemoApiListSalesCreditMemosOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *SalesCreditMemoApiService) ListSalesCreditMemos(ctx context.Context, companyId string, localVarOptionals *SalesCreditMemoApiListSalesCreditMemosOpts) (InlineResponse20043, *http.Response, error) {
+func (a *SalesCreditMemoApiService) ListSalesCreditMemos(ctx context.Context, companyId string, localVarOptionals *SalesCreditMemoApiListSalesCreditMemosOpts) (InlineResponse20038, *http.Response, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
-		localVarReturnValue InlineResponse20043
+		localVarReturnValue InlineResponse20038
 	)
 
 	// create path and map variables
@@ -436,7 +436,7 @@ func (a *SalesCreditMemoApiService) ListSalesCreditMemos(ctx context.Context, co
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse20043
+			var v InlineResponse20038
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()

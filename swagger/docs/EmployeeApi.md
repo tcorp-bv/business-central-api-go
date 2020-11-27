@@ -75,7 +75,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListEmployees**
-> InlineResponse20018 ListEmployees(ctx, companyId, optional)
+> InlineResponse20021 ListEmployees(ctx, companyId, optional)
 Returns a list of employees
 
 ### Required Parameters
@@ -100,7 +100,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20018**](inline_response_200_18.md)
+[**InlineResponse20021**](inline_response_200_21.md)
 
 ### Authorization
 

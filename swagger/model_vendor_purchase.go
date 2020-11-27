@@ -13,14 +13,14 @@ import (
 )
 
 type VendorPurchase struct {
-	// The vendorId property for the Dynamics 365 Business Central vendorPurchase entity
-	VendorId string `json:"vendorId,omitempty"`
-	// The vendorNumber property for the Dynamics 365 Business Central vendorPurchase entity
-	VendorNumber string `json:"vendorNumber,omitempty"`
+	// The dateFilter_FilterOnly property for the Dynamics 365 Business Central vendorPurchase entity
+	DateFilterFilterOnly time.Time `json:"dateFilter_FilterOnly,omitempty"`
 	// The name property for the Dynamics 365 Business Central vendorPurchase entity
 	Name string `json:"name,omitempty"`
 	// The totalPurchaseAmount property for the Dynamics 365 Business Central vendorPurchase entity
 	TotalPurchaseAmount float64 `json:"totalPurchaseAmount,omitempty"`
-	// The dateFilter_FilterOnly property for the Dynamics 365 Business Central vendorPurchase entity
-	DateFilterFilterOnly time.Time `json:"dateFilter_FilterOnly,omitempty"`
+	// The vendorId property for the Dynamics 365 Business Central vendorPurchase entity
+	VendorId string `json:"vendorId,omitempty"`
+	// The vendorNumber property for the Dynamics 365 Business Central vendorPurchase entity
+	VendorNumber string `json:"vendorNumber,omitempty"`
 }

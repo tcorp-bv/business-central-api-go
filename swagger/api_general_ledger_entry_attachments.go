@@ -210,7 +210,7 @@ GeneralLedgerEntryAttachmentsApiService Returns a list of generalLedgerEntryAtta
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Expand" (optional.Interface of []string) -  Entities to expand
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse20045
+@return InlineResponse20024
 */
 
 type GeneralLedgerEntryAttachmentsApiListGeneralLedgerEntryAttachmentsOpts struct {
@@ -222,13 +222,13 @@ type GeneralLedgerEntryAttachmentsApiListGeneralLedgerEntryAttachmentsOpts struc
 	Select_ optional.Interface
 }
 
-func (a *GeneralLedgerEntryAttachmentsApiService) ListGeneralLedgerEntryAttachments(ctx context.Context, companyId string, localVarOptionals *GeneralLedgerEntryAttachmentsApiListGeneralLedgerEntryAttachmentsOpts) (InlineResponse20045, *http.Response, error) {
+func (a *GeneralLedgerEntryAttachmentsApiService) ListGeneralLedgerEntryAttachments(ctx context.Context, companyId string, localVarOptionals *GeneralLedgerEntryAttachmentsApiListGeneralLedgerEntryAttachmentsOpts) (InlineResponse20024, *http.Response, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
-		localVarReturnValue InlineResponse20045
+		localVarReturnValue InlineResponse20024
 	)
 
 	// create path and map variables
@@ -304,7 +304,7 @@ func (a *GeneralLedgerEntryAttachmentsApiService) ListGeneralLedgerEntryAttachme
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse20045
+			var v InlineResponse20024
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()

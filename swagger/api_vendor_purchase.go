@@ -136,7 +136,7 @@ VendorPurchaseApiService Returns a list of vendorPurchases
      * @param "Limit" (optional.Int32) -  Number of items to return from the list
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse20051
+@return InlineResponse20050
 */
 
 type VendorPurchaseApiListVendorPurchasesOpts struct {
@@ -147,13 +147,13 @@ type VendorPurchaseApiListVendorPurchasesOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *VendorPurchaseApiService) ListVendorPurchases(ctx context.Context, companyId string, localVarOptionals *VendorPurchaseApiListVendorPurchasesOpts) (InlineResponse20051, *http.Response, error) {
+func (a *VendorPurchaseApiService) ListVendorPurchases(ctx context.Context, companyId string, localVarOptionals *VendorPurchaseApiListVendorPurchasesOpts) (InlineResponse20050, *http.Response, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
-		localVarReturnValue InlineResponse20051
+		localVarReturnValue InlineResponse20050
 	)
 
 	// create path and map variables
@@ -226,7 +226,7 @@ func (a *VendorPurchaseApiService) ListVendorPurchases(ctx context.Context, comp
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse20051
+			var v InlineResponse20050
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()

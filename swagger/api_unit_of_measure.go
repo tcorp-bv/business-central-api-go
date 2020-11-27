@@ -200,7 +200,7 @@ UnitOfMeasureApiService Returns a list of unitsOfMeasure
      * @param "Limit" (optional.Int32) -  Number of items to return from the list
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse20034
+@return InlineResponse20049
 */
 
 type UnitOfMeasureApiListUnitsOfMeasureOpts struct {
@@ -211,13 +211,13 @@ type UnitOfMeasureApiListUnitsOfMeasureOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *UnitOfMeasureApiService) ListUnitsOfMeasure(ctx context.Context, companyId string, localVarOptionals *UnitOfMeasureApiListUnitsOfMeasureOpts) (InlineResponse20034, *http.Response, error) {
+func (a *UnitOfMeasureApiService) ListUnitsOfMeasure(ctx context.Context, companyId string, localVarOptionals *UnitOfMeasureApiListUnitsOfMeasureOpts) (InlineResponse20049, *http.Response, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
-		localVarReturnValue InlineResponse20034
+		localVarReturnValue InlineResponse20049
 	)
 
 	// create path and map variables
@@ -290,7 +290,7 @@ func (a *UnitOfMeasureApiService) ListUnitsOfMeasure(ctx context.Context, compan
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse20034
+			var v InlineResponse20049
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()

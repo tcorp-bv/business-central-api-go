@@ -200,7 +200,7 @@ TaxAreaApiService Returns a list of taxAreas
      * @param "Limit" (optional.Int32) -  Number of items to return from the list
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse20040
+@return InlineResponse20046
 */
 
 type TaxAreaApiListTaxAreasOpts struct {
@@ -211,13 +211,13 @@ type TaxAreaApiListTaxAreasOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *TaxAreaApiService) ListTaxAreas(ctx context.Context, companyId string, localVarOptionals *TaxAreaApiListTaxAreasOpts) (InlineResponse20040, *http.Response, error) {
+func (a *TaxAreaApiService) ListTaxAreas(ctx context.Context, companyId string, localVarOptionals *TaxAreaApiListTaxAreasOpts) (InlineResponse20046, *http.Response, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
-		localVarReturnValue InlineResponse20040
+		localVarReturnValue InlineResponse20046
 	)
 
 	// create path and map variables
@@ -290,7 +290,7 @@ func (a *TaxAreaApiService) ListTaxAreas(ctx context.Context, companyId string, 
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse20040
+			var v InlineResponse20046
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()

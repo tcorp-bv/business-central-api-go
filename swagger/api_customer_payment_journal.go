@@ -206,7 +206,7 @@ CustomerPaymentJournalApiService Returns a list of customerPaymentJournals
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Expand" (optional.Interface of []string) -  Entities to expand
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse20011
+@return InlineResponse20012
 */
 
 type CustomerPaymentJournalApiListCustomerPaymentJournalsOpts struct {
@@ -218,13 +218,13 @@ type CustomerPaymentJournalApiListCustomerPaymentJournalsOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *CustomerPaymentJournalApiService) ListCustomerPaymentJournals(ctx context.Context, companyId string, localVarOptionals *CustomerPaymentJournalApiListCustomerPaymentJournalsOpts) (InlineResponse20011, *http.Response, error) {
+func (a *CustomerPaymentJournalApiService) ListCustomerPaymentJournals(ctx context.Context, companyId string, localVarOptionals *CustomerPaymentJournalApiListCustomerPaymentJournalsOpts) (InlineResponse20012, *http.Response, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
-		localVarReturnValue InlineResponse20011
+		localVarReturnValue InlineResponse20012
 	)
 
 	// create path and map variables
@@ -300,7 +300,7 @@ func (a *CustomerPaymentJournalApiService) ListCustomerPaymentJournals(ctx conte
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse20011
+			var v InlineResponse20012
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()

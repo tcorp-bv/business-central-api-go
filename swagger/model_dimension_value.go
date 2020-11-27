@@ -13,12 +13,12 @@ import (
 )
 
 type DimensionValue struct {
-	// The id property for the Dynamics 365 Business Central dimensionValue entity
-	Id string `json:"id,omitempty"`
 	// The code property for the Dynamics 365 Business Central dimensionValue entity
 	Code string `json:"code,omitempty"`
 	// The displayName property for the Dynamics 365 Business Central dimensionValue entity
 	DisplayName string `json:"displayName,omitempty"`
+	// The id property for the Dynamics 365 Business Central dimensionValue entity
+	Id string `json:"id,omitempty"`
 	// The lastModifiedDateTime property for the Dynamics 365 Business Central dimensionValue entity
 	LastModifiedDateTime time.Time `json:"lastModifiedDateTime,omitempty"`
 }

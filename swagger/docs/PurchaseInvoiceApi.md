@@ -76,7 +76,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListPurchaseInvoices**
-> InlineResponse20046 ListPurchaseInvoices(ctx, companyId, optional)
+> InlineResponse20035 ListPurchaseInvoices(ctx, companyId, optional)
 Returns a list of purchaseInvoices
 
 ### Required Parameters
@@ -101,7 +101,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20046**](inline_response_200_46.md)
+[**InlineResponse20035**](inline_response_200_35.md)
 
 ### Authorization
 

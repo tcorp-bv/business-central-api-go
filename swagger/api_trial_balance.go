@@ -138,7 +138,7 @@ TrialBalanceApiService Returns a list of trialBalance
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Expand" (optional.Interface of []string) -  Entities to expand
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse20038
+@return InlineResponse20048
 */
 
 type TrialBalanceApiListTrialBalanceOpts struct {
@@ -150,13 +150,13 @@ type TrialBalanceApiListTrialBalanceOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *TrialBalanceApiService) ListTrialBalance(ctx context.Context, companyId string, localVarOptionals *TrialBalanceApiListTrialBalanceOpts) (InlineResponse20038, *http.Response, error) {
+func (a *TrialBalanceApiService) ListTrialBalance(ctx context.Context, companyId string, localVarOptionals *TrialBalanceApiListTrialBalanceOpts) (InlineResponse20048, *http.Response, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
-		localVarReturnValue InlineResponse20038
+		localVarReturnValue InlineResponse20048
 	)
 
 	// create path and map variables
@@ -232,7 +232,7 @@ func (a *TrialBalanceApiService) ListTrialBalance(ctx context.Context, companyId
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse20038
+			var v InlineResponse20048
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()

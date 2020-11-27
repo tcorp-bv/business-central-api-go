@@ -13,8 +13,8 @@ import (
 )
 
 type PdfDocument struct {
-	// The id property for the Dynamics 365 Business Central pdfDocument entity
-	Id string `json:"id,omitempty"`
 	// The content property for the Dynamics 365 Business Central pdfDocument entity
 	Content **os.File `json:"content,omitempty"`
+	// The id property for the Dynamics 365 Business Central pdfDocument entity
+	Id string `json:"id,omitempty"`
 }

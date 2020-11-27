@@ -200,7 +200,7 @@ BankAccountApiService Returns a list of bankAccounts
      * @param "Limit" (optional.Int32) -  Number of items to return from the list
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse20049
+@return InlineResponse2006
 */
 
 type BankAccountApiListBankAccountsOpts struct {
@@ -211,13 +211,13 @@ type BankAccountApiListBankAccountsOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *BankAccountApiService) ListBankAccounts(ctx context.Context, companyId string, localVarOptionals *BankAccountApiListBankAccountsOpts) (InlineResponse20049, *http.Response, error) {
+func (a *BankAccountApiService) ListBankAccounts(ctx context.Context, companyId string, localVarOptionals *BankAccountApiListBankAccountsOpts) (InlineResponse2006, *http.Response, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
-		localVarReturnValue InlineResponse20049
+		localVarReturnValue InlineResponse2006
 	)
 
 	// create path and map variables
@@ -290,7 +290,7 @@ func (a *BankAccountApiService) ListBankAccounts(ctx context.Context, companyId 
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse20049
+			var v InlineResponse2006
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()

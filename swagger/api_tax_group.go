@@ -200,7 +200,7 @@ TaxGroupApiService Returns a list of taxGroups
      * @param "Limit" (optional.Int32) -  Number of items to return from the list
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse20014
+@return InlineResponse20047
 */
 
 type TaxGroupApiListTaxGroupsOpts struct {
@@ -211,13 +211,13 @@ type TaxGroupApiListTaxGroupsOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *TaxGroupApiService) ListTaxGroups(ctx context.Context, companyId string, localVarOptionals *TaxGroupApiListTaxGroupsOpts) (InlineResponse20014, *http.Response, error) {
+func (a *TaxGroupApiService) ListTaxGroups(ctx context.Context, companyId string, localVarOptionals *TaxGroupApiListTaxGroupsOpts) (InlineResponse20047, *http.Response, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
-		localVarReturnValue InlineResponse20014
+		localVarReturnValue InlineResponse20047
 	)
 
 	// create path and map variables
@@ -290,7 +290,7 @@ func (a *TaxGroupApiService) ListTaxGroups(ctx context.Context, companyId string
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse20014
+			var v InlineResponse20047
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()

@@ -9,5 +9,5 @@
 package swagger
 
 type InlineResponse20010 struct {
-	Value []PdfDocument `json:"value,omitempty"`
+	Value []Currency `json:"value,omitempty"`
 }

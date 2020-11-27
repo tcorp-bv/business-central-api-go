@@ -554,7 +554,7 @@ AttachmentsApiService Returns a list of attachments
      * @param "Limit" (optional.Int32) -  Number of items to return from the list
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse20017
+@return InlineResponse2004
 */
 
 type AttachmentsApiListAttachmentsOpts struct {
@@ -565,13 +565,13 @@ type AttachmentsApiListAttachmentsOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *AttachmentsApiService) ListAttachments(ctx context.Context, companyId string, localVarOptionals *AttachmentsApiListAttachmentsOpts) (InlineResponse20017, *http.Response, error) {
+func (a *AttachmentsApiService) ListAttachments(ctx context.Context, companyId string, localVarOptionals *AttachmentsApiListAttachmentsOpts) (InlineResponse2004, *http.Response, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
-		localVarReturnValue InlineResponse20017
+		localVarReturnValue InlineResponse2004
 	)
 
 	// create path and map variables
@@ -644,7 +644,7 @@ func (a *AttachmentsApiService) ListAttachments(ctx context.Context, companyId s
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse20017
+			var v InlineResponse2004
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()
@@ -670,7 +670,7 @@ AttachmentsApiService Returns a list of attachments
      * @param "Limit" (optional.Int32) -  Number of items to return from the list
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse20017
+@return InlineResponse2004
 */
 
 type AttachmentsApiListAttachmentsForJournalLineOpts struct {
@@ -681,13 +681,13 @@ type AttachmentsApiListAttachmentsForJournalLineOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *AttachmentsApiService) ListAttachmentsForJournalLine(ctx context.Context, companyId string, journalLineId string, localVarOptionals *AttachmentsApiListAttachmentsForJournalLineOpts) (InlineResponse20017, *http.Response, error) {
+func (a *AttachmentsApiService) ListAttachmentsForJournalLine(ctx context.Context, companyId string, journalLineId string, localVarOptionals *AttachmentsApiListAttachmentsForJournalLineOpts) (InlineResponse2004, *http.Response, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
-		localVarReturnValue InlineResponse20017
+		localVarReturnValue InlineResponse2004
 	)
 
 	// create path and map variables
@@ -761,7 +761,7 @@ func (a *AttachmentsApiService) ListAttachmentsForJournalLine(ctx context.Contex
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse20017
+			var v InlineResponse2004
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()
@@ -788,7 +788,7 @@ AttachmentsApiService Returns a list of attachments
      * @param "Limit" (optional.Int32) -  Number of items to return from the list
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse20017
+@return InlineResponse2004
 */
 
 type AttachmentsApiListAttachmentsForJournalLineForJournalOpts struct {
@@ -799,13 +799,13 @@ type AttachmentsApiListAttachmentsForJournalLineForJournalOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *AttachmentsApiService) ListAttachmentsForJournalLineForJournal(ctx context.Context, companyId string, journalId string, journalLineId string, localVarOptionals *AttachmentsApiListAttachmentsForJournalLineForJournalOpts) (InlineResponse20017, *http.Response, error) {
+func (a *AttachmentsApiService) ListAttachmentsForJournalLineForJournal(ctx context.Context, companyId string, journalId string, journalLineId string, localVarOptionals *AttachmentsApiListAttachmentsForJournalLineForJournalOpts) (InlineResponse2004, *http.Response, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
-		localVarReturnValue InlineResponse20017
+		localVarReturnValue InlineResponse2004
 	)
 
 	// create path and map variables
@@ -880,7 +880,7 @@ func (a *AttachmentsApiService) ListAttachmentsForJournalLineForJournal(ctx cont
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse20017
+			var v InlineResponse2004
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()

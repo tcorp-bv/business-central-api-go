@@ -74,7 +74,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListTaxAreas**
-> InlineResponse20040 ListTaxAreas(ctx, companyId, optional)
+> InlineResponse20046 ListTaxAreas(ctx, companyId, optional)
 Returns a list of taxAreas
 
 ### Required Parameters
@@ -98,7 +98,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20040**](inline_response_200_40.md)
+[**InlineResponse20046**](inline_response_200_46.md)
 
 ### Authorization
 

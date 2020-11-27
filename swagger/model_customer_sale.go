@@ -17,10 +17,10 @@ type CustomerSale struct {
 	CustomerId string `json:"customerId,omitempty"`
 	// The customerNumber property for the Dynamics 365 Business Central customerSale entity
 	CustomerNumber string `json:"customerNumber,omitempty"`
+	// The dateFilter_FilterOnly property for the Dynamics 365 Business Central customerSale entity
+	DateFilterFilterOnly time.Time `json:"dateFilter_FilterOnly,omitempty"`
 	// The name property for the Dynamics 365 Business Central customerSale entity
 	Name string `json:"name,omitempty"`
 	// The totalSalesAmount property for the Dynamics 365 Business Central customerSale entity
 	TotalSalesAmount float64 `json:"totalSalesAmount,omitempty"`
-	// The dateFilter_FilterOnly property for the Dynamics 365 Business Central customerSale entity
-	DateFilterFilterOnly time.Time `json:"dateFilter_FilterOnly,omitempty"`
 }

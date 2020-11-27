@@ -76,7 +76,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListJournals**
-> InlineResponse20015 ListJournals(ctx, companyId, optional)
+> InlineResponse20029 ListJournals(ctx, companyId, optional)
 Returns a list of journals
 
 ### Required Parameters
@@ -101,7 +101,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20015**](inline_response_200_15.md)
+[**InlineResponse20029**](inline_response_200_29.md)
 
 ### Authorization
 

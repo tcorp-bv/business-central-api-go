@@ -380,7 +380,7 @@ PurchaseInvoiceLineApiService Returns a list of purchaseInvoiceLines
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Expand" (optional.Interface of []string) -  Entities to expand
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse20047
+@return InlineResponse20034
 */
 
 type PurchaseInvoiceLineApiListPurchaseInvoiceLinesOpts struct {
@@ -392,13 +392,13 @@ type PurchaseInvoiceLineApiListPurchaseInvoiceLinesOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *PurchaseInvoiceLineApiService) ListPurchaseInvoiceLines(ctx context.Context, companyId string, localVarOptionals *PurchaseInvoiceLineApiListPurchaseInvoiceLinesOpts) (InlineResponse20047, *http.Response, error) {
+func (a *PurchaseInvoiceLineApiService) ListPurchaseInvoiceLines(ctx context.Context, companyId string, localVarOptionals *PurchaseInvoiceLineApiListPurchaseInvoiceLinesOpts) (InlineResponse20034, *http.Response, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
-		localVarReturnValue InlineResponse20047
+		localVarReturnValue InlineResponse20034
 	)
 
 	// create path and map variables
@@ -474,7 +474,7 @@ func (a *PurchaseInvoiceLineApiService) ListPurchaseInvoiceLines(ctx context.Con
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse20047
+			var v InlineResponse20034
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()
@@ -501,7 +501,7 @@ PurchaseInvoiceLineApiService Returns a list of purchaseInvoiceLines
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Expand" (optional.Interface of []string) -  Entities to expand
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse20047
+@return InlineResponse20034
 */
 
 type PurchaseInvoiceLineApiListPurchaseInvoiceLinesForPurchaseInvoiceOpts struct {
@@ -513,13 +513,13 @@ type PurchaseInvoiceLineApiListPurchaseInvoiceLinesForPurchaseInvoiceOpts struct
 	Select_ optional.Interface
 }
 
-func (a *PurchaseInvoiceLineApiService) ListPurchaseInvoiceLinesForPurchaseInvoice(ctx context.Context, companyId string, purchaseInvoiceId string, localVarOptionals *PurchaseInvoiceLineApiListPurchaseInvoiceLinesForPurchaseInvoiceOpts) (InlineResponse20047, *http.Response, error) {
+func (a *PurchaseInvoiceLineApiService) ListPurchaseInvoiceLinesForPurchaseInvoice(ctx context.Context, companyId string, purchaseInvoiceId string, localVarOptionals *PurchaseInvoiceLineApiListPurchaseInvoiceLinesForPurchaseInvoiceOpts) (InlineResponse20034, *http.Response, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
-		localVarReturnValue InlineResponse20047
+		localVarReturnValue InlineResponse20034
 	)
 
 	// create path and map variables
@@ -596,7 +596,7 @@ func (a *PurchaseInvoiceLineApiService) ListPurchaseInvoiceLinesForPurchaseInvoi
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse20047
+			var v InlineResponse20034
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()

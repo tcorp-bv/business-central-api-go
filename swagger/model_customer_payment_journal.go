@@ -13,18 +13,18 @@ import (
 )
 
 type CustomerPaymentJournal struct {
-	// The id property for the Dynamics 365 Business Central customerPaymentJournal entity
-	Id string `json:"id,omitempty"`
-	// The code property for the Dynamics 365 Business Central customerPaymentJournal entity
-	Code string `json:"code,omitempty"`
-	// The displayName property for the Dynamics 365 Business Central customerPaymentJournal entity
-	DisplayName string `json:"displayName,omitempty"`
-	// The lastModifiedDateTime property for the Dynamics 365 Business Central customerPaymentJournal entity
-	LastModifiedDateTime time.Time `json:"lastModifiedDateTime,omitempty"`
+	Account *Account `json:"account,omitempty"`
 	// The balancingAccountId property for the Dynamics 365 Business Central customerPaymentJournal entity
 	BalancingAccountId string `json:"balancingAccountId,omitempty"`
 	// The balancingAccountNumber property for the Dynamics 365 Business Central customerPaymentJournal entity
-	BalancingAccountNumber string            `json:"balancingAccountNumber,omitempty"`
-	CustomerPayments       []CustomerPayment `json:"customerPayments,omitempty"`
-	Account                *Account          `json:"account,omitempty"`
+	BalancingAccountNumber string `json:"balancingAccountNumber,omitempty"`
+	// The code property for the Dynamics 365 Business Central customerPaymentJournal entity
+	Code             string            `json:"code,omitempty"`
+	CustomerPayments []CustomerPayment `json:"customerPayments,omitempty"`
+	// The displayName property for the Dynamics 365 Business Central customerPaymentJournal entity
+	DisplayName string `json:"displayName,omitempty"`
+	// The id property for the Dynamics 365 Business Central customerPaymentJournal entity
+	Id string `json:"id,omitempty"`
+	// The lastModifiedDateTime property for the Dynamics 365 Business Central customerPaymentJournal entity
+	LastModifiedDateTime time.Time `json:"lastModifiedDateTime,omitempty"`
 }

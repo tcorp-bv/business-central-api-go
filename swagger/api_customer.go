@@ -206,7 +206,7 @@ CustomerApiService Returns a list of customers
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Expand" (optional.Interface of []string) -  Entities to expand
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse2004
+@return InlineResponse20015
 */
 
 type CustomerApiListCustomersOpts struct {
@@ -218,13 +218,13 @@ type CustomerApiListCustomersOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *CustomerApiService) ListCustomers(ctx context.Context, companyId string, localVarOptionals *CustomerApiListCustomersOpts) (InlineResponse2004, *http.Response, error) {
+func (a *CustomerApiService) ListCustomers(ctx context.Context, companyId string, localVarOptionals *CustomerApiListCustomersOpts) (InlineResponse20015, *http.Response, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
-		localVarReturnValue InlineResponse2004
+		localVarReturnValue InlineResponse20015
 	)
 
 	// create path and map variables
@@ -300,7 +300,7 @@ func (a *CustomerApiService) ListCustomers(ctx context.Context, companyId string
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse2004
+			var v InlineResponse20015
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()

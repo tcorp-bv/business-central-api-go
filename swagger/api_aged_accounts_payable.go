@@ -132,7 +132,7 @@ AgedAccountsPayableApiService Returns a list of agedAccountsPayable
      * @param "Limit" (optional.Int32) -  Number of items to return from the list
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse20036
+@return InlineResponse2002
 */
 
 type AgedAccountsPayableApiListAgedAccountsPayableOpts struct {
@@ -143,13 +143,13 @@ type AgedAccountsPayableApiListAgedAccountsPayableOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *AgedAccountsPayableApiService) ListAgedAccountsPayable(ctx context.Context, companyId string, localVarOptionals *AgedAccountsPayableApiListAgedAccountsPayableOpts) (InlineResponse20036, *http.Response, error) {
+func (a *AgedAccountsPayableApiService) ListAgedAccountsPayable(ctx context.Context, companyId string, localVarOptionals *AgedAccountsPayableApiListAgedAccountsPayableOpts) (InlineResponse2002, *http.Response, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
-		localVarReturnValue InlineResponse20036
+		localVarReturnValue InlineResponse2002
 	)
 
 	// create path and map variables
@@ -222,7 +222,7 @@ func (a *AgedAccountsPayableApiService) ListAgedAccountsPayable(ctx context.Cont
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse20036
+			var v InlineResponse2002
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()

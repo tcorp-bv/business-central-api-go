@@ -9,21 +9,21 @@
 package swagger
 
 type Postaladdresstype struct {
-	// The street property for the Dynamics 365 Business Central postaladdresstype entity
-	Street string `json:"street,omitempty"`
 	// The city property for the Dynamics 365 Business Central postaladdresstype entity
 	City string `json:"city,omitempty"`
+	// The countryLetterCode property for the Dynamics 365 Business Central postaladdresstype entity
+	CountryLetterCode        string                    `json:"countryLetterCode,omitempty"`
+	Currency                 *Currency                 `json:"currency,omitempty"`
+	CustomerFinancialDetails []CustomerFinancialDetail `json:"customerFinancialDetails,omitempty"`
+	DefaultDimensions        []DefaultDimensions       `json:"defaultDimensions,omitempty"`
+	PaymentMethod            *PaymentMethod            `json:"paymentMethod,omitempty"`
+	PaymentTerm              *PaymentTerm              `json:"paymentTerm,omitempty"`
+	Picture                  []Picture                 `json:"picture,omitempty"`
+	// The postalCode property for the Dynamics 365 Business Central postaladdresstype entity
+	PostalCode     string          `json:"postalCode,omitempty"`
+	ShipmentMethod *ShipmentMethod `json:"shipmentMethod,omitempty"`
 	// The state property for the Dynamics 365 Business Central postaladdresstype entity
 	State string `json:"state,omitempty"`
-	// The countryLetterCode property for the Dynamics 365 Business Central postaladdresstype entity
-	CountryLetterCode string `json:"countryLetterCode,omitempty"`
-	// The postalCode property for the Dynamics 365 Business Central postaladdresstype entity
-	PostalCode               string                    `json:"postalCode,omitempty"`
-	CustomerFinancialDetails []CustomerFinancialDetail `json:"customerFinancialDetails,omitempty"`
-	Picture                  []Picture                 `json:"picture,omitempty"`
-	DefaultDimensions        []DefaultDimensions       `json:"defaultDimensions,omitempty"`
-	Currency                 *Currency                 `json:"currency,omitempty"`
-	PaymentTerm              *PaymentTerm              `json:"paymentTerm,omitempty"`
-	ShipmentMethod           *ShipmentMethod           `json:"shipmentMethod,omitempty"`
-	PaymentMethod            *PaymentMethod            `json:"paymentMethod,omitempty"`
+	// The street property for the Dynamics 365 Business Central postaladdresstype entity
+	Street string `json:"street,omitempty"`
 }

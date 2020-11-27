@@ -9,19 +9,19 @@
 package swagger
 
 type DimensionLine struct {
-	// The parentId property for the Dynamics 365 Business Central dimensionLine entity
-	ParentId string `json:"parentId,omitempty"`
-	// The id property for the Dynamics 365 Business Central dimensionLine entity
-	Id string `json:"id,omitempty"`
 	// The code property for the Dynamics 365 Business Central dimensionLine entity
-	Code string `json:"code,omitempty"`
+	Code      string     `json:"code,omitempty"`
+	Dimension *Dimension `json:"dimension,omitempty"`
 	// The displayName property for the Dynamics 365 Business Central dimensionLine entity
 	DisplayName string `json:"displayName,omitempty"`
-	// The valueId property for the Dynamics 365 Business Central dimensionLine entity
-	ValueId string `json:"valueId,omitempty"`
+	// The id property for the Dynamics 365 Business Central dimensionLine entity
+	Id string `json:"id,omitempty"`
+	// The parentId property for the Dynamics 365 Business Central dimensionLine entity
+	ParentId string `json:"parentId,omitempty"`
 	// The valueCode property for the Dynamics 365 Business Central dimensionLine entity
 	ValueCode string `json:"valueCode,omitempty"`
 	// The valueDisplayName property for the Dynamics 365 Business Central dimensionLine entity
-	ValueDisplayName string     `json:"valueDisplayName,omitempty"`
-	Dimension        *Dimension `json:"dimension,omitempty"`
+	ValueDisplayName string `json:"valueDisplayName,omitempty"`
+	// The valueId property for the Dynamics 365 Business Central dimensionLine entity
+	ValueId string `json:"valueId,omitempty"`
 }

@@ -84,7 +84,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListDimensionValues**
-> InlineResponse20024 ListDimensionValues(ctx, companyId, optional)
+> InlineResponse20019 ListDimensionValues(ctx, companyId, optional)
 Returns a list of dimensionValues
 
 ### Required Parameters
@@ -108,7 +108,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20024**](inline_response_200_24.md)
+[**InlineResponse20019**](inline_response_200_19.md)
 
 ### Authorization
 
@@ -122,7 +122,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListDimensionValuesForDimension**
-> InlineResponse20024 ListDimensionValuesForDimension(ctx, companyId, dimensionId, optional)
+> InlineResponse20019 ListDimensionValuesForDimension(ctx, companyId, dimensionId, optional)
 Returns a list of dimensionValues
 
 ### Required Parameters
@@ -148,7 +148,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20024**](inline_response_200_24.md)
+[**InlineResponse20019**](inline_response_200_19.md)
 
 ### Authorization
 

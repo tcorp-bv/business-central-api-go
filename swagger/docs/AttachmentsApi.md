@@ -228,7 +228,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListAttachments**
-> InlineResponse20017 ListAttachments(ctx, companyId, optional)
+> InlineResponse2004 ListAttachments(ctx, companyId, optional)
 Returns a list of attachments
 
 ### Required Parameters
@@ -252,7 +252,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20017**](inline_response_200_17.md)
+[**InlineResponse2004**](inline_response_200_4.md)
 
 ### Authorization
 
@@ -266,7 +266,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListAttachmentsForJournalLine**
-> InlineResponse20017 ListAttachmentsForJournalLine(ctx, companyId, journalLineId, optional)
+> InlineResponse2004 ListAttachmentsForJournalLine(ctx, companyId, journalLineId, optional)
 Returns a list of attachments
 
 ### Required Parameters
@@ -292,7 +292,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20017**](inline_response_200_17.md)
+[**InlineResponse2004**](inline_response_200_4.md)
 
 ### Authorization
 
@@ -306,7 +306,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListAttachmentsForJournalLineForJournal**
-> InlineResponse20017 ListAttachmentsForJournalLineForJournal(ctx, companyId, journalId, journalLineId, optional)
+> InlineResponse2004 ListAttachmentsForJournalLineForJournal(ctx, companyId, journalId, journalLineId, optional)
 Returns a list of attachments
 
 ### Required Parameters
@@ -334,7 +334,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20017**](inline_response_200_17.md)
+[**InlineResponse2004**](inline_response_200_4.md)
 
 ### Authorization
 

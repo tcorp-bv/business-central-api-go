@@ -84,13 +84,21 @@ For more information on all the possible filters, see the [Microsoft API guideli
 
 ## Generating the client 
 
+**Old method**
+
 To regenerate the swagger client ([swagger/](./swagger)) execute the following command:
 
 ```shell script
 make generate
 ```
 
+**New method**
 
+You will notice that there is a problem with the dates: We hotpatch this with a custom script 
+
+```shell script
+./scripts/generate.sh
+```
 ## Business Central authentication
 As we've wasted a lot of time getting to authenticate with the oauth for business central,
 I'll document the process here.

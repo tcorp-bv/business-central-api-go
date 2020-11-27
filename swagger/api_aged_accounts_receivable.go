@@ -132,7 +132,7 @@ AgedAccountsReceivableApiService Returns a list of agedAccountsReceivable
      * @param "Limit" (optional.Int32) -  Number of items to return from the list
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse20035
+@return InlineResponse2003
 */
 
 type AgedAccountsReceivableApiListAgedAccountsReceivableOpts struct {
@@ -143,13 +143,13 @@ type AgedAccountsReceivableApiListAgedAccountsReceivableOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *AgedAccountsReceivableApiService) ListAgedAccountsReceivable(ctx context.Context, companyId string, localVarOptionals *AgedAccountsReceivableApiListAgedAccountsReceivableOpts) (InlineResponse20035, *http.Response, error) {
+func (a *AgedAccountsReceivableApiService) ListAgedAccountsReceivable(ctx context.Context, companyId string, localVarOptionals *AgedAccountsReceivableApiListAgedAccountsReceivableOpts) (InlineResponse2003, *http.Response, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
-		localVarReturnValue InlineResponse20035
+		localVarReturnValue InlineResponse2003
 	)
 
 	// create path and map variables
@@ -222,7 +222,7 @@ func (a *AgedAccountsReceivableApiService) ListAgedAccountsReceivable(ctx contex
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse20035
+			var v InlineResponse2003
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()

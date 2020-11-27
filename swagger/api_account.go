@@ -132,7 +132,7 @@ AccountApiService Returns a list of accounts
      * @param "Limit" (optional.Int32) -  Number of items to return from the list
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse20013
+@return InlineResponse2001
 */
 
 type AccountApiListAccountsOpts struct {
@@ -143,13 +143,13 @@ type AccountApiListAccountsOpts struct {
 	Select_ optional.Interface
 }
 
-func (a *AccountApiService) ListAccounts(ctx context.Context, companyId string, localVarOptionals *AccountApiListAccountsOpts) (InlineResponse20013, *http.Response, error) {
+func (a *AccountApiService) ListAccounts(ctx context.Context, companyId string, localVarOptionals *AccountApiListAccountsOpts) (InlineResponse2001, *http.Response, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
 		localVarFileName    string
 		localVarFileBytes   []byte
-		localVarReturnValue InlineResponse20013
+		localVarReturnValue InlineResponse2001
 	)
 
 	// create path and map variables
@@ -222,7 +222,7 @@ func (a *AccountApiService) ListAccounts(ctx context.Context, companyId string, 
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse20013
+			var v InlineResponse2001
 			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
 			if err != nil {
 				newErr.error = err.Error()
