@@ -1,4 +1,3 @@
-
 /*
  * Dynamics 365 Business Central
  *
@@ -11,12 +10,12 @@ package swagger
 
 import (
 	"context"
+	"fmt"
+	"github.com/antihax/optional"
 	"io/ioutil"
 	"net/http"
 	"net/url"
 	"strings"
-	"fmt"
-	"github.com/antihax/optional"
 )
 
 // Linger please
@@ -25,6 +24,7 @@ var (
 )
 
 type CustomerSaleApiService service
+
 /*
 CustomerSaleApiService Retrieve the properties and relationships of an object of type customerSale for Dynamics 365 Business Central.
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
@@ -37,16 +37,16 @@ CustomerSaleApiService Retrieve the properties and relationships of an object of
 @return CustomerSale
 */
 
-type CustomerSaleApiGetCustomerSaleOpts struct { 
+type CustomerSaleApiGetCustomerSaleOpts struct {
 	Select_ optional.Interface
 }
 
 func (a *CustomerSaleApiService) GetCustomerSale(ctx context.Context, companyId string, customerSaleCustomerId string, customerSaleCustomerNumber string, customerSaleName string, localVarOptionals *CustomerSaleApiGetCustomerSaleOpts) (CustomerSale, *http.Response, error) {
 	var (
-		localVarHttpMethod = strings.ToUpper("Get")
-		localVarPostBody   interface{}
-		localVarFileName   string
-		localVarFileBytes  []byte
+		localVarHttpMethod  = strings.ToUpper("Get")
+		localVarPostBody    interface{}
+		localVarFileName    string
+		localVarFileBytes   []byte
 		localVarReturnValue CustomerSale
 	)
 
@@ -99,32 +99,33 @@ func (a *CustomerSaleApiService) GetCustomerSale(ctx context.Context, companyId 
 
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
-		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
+		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
+		if err == nil {
 			return localVarReturnValue, localVarHttpResponse, err
 		}
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
 		newErr := GenericSwaggerError{
-			body: localVarBody,
+			body:  localVarBody,
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
 			var v CustomerSale
-			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-				if err != nil {
-					newErr.error = err.Error()
-					return localVarReturnValue, localVarHttpResponse, newErr
-				}
-				newErr.model = v
+			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
+			if err != nil {
+				newErr.error = err.Error()
 				return localVarReturnValue, localVarHttpResponse, newErr
+			}
+			newErr.model = v
+			return localVarReturnValue, localVarHttpResponse, newErr
 		}
 		return localVarReturnValue, localVarHttpResponse, newErr
 	}
 
 	return localVarReturnValue, localVarHttpResponse, nil
 }
+
 /*
 CustomerSaleApiService Returns a list of customerSales
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
@@ -135,24 +136,24 @@ CustomerSaleApiService Returns a list of customerSales
      * @param "Limit" (optional.Int32) -  Number of items to return from the list
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse20014
+@return InlineResponse20050
 */
 
-type CustomerSaleApiListCustomerSalesOpts struct { 
-	Top optional.Int32
-	Skip optional.Int32
-	Limit optional.Int32
-	Filter optional.String
+type CustomerSaleApiListCustomerSalesOpts struct {
+	Top     optional.Int32
+	Skip    optional.Int32
+	Limit   optional.Int32
+	Filter  optional.String
 	Select_ optional.Interface
 }
 
-func (a *CustomerSaleApiService) ListCustomerSales(ctx context.Context, companyId string, localVarOptionals *CustomerSaleApiListCustomerSalesOpts) (InlineResponse20014, *http.Response, error) {
+func (a *CustomerSaleApiService) ListCustomerSales(ctx context.Context, companyId string, localVarOptionals *CustomerSaleApiListCustomerSalesOpts) (InlineResponse20050, *http.Response, error) {
 	var (
-		localVarHttpMethod = strings.ToUpper("Get")
-		localVarPostBody   interface{}
-		localVarFileName   string
-		localVarFileBytes  []byte
-		localVarReturnValue InlineResponse20014
+		localVarHttpMethod  = strings.ToUpper("Get")
+		localVarPostBody    interface{}
+		localVarFileName    string
+		localVarFileBytes   []byte
+		localVarReturnValue InlineResponse20050
 	)
 
 	// create path and map variables
@@ -213,26 +214,26 @@ func (a *CustomerSaleApiService) ListCustomerSales(ctx context.Context, companyI
 
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
-		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
+		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
+		if err == nil {
 			return localVarReturnValue, localVarHttpResponse, err
 		}
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
 		newErr := GenericSwaggerError{
-			body: localVarBody,
+			body:  localVarBody,
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse20014
-			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-				if err != nil {
-					newErr.error = err.Error()
-					return localVarReturnValue, localVarHttpResponse, newErr
-				}
-				newErr.model = v
+			var v InlineResponse20050
+			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
+			if err != nil {
+				newErr.error = err.Error()
 				return localVarReturnValue, localVarHttpResponse, newErr
+			}
+			newErr.model = v
+			return localVarReturnValue, localVarHttpResponse, newErr
 		}
 		return localVarReturnValue, localVarHttpResponse, newErr
 	}

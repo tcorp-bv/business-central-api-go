@@ -1,4 +1,3 @@
-
 /*
  * Dynamics 365 Business Central
  *
@@ -11,12 +10,12 @@ package swagger
 
 import (
 	"context"
+	"fmt"
+	"github.com/antihax/optional"
 	"io/ioutil"
 	"net/http"
 	"net/url"
 	"strings"
-	"fmt"
-	"github.com/antihax/optional"
 )
 
 // Linger please
@@ -25,6 +24,7 @@ var (
 )
 
 type PdfDocumentApiService service
+
 /*
 PdfDocumentApiService Retrieve the properties and relationships of an object of type pdfDocument for Dynamics 365 Business Central.
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
@@ -35,16 +35,16 @@ PdfDocumentApiService Retrieve the properties and relationships of an object of 
 @return PdfDocument
 */
 
-type PdfDocumentApiGetPdfDocumentOpts struct { 
+type PdfDocumentApiGetPdfDocumentOpts struct {
 	Select_ optional.Interface
 }
 
 func (a *PdfDocumentApiService) GetPdfDocument(ctx context.Context, companyId string, pdfDocumentId string, localVarOptionals *PdfDocumentApiGetPdfDocumentOpts) (PdfDocument, *http.Response, error) {
 	var (
-		localVarHttpMethod = strings.ToUpper("Get")
-		localVarPostBody   interface{}
-		localVarFileName   string
-		localVarFileBytes  []byte
+		localVarHttpMethod  = strings.ToUpper("Get")
+		localVarPostBody    interface{}
+		localVarFileName    string
+		localVarFileBytes   []byte
 		localVarReturnValue PdfDocument
 	)
 
@@ -95,32 +95,33 @@ func (a *PdfDocumentApiService) GetPdfDocument(ctx context.Context, companyId st
 
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
-		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
+		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
+		if err == nil {
 			return localVarReturnValue, localVarHttpResponse, err
 		}
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
 		newErr := GenericSwaggerError{
-			body: localVarBody,
+			body:  localVarBody,
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
 			var v PdfDocument
-			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-				if err != nil {
-					newErr.error = err.Error()
-					return localVarReturnValue, localVarHttpResponse, newErr
-				}
-				newErr.model = v
+			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
+			if err != nil {
+				newErr.error = err.Error()
 				return localVarReturnValue, localVarHttpResponse, newErr
+			}
+			newErr.model = v
+			return localVarReturnValue, localVarHttpResponse, newErr
 		}
 		return localVarReturnValue, localVarHttpResponse, newErr
 	}
 
 	return localVarReturnValue, localVarHttpResponse, nil
 }
+
 /*
 PdfDocumentApiService Retrieve the properties and relationships of an object of type pdfDocument for Dynamics 365 Business Central.
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
@@ -132,16 +133,16 @@ PdfDocumentApiService Retrieve the properties and relationships of an object of 
 @return PdfDocument
 */
 
-type PdfDocumentApiGetPdfDocumentForPurchaseInvoiceOpts struct { 
+type PdfDocumentApiGetPdfDocumentForPurchaseInvoiceOpts struct {
 	Select_ optional.Interface
 }
 
 func (a *PdfDocumentApiService) GetPdfDocumentForPurchaseInvoice(ctx context.Context, companyId string, purchaseInvoiceId string, pdfDocumentId string, localVarOptionals *PdfDocumentApiGetPdfDocumentForPurchaseInvoiceOpts) (PdfDocument, *http.Response, error) {
 	var (
-		localVarHttpMethod = strings.ToUpper("Get")
-		localVarPostBody   interface{}
-		localVarFileName   string
-		localVarFileBytes  []byte
+		localVarHttpMethod  = strings.ToUpper("Get")
+		localVarPostBody    interface{}
+		localVarFileName    string
+		localVarFileBytes   []byte
 		localVarReturnValue PdfDocument
 	)
 
@@ -193,32 +194,33 @@ func (a *PdfDocumentApiService) GetPdfDocumentForPurchaseInvoice(ctx context.Con
 
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
-		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
+		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
+		if err == nil {
 			return localVarReturnValue, localVarHttpResponse, err
 		}
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
 		newErr := GenericSwaggerError{
-			body: localVarBody,
+			body:  localVarBody,
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
 			var v PdfDocument
-			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-				if err != nil {
-					newErr.error = err.Error()
-					return localVarReturnValue, localVarHttpResponse, newErr
-				}
-				newErr.model = v
+			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
+			if err != nil {
+				newErr.error = err.Error()
 				return localVarReturnValue, localVarHttpResponse, newErr
+			}
+			newErr.model = v
+			return localVarReturnValue, localVarHttpResponse, newErr
 		}
 		return localVarReturnValue, localVarHttpResponse, newErr
 	}
 
 	return localVarReturnValue, localVarHttpResponse, nil
 }
+
 /*
 PdfDocumentApiService Retrieve the properties and relationships of an object of type pdfDocument for Dynamics 365 Business Central.
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
@@ -230,16 +232,16 @@ PdfDocumentApiService Retrieve the properties and relationships of an object of 
 @return PdfDocument
 */
 
-type PdfDocumentApiGetPdfDocumentForSalesCreditMemoOpts struct { 
+type PdfDocumentApiGetPdfDocumentForSalesCreditMemoOpts struct {
 	Select_ optional.Interface
 }
 
 func (a *PdfDocumentApiService) GetPdfDocumentForSalesCreditMemo(ctx context.Context, companyId string, salesCreditMemoId string, pdfDocumentId string, localVarOptionals *PdfDocumentApiGetPdfDocumentForSalesCreditMemoOpts) (PdfDocument, *http.Response, error) {
 	var (
-		localVarHttpMethod = strings.ToUpper("Get")
-		localVarPostBody   interface{}
-		localVarFileName   string
-		localVarFileBytes  []byte
+		localVarHttpMethod  = strings.ToUpper("Get")
+		localVarPostBody    interface{}
+		localVarFileName    string
+		localVarFileBytes   []byte
 		localVarReturnValue PdfDocument
 	)
 
@@ -291,32 +293,33 @@ func (a *PdfDocumentApiService) GetPdfDocumentForSalesCreditMemo(ctx context.Con
 
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
-		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
+		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
+		if err == nil {
 			return localVarReturnValue, localVarHttpResponse, err
 		}
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
 		newErr := GenericSwaggerError{
-			body: localVarBody,
+			body:  localVarBody,
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
 			var v PdfDocument
-			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-				if err != nil {
-					newErr.error = err.Error()
-					return localVarReturnValue, localVarHttpResponse, newErr
-				}
-				newErr.model = v
+			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
+			if err != nil {
+				newErr.error = err.Error()
 				return localVarReturnValue, localVarHttpResponse, newErr
+			}
+			newErr.model = v
+			return localVarReturnValue, localVarHttpResponse, newErr
 		}
 		return localVarReturnValue, localVarHttpResponse, newErr
 	}
 
 	return localVarReturnValue, localVarHttpResponse, nil
 }
+
 /*
 PdfDocumentApiService Retrieve the properties and relationships of an object of type pdfDocument for Dynamics 365 Business Central.
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
@@ -328,16 +331,16 @@ PdfDocumentApiService Retrieve the properties and relationships of an object of 
 @return PdfDocument
 */
 
-type PdfDocumentApiGetPdfDocumentForSalesInvoiceOpts struct { 
+type PdfDocumentApiGetPdfDocumentForSalesInvoiceOpts struct {
 	Select_ optional.Interface
 }
 
 func (a *PdfDocumentApiService) GetPdfDocumentForSalesInvoice(ctx context.Context, companyId string, salesInvoiceId string, pdfDocumentId string, localVarOptionals *PdfDocumentApiGetPdfDocumentForSalesInvoiceOpts) (PdfDocument, *http.Response, error) {
 	var (
-		localVarHttpMethod = strings.ToUpper("Get")
-		localVarPostBody   interface{}
-		localVarFileName   string
-		localVarFileBytes  []byte
+		localVarHttpMethod  = strings.ToUpper("Get")
+		localVarPostBody    interface{}
+		localVarFileName    string
+		localVarFileBytes   []byte
 		localVarReturnValue PdfDocument
 	)
 
@@ -389,32 +392,33 @@ func (a *PdfDocumentApiService) GetPdfDocumentForSalesInvoice(ctx context.Contex
 
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
-		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
+		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
+		if err == nil {
 			return localVarReturnValue, localVarHttpResponse, err
 		}
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
 		newErr := GenericSwaggerError{
-			body: localVarBody,
+			body:  localVarBody,
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
 			var v PdfDocument
-			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-				if err != nil {
-					newErr.error = err.Error()
-					return localVarReturnValue, localVarHttpResponse, newErr
-				}
-				newErr.model = v
+			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
+			if err != nil {
+				newErr.error = err.Error()
 				return localVarReturnValue, localVarHttpResponse, newErr
+			}
+			newErr.model = v
+			return localVarReturnValue, localVarHttpResponse, newErr
 		}
 		return localVarReturnValue, localVarHttpResponse, newErr
 	}
 
 	return localVarReturnValue, localVarHttpResponse, nil
 }
+
 /*
 PdfDocumentApiService Retrieve the properties and relationships of an object of type pdfDocument for Dynamics 365 Business Central.
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
@@ -426,16 +430,16 @@ PdfDocumentApiService Retrieve the properties and relationships of an object of 
 @return PdfDocument
 */
 
-type PdfDocumentApiGetPdfDocumentForSalesQuoteOpts struct { 
+type PdfDocumentApiGetPdfDocumentForSalesQuoteOpts struct {
 	Select_ optional.Interface
 }
 
 func (a *PdfDocumentApiService) GetPdfDocumentForSalesQuote(ctx context.Context, companyId string, salesQuoteId string, pdfDocumentId string, localVarOptionals *PdfDocumentApiGetPdfDocumentForSalesQuoteOpts) (PdfDocument, *http.Response, error) {
 	var (
-		localVarHttpMethod = strings.ToUpper("Get")
-		localVarPostBody   interface{}
-		localVarFileName   string
-		localVarFileBytes  []byte
+		localVarHttpMethod  = strings.ToUpper("Get")
+		localVarPostBody    interface{}
+		localVarFileName    string
+		localVarFileBytes   []byte
 		localVarReturnValue PdfDocument
 	)
 
@@ -487,32 +491,33 @@ func (a *PdfDocumentApiService) GetPdfDocumentForSalesQuote(ctx context.Context,
 
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
-		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
+		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
+		if err == nil {
 			return localVarReturnValue, localVarHttpResponse, err
 		}
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
 		newErr := GenericSwaggerError{
-			body: localVarBody,
+			body:  localVarBody,
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
 			var v PdfDocument
-			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-				if err != nil {
-					newErr.error = err.Error()
-					return localVarReturnValue, localVarHttpResponse, newErr
-				}
-				newErr.model = v
+			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
+			if err != nil {
+				newErr.error = err.Error()
 				return localVarReturnValue, localVarHttpResponse, newErr
+			}
+			newErr.model = v
+			return localVarReturnValue, localVarHttpResponse, newErr
 		}
 		return localVarReturnValue, localVarHttpResponse, newErr
 	}
 
 	return localVarReturnValue, localVarHttpResponse, nil
 }
+
 /*
 PdfDocumentApiService Returns a list of pdfDocument
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
@@ -523,24 +528,24 @@ PdfDocumentApiService Returns a list of pdfDocument
      * @param "Limit" (optional.Int32) -  Number of items to return from the list
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse20032
+@return InlineResponse20010
 */
 
-type PdfDocumentApiListPdfDocumentOpts struct { 
-	Top optional.Int32
-	Skip optional.Int32
-	Limit optional.Int32
-	Filter optional.String
+type PdfDocumentApiListPdfDocumentOpts struct {
+	Top     optional.Int32
+	Skip    optional.Int32
+	Limit   optional.Int32
+	Filter  optional.String
 	Select_ optional.Interface
 }
 
-func (a *PdfDocumentApiService) ListPdfDocument(ctx context.Context, companyId string, localVarOptionals *PdfDocumentApiListPdfDocumentOpts) (InlineResponse20032, *http.Response, error) {
+func (a *PdfDocumentApiService) ListPdfDocument(ctx context.Context, companyId string, localVarOptionals *PdfDocumentApiListPdfDocumentOpts) (InlineResponse20010, *http.Response, error) {
 	var (
-		localVarHttpMethod = strings.ToUpper("Get")
-		localVarPostBody   interface{}
-		localVarFileName   string
-		localVarFileBytes  []byte
-		localVarReturnValue InlineResponse20032
+		localVarHttpMethod  = strings.ToUpper("Get")
+		localVarPostBody    interface{}
+		localVarFileName    string
+		localVarFileBytes   []byte
+		localVarReturnValue InlineResponse20010
 	)
 
 	// create path and map variables
@@ -601,32 +606,33 @@ func (a *PdfDocumentApiService) ListPdfDocument(ctx context.Context, companyId s
 
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
-		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
+		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
+		if err == nil {
 			return localVarReturnValue, localVarHttpResponse, err
 		}
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
 		newErr := GenericSwaggerError{
-			body: localVarBody,
+			body:  localVarBody,
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse20032
-			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-				if err != nil {
-					newErr.error = err.Error()
-					return localVarReturnValue, localVarHttpResponse, newErr
-				}
-				newErr.model = v
+			var v InlineResponse20010
+			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
+			if err != nil {
+				newErr.error = err.Error()
 				return localVarReturnValue, localVarHttpResponse, newErr
+			}
+			newErr.model = v
+			return localVarReturnValue, localVarHttpResponse, newErr
 		}
 		return localVarReturnValue, localVarHttpResponse, newErr
 	}
 
 	return localVarReturnValue, localVarHttpResponse, nil
 }
+
 /*
 PdfDocumentApiService Returns a list of pdfDocument
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
@@ -638,24 +644,24 @@ PdfDocumentApiService Returns a list of pdfDocument
      * @param "Limit" (optional.Int32) -  Number of items to return from the list
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse20032
+@return InlineResponse20010
 */
 
-type PdfDocumentApiListPdfDocumentForPurchaseInvoiceOpts struct { 
-	Top optional.Int32
-	Skip optional.Int32
-	Limit optional.Int32
-	Filter optional.String
+type PdfDocumentApiListPdfDocumentForPurchaseInvoiceOpts struct {
+	Top     optional.Int32
+	Skip    optional.Int32
+	Limit   optional.Int32
+	Filter  optional.String
 	Select_ optional.Interface
 }
 
-func (a *PdfDocumentApiService) ListPdfDocumentForPurchaseInvoice(ctx context.Context, companyId string, purchaseInvoiceId string, localVarOptionals *PdfDocumentApiListPdfDocumentForPurchaseInvoiceOpts) (InlineResponse20032, *http.Response, error) {
+func (a *PdfDocumentApiService) ListPdfDocumentForPurchaseInvoice(ctx context.Context, companyId string, purchaseInvoiceId string, localVarOptionals *PdfDocumentApiListPdfDocumentForPurchaseInvoiceOpts) (InlineResponse20010, *http.Response, error) {
 	var (
-		localVarHttpMethod = strings.ToUpper("Get")
-		localVarPostBody   interface{}
-		localVarFileName   string
-		localVarFileBytes  []byte
-		localVarReturnValue InlineResponse20032
+		localVarHttpMethod  = strings.ToUpper("Get")
+		localVarPostBody    interface{}
+		localVarFileName    string
+		localVarFileBytes   []byte
+		localVarReturnValue InlineResponse20010
 	)
 
 	// create path and map variables
@@ -717,32 +723,33 @@ func (a *PdfDocumentApiService) ListPdfDocumentForPurchaseInvoice(ctx context.Co
 
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
-		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
+		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
+		if err == nil {
 			return localVarReturnValue, localVarHttpResponse, err
 		}
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
 		newErr := GenericSwaggerError{
-			body: localVarBody,
+			body:  localVarBody,
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse20032
-			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-				if err != nil {
-					newErr.error = err.Error()
-					return localVarReturnValue, localVarHttpResponse, newErr
-				}
-				newErr.model = v
+			var v InlineResponse20010
+			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
+			if err != nil {
+				newErr.error = err.Error()
 				return localVarReturnValue, localVarHttpResponse, newErr
+			}
+			newErr.model = v
+			return localVarReturnValue, localVarHttpResponse, newErr
 		}
 		return localVarReturnValue, localVarHttpResponse, newErr
 	}
 
 	return localVarReturnValue, localVarHttpResponse, nil
 }
+
 /*
 PdfDocumentApiService Returns a list of pdfDocument
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
@@ -754,24 +761,24 @@ PdfDocumentApiService Returns a list of pdfDocument
      * @param "Limit" (optional.Int32) -  Number of items to return from the list
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse20032
+@return InlineResponse20010
 */
 
-type PdfDocumentApiListPdfDocumentForSalesCreditMemoOpts struct { 
-	Top optional.Int32
-	Skip optional.Int32
-	Limit optional.Int32
-	Filter optional.String
+type PdfDocumentApiListPdfDocumentForSalesCreditMemoOpts struct {
+	Top     optional.Int32
+	Skip    optional.Int32
+	Limit   optional.Int32
+	Filter  optional.String
 	Select_ optional.Interface
 }
 
-func (a *PdfDocumentApiService) ListPdfDocumentForSalesCreditMemo(ctx context.Context, companyId string, salesCreditMemoId string, localVarOptionals *PdfDocumentApiListPdfDocumentForSalesCreditMemoOpts) (InlineResponse20032, *http.Response, error) {
+func (a *PdfDocumentApiService) ListPdfDocumentForSalesCreditMemo(ctx context.Context, companyId string, salesCreditMemoId string, localVarOptionals *PdfDocumentApiListPdfDocumentForSalesCreditMemoOpts) (InlineResponse20010, *http.Response, error) {
 	var (
-		localVarHttpMethod = strings.ToUpper("Get")
-		localVarPostBody   interface{}
-		localVarFileName   string
-		localVarFileBytes  []byte
-		localVarReturnValue InlineResponse20032
+		localVarHttpMethod  = strings.ToUpper("Get")
+		localVarPostBody    interface{}
+		localVarFileName    string
+		localVarFileBytes   []byte
+		localVarReturnValue InlineResponse20010
 	)
 
 	// create path and map variables
@@ -833,32 +840,33 @@ func (a *PdfDocumentApiService) ListPdfDocumentForSalesCreditMemo(ctx context.Co
 
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
-		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
+		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
+		if err == nil {
 			return localVarReturnValue, localVarHttpResponse, err
 		}
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
 		newErr := GenericSwaggerError{
-			body: localVarBody,
+			body:  localVarBody,
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse20032
-			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-				if err != nil {
-					newErr.error = err.Error()
-					return localVarReturnValue, localVarHttpResponse, newErr
-				}
-				newErr.model = v
+			var v InlineResponse20010
+			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
+			if err != nil {
+				newErr.error = err.Error()
 				return localVarReturnValue, localVarHttpResponse, newErr
+			}
+			newErr.model = v
+			return localVarReturnValue, localVarHttpResponse, newErr
 		}
 		return localVarReturnValue, localVarHttpResponse, newErr
 	}
 
 	return localVarReturnValue, localVarHttpResponse, nil
 }
+
 /*
 PdfDocumentApiService Returns a list of pdfDocument
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
@@ -870,24 +878,24 @@ PdfDocumentApiService Returns a list of pdfDocument
      * @param "Limit" (optional.Int32) -  Number of items to return from the list
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse20032
+@return InlineResponse20010
 */
 
-type PdfDocumentApiListPdfDocumentForSalesInvoiceOpts struct { 
-	Top optional.Int32
-	Skip optional.Int32
-	Limit optional.Int32
-	Filter optional.String
+type PdfDocumentApiListPdfDocumentForSalesInvoiceOpts struct {
+	Top     optional.Int32
+	Skip    optional.Int32
+	Limit   optional.Int32
+	Filter  optional.String
 	Select_ optional.Interface
 }
 
-func (a *PdfDocumentApiService) ListPdfDocumentForSalesInvoice(ctx context.Context, companyId string, salesInvoiceId string, localVarOptionals *PdfDocumentApiListPdfDocumentForSalesInvoiceOpts) (InlineResponse20032, *http.Response, error) {
+func (a *PdfDocumentApiService) ListPdfDocumentForSalesInvoice(ctx context.Context, companyId string, salesInvoiceId string, localVarOptionals *PdfDocumentApiListPdfDocumentForSalesInvoiceOpts) (InlineResponse20010, *http.Response, error) {
 	var (
-		localVarHttpMethod = strings.ToUpper("Get")
-		localVarPostBody   interface{}
-		localVarFileName   string
-		localVarFileBytes  []byte
-		localVarReturnValue InlineResponse20032
+		localVarHttpMethod  = strings.ToUpper("Get")
+		localVarPostBody    interface{}
+		localVarFileName    string
+		localVarFileBytes   []byte
+		localVarReturnValue InlineResponse20010
 	)
 
 	// create path and map variables
@@ -949,32 +957,33 @@ func (a *PdfDocumentApiService) ListPdfDocumentForSalesInvoice(ctx context.Conte
 
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
-		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
+		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
+		if err == nil {
 			return localVarReturnValue, localVarHttpResponse, err
 		}
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
 		newErr := GenericSwaggerError{
-			body: localVarBody,
+			body:  localVarBody,
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse20032
-			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-				if err != nil {
-					newErr.error = err.Error()
-					return localVarReturnValue, localVarHttpResponse, newErr
-				}
-				newErr.model = v
+			var v InlineResponse20010
+			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
+			if err != nil {
+				newErr.error = err.Error()
 				return localVarReturnValue, localVarHttpResponse, newErr
+			}
+			newErr.model = v
+			return localVarReturnValue, localVarHttpResponse, newErr
 		}
 		return localVarReturnValue, localVarHttpResponse, newErr
 	}
 
 	return localVarReturnValue, localVarHttpResponse, nil
 }
+
 /*
 PdfDocumentApiService Returns a list of pdfDocument
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
@@ -986,24 +995,24 @@ PdfDocumentApiService Returns a list of pdfDocument
      * @param "Limit" (optional.Int32) -  Number of items to return from the list
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse20032
+@return InlineResponse20010
 */
 
-type PdfDocumentApiListPdfDocumentForSalesQuoteOpts struct { 
-	Top optional.Int32
-	Skip optional.Int32
-	Limit optional.Int32
-	Filter optional.String
+type PdfDocumentApiListPdfDocumentForSalesQuoteOpts struct {
+	Top     optional.Int32
+	Skip    optional.Int32
+	Limit   optional.Int32
+	Filter  optional.String
 	Select_ optional.Interface
 }
 
-func (a *PdfDocumentApiService) ListPdfDocumentForSalesQuote(ctx context.Context, companyId string, salesQuoteId string, localVarOptionals *PdfDocumentApiListPdfDocumentForSalesQuoteOpts) (InlineResponse20032, *http.Response, error) {
+func (a *PdfDocumentApiService) ListPdfDocumentForSalesQuote(ctx context.Context, companyId string, salesQuoteId string, localVarOptionals *PdfDocumentApiListPdfDocumentForSalesQuoteOpts) (InlineResponse20010, *http.Response, error) {
 	var (
-		localVarHttpMethod = strings.ToUpper("Get")
-		localVarPostBody   interface{}
-		localVarFileName   string
-		localVarFileBytes  []byte
-		localVarReturnValue InlineResponse20032
+		localVarHttpMethod  = strings.ToUpper("Get")
+		localVarPostBody    interface{}
+		localVarFileName    string
+		localVarFileBytes   []byte
+		localVarReturnValue InlineResponse20010
 	)
 
 	// create path and map variables
@@ -1065,26 +1074,26 @@ func (a *PdfDocumentApiService) ListPdfDocumentForSalesQuote(ctx context.Context
 
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
-		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
+		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
+		if err == nil {
 			return localVarReturnValue, localVarHttpResponse, err
 		}
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
 		newErr := GenericSwaggerError{
-			body: localVarBody,
+			body:  localVarBody,
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse20032
-			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-				if err != nil {
-					newErr.error = err.Error()
-					return localVarReturnValue, localVarHttpResponse, newErr
-				}
-				newErr.model = v
+			var v InlineResponse20010
+			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
+			if err != nil {
+				newErr.error = err.Error()
 				return localVarReturnValue, localVarHttpResponse, newErr
+			}
+			newErr.model = v
+			return localVarReturnValue, localVarHttpResponse, newErr
 		}
 		return localVarReturnValue, localVarHttpResponse, newErr
 	}

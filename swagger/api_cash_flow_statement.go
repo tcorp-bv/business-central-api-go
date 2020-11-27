@@ -1,4 +1,3 @@
-
 /*
  * Dynamics 365 Business Central
  *
@@ -11,12 +10,12 @@ package swagger
 
 import (
 	"context"
+	"fmt"
+	"github.com/antihax/optional"
 	"io/ioutil"
 	"net/http"
 	"net/url"
 	"strings"
-	"fmt"
-	"github.com/antihax/optional"
 )
 
 // Linger please
@@ -25,6 +24,7 @@ var (
 )
 
 type CashFlowStatementApiService service
+
 /*
 CashFlowStatementApiService Retrieve the properties and relationships of an object of type cashFlowStatement for Dynamics 365 Business Central.
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
@@ -35,16 +35,16 @@ CashFlowStatementApiService Retrieve the properties and relationships of an obje
 @return CashFlowStatement
 */
 
-type CashFlowStatementApiGetCashFlowStatementOpts struct { 
+type CashFlowStatementApiGetCashFlowStatementOpts struct {
 	Select_ optional.Interface
 }
 
 func (a *CashFlowStatementApiService) GetCashFlowStatement(ctx context.Context, companyId string, cashFlowStatementLineNumber int32, localVarOptionals *CashFlowStatementApiGetCashFlowStatementOpts) (CashFlowStatement, *http.Response, error) {
 	var (
-		localVarHttpMethod = strings.ToUpper("Get")
-		localVarPostBody   interface{}
-		localVarFileName   string
-		localVarFileBytes  []byte
+		localVarHttpMethod  = strings.ToUpper("Get")
+		localVarPostBody    interface{}
+		localVarFileName    string
+		localVarFileBytes   []byte
 		localVarReturnValue CashFlowStatement
 	)
 
@@ -95,32 +95,33 @@ func (a *CashFlowStatementApiService) GetCashFlowStatement(ctx context.Context, 
 
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
-		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
+		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
+		if err == nil {
 			return localVarReturnValue, localVarHttpResponse, err
 		}
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
 		newErr := GenericSwaggerError{
-			body: localVarBody,
+			body:  localVarBody,
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
 			var v CashFlowStatement
-			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-				if err != nil {
-					newErr.error = err.Error()
-					return localVarReturnValue, localVarHttpResponse, newErr
-				}
-				newErr.model = v
+			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
+			if err != nil {
+				newErr.error = err.Error()
 				return localVarReturnValue, localVarHttpResponse, newErr
+			}
+			newErr.model = v
+			return localVarReturnValue, localVarHttpResponse, newErr
 		}
 		return localVarReturnValue, localVarHttpResponse, newErr
 	}
 
 	return localVarReturnValue, localVarHttpResponse, nil
 }
+
 /*
 CashFlowStatementApiService Returns a list of cashFlowStatement
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
@@ -131,24 +132,24 @@ CashFlowStatementApiService Returns a list of cashFlowStatement
      * @param "Limit" (optional.Int32) -  Number of items to return from the list
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse2007
+@return InlineResponse20029
 */
 
-type CashFlowStatementApiListCashFlowStatementOpts struct { 
-	Top optional.Int32
-	Skip optional.Int32
-	Limit optional.Int32
-	Filter optional.String
+type CashFlowStatementApiListCashFlowStatementOpts struct {
+	Top     optional.Int32
+	Skip    optional.Int32
+	Limit   optional.Int32
+	Filter  optional.String
 	Select_ optional.Interface
 }
 
-func (a *CashFlowStatementApiService) ListCashFlowStatement(ctx context.Context, companyId string, localVarOptionals *CashFlowStatementApiListCashFlowStatementOpts) (InlineResponse2007, *http.Response, error) {
+func (a *CashFlowStatementApiService) ListCashFlowStatement(ctx context.Context, companyId string, localVarOptionals *CashFlowStatementApiListCashFlowStatementOpts) (InlineResponse20029, *http.Response, error) {
 	var (
-		localVarHttpMethod = strings.ToUpper("Get")
-		localVarPostBody   interface{}
-		localVarFileName   string
-		localVarFileBytes  []byte
-		localVarReturnValue InlineResponse2007
+		localVarHttpMethod  = strings.ToUpper("Get")
+		localVarPostBody    interface{}
+		localVarFileName    string
+		localVarFileBytes   []byte
+		localVarReturnValue InlineResponse20029
 	)
 
 	// create path and map variables
@@ -209,26 +210,26 @@ func (a *CashFlowStatementApiService) ListCashFlowStatement(ctx context.Context,
 
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
-		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
+		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
+		if err == nil {
 			return localVarReturnValue, localVarHttpResponse, err
 		}
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
 		newErr := GenericSwaggerError{
-			body: localVarBody,
+			body:  localVarBody,
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse2007
-			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-				if err != nil {
-					newErr.error = err.Error()
-					return localVarReturnValue, localVarHttpResponse, newErr
-				}
-				newErr.model = v
+			var v InlineResponse20029
+			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
+			if err != nil {
+				newErr.error = err.Error()
 				return localVarReturnValue, localVarHttpResponse, newErr
+			}
+			newErr.model = v
+			return localVarReturnValue, localVarHttpResponse, newErr
 		}
 		return localVarReturnValue, localVarHttpResponse, newErr
 	}

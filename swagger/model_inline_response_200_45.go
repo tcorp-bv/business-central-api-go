@@ -9,5 +9,5 @@
 package swagger
 
 type InlineResponse20045 struct {
-	Value []ShipmentMethod `json:"value,omitempty"`
+	Value []GeneralLedgerEntryAttachments `json:"value,omitempty"`
 }

@@ -353,7 +353,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListPicture**
-> InlineResponse20017 ListPicture(ctx, companyId, optional)
+> InlineResponse2002 ListPicture(ctx, companyId, optional)
 Returns a list of picture
 
 ### Required Parameters
@@ -377,7 +377,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20017**](inline_response_200_17.md)
+[**InlineResponse2002**](inline_response_200_2.md)
 
 ### Authorization
 
@@ -391,7 +391,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListPictureForCustomer**
-> InlineResponse20017 ListPictureForCustomer(ctx, companyId, customerId, optional)
+> InlineResponse2002 ListPictureForCustomer(ctx, companyId, customerId, optional)
 Returns a list of picture
 
 ### Required Parameters
@@ -417,7 +417,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20017**](inline_response_200_17.md)
+[**InlineResponse2002**](inline_response_200_2.md)
 
 ### Authorization
 
@@ -431,7 +431,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListPictureForEmployee**
-> InlineResponse20017 ListPictureForEmployee(ctx, companyId, employeeId, optional)
+> InlineResponse2002 ListPictureForEmployee(ctx, companyId, employeeId, optional)
 Returns a list of picture
 
 ### Required Parameters
@@ -457,7 +457,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20017**](inline_response_200_17.md)
+[**InlineResponse2002**](inline_response_200_2.md)
 
 ### Authorization
 
@@ -471,7 +471,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListPictureForItem**
-> InlineResponse20017 ListPictureForItem(ctx, companyId, itemId, optional)
+> InlineResponse2002 ListPictureForItem(ctx, companyId, itemId, optional)
 Returns a list of picture
 
 ### Required Parameters
@@ -497,7 +497,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20017**](inline_response_200_17.md)
+[**InlineResponse2002**](inline_response_200_2.md)
 
 ### Authorization
 
@@ -511,7 +511,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListPictureForVendor**
-> InlineResponse20017 ListPictureForVendor(ctx, companyId, vendorId, optional)
+> InlineResponse2002 ListPictureForVendor(ctx, companyId, vendorId, optional)
 Returns a list of picture
 
 ### Required Parameters
@@ -537,7 +537,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20017**](inline_response_200_17.md)
+[**InlineResponse2002**](inline_response_200_2.md)
 
 ### Authorization
 

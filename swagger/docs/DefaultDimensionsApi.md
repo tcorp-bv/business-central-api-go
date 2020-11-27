@@ -378,7 +378,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListDefaultDimensions**
-> InlineResponse20016 ListDefaultDimensions(ctx, companyId, optional)
+> InlineResponse2003 ListDefaultDimensions(ctx, companyId, optional)
 Returns a list of defaultDimensions
 
 ### Required Parameters
@@ -403,7 +403,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20016**](inline_response_200_16.md)
+[**InlineResponse2003**](inline_response_200_3.md)
 
 ### Authorization
 
@@ -417,7 +417,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListDefaultDimensionsForCustomer**
-> InlineResponse20016 ListDefaultDimensionsForCustomer(ctx, companyId, customerId, optional)
+> InlineResponse2003 ListDefaultDimensionsForCustomer(ctx, companyId, customerId, optional)
 Returns a list of defaultDimensions
 
 ### Required Parameters
@@ -444,7 +444,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20016**](inline_response_200_16.md)
+[**InlineResponse2003**](inline_response_200_3.md)
 
 ### Authorization
 
@@ -458,7 +458,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListDefaultDimensionsForEmployee**
-> InlineResponse20016 ListDefaultDimensionsForEmployee(ctx, companyId, employeeId, optional)
+> InlineResponse2003 ListDefaultDimensionsForEmployee(ctx, companyId, employeeId, optional)
 Returns a list of defaultDimensions
 
 ### Required Parameters
@@ -485,7 +485,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20016**](inline_response_200_16.md)
+[**InlineResponse2003**](inline_response_200_3.md)
 
 ### Authorization
 
@@ -499,7 +499,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListDefaultDimensionsForItem**
-> InlineResponse20016 ListDefaultDimensionsForItem(ctx, companyId, itemId, optional)
+> InlineResponse2003 ListDefaultDimensionsForItem(ctx, companyId, itemId, optional)
 Returns a list of defaultDimensions
 
 ### Required Parameters
@@ -526,7 +526,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20016**](inline_response_200_16.md)
+[**InlineResponse2003**](inline_response_200_3.md)
 
 ### Authorization
 
@@ -540,7 +540,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListDefaultDimensionsForVendor**
-> InlineResponse20016 ListDefaultDimensionsForVendor(ctx, companyId, vendorId, optional)
+> InlineResponse2003 ListDefaultDimensionsForVendor(ctx, companyId, vendorId, optional)
 Returns a list of defaultDimensions
 
 ### Required Parameters
@@ -567,7 +567,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20016**](inline_response_200_16.md)
+[**InlineResponse2003**](inline_response_200_3.md)
 
 ### Authorization
 

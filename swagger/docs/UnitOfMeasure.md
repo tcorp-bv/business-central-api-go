@@ -3,9 +3,9 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**Id** | **string** | The id property for the Dynamics 365 Business Central unitOfMeasure entity | [optional] [default to null]
 **Code** | **string** | The code property for the Dynamics 365 Business Central unitOfMeasure entity | [optional] [default to null]
 **DisplayName** | **string** | The displayName property for the Dynamics 365 Business Central unitOfMeasure entity | [optional] [default to null]
-**Id** | **string** | The id property for the Dynamics 365 Business Central unitOfMeasure entity | [optional] [default to null]
 **InternationalStandardCode** | **string** | The internationalStandardCode property for the Dynamics 365 Business Central unitOfMeasure entity | [optional] [default to null]
 **LastModifiedDateTime** | [**time.Time**](time.Time.md) | The lastModifiedDateTime property for the Dynamics 365 Business Central unitOfMeasure entity | [optional] [default to null]
 

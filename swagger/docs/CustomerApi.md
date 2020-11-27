@@ -75,7 +75,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListCustomers**
-> InlineResponse20015 ListCustomers(ctx, companyId, optional)
+> InlineResponse2004 ListCustomers(ctx, companyId, optional)
 Returns a list of customers
 
 ### Required Parameters
@@ -100,7 +100,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20015**](inline_response_200_15.md)
+[**InlineResponse2004**](inline_response_200_4.md)
 
 ### Authorization
 

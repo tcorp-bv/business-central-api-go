@@ -74,7 +74,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListItemCategories**
-> InlineResponse20026 ListItemCategories(ctx, companyId, optional)
+> InlineResponse20028 ListItemCategories(ctx, companyId, optional)
 Returns a list of itemCategories
 
 ### Required Parameters
@@ -98,7 +98,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20026**](inline_response_200_26.md)
+[**InlineResponse20028**](inline_response_200_28.md)
 
 ### Authorization
 

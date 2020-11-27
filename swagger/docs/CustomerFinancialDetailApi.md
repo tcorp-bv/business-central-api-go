@@ -84,7 +84,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListCustomerFinancialDetails**
-> InlineResponse20011 ListCustomerFinancialDetails(ctx, companyId, optional)
+> InlineResponse2005 ListCustomerFinancialDetails(ctx, companyId, optional)
 Returns a list of customerFinancialDetails
 
 ### Required Parameters
@@ -108,7 +108,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20011**](inline_response_200_11.md)
+[**InlineResponse2005**](inline_response_200_5.md)
 
 ### Authorization
 
@@ -122,7 +122,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListCustomerFinancialDetailsForCustomer**
-> InlineResponse20011 ListCustomerFinancialDetailsForCustomer(ctx, companyId, customerId, optional)
+> InlineResponse2005 ListCustomerFinancialDetailsForCustomer(ctx, companyId, customerId, optional)
 Returns a list of customerFinancialDetails
 
 ### Required Parameters
@@ -148,7 +148,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20011**](inline_response_200_11.md)
+[**InlineResponse2005**](inline_response_200_5.md)
 
 ### Authorization
 

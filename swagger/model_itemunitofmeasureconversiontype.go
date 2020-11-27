@@ -9,11 +9,11 @@
 package swagger
 
 type Itemunitofmeasureconversiontype struct {
-	DefaultDimensions []DefaultDimensions `json:"defaultDimensions,omitempty"`
-	// The fromToConversionRate property for the Dynamics 365 Business Central itemunitofmeasureconversiontype entity
-	FromToConversionRate float64 `json:"fromToConversionRate,omitempty"`
-	ItemCategory *ItemCategory `json:"itemCategory,omitempty"`
-	Picture []Picture `json:"picture,omitempty"`
 	// The toUnitOfMeasure property for the Dynamics 365 Business Central itemunitofmeasureconversiontype entity
 	ToUnitOfMeasure string `json:"toUnitOfMeasure,omitempty"`
+	// The fromToConversionRate property for the Dynamics 365 Business Central itemunitofmeasureconversiontype entity
+	FromToConversionRate float64             `json:"fromToConversionRate,omitempty"`
+	Picture              []Picture           `json:"picture,omitempty"`
+	DefaultDimensions    []DefaultDimensions `json:"defaultDimensions,omitempty"`
+	ItemCategory         *ItemCategory       `json:"itemCategory,omitempty"`
 }

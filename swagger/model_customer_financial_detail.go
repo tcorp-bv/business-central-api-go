@@ -9,14 +9,14 @@
 package swagger
 
 type CustomerFinancialDetail struct {
-	// The balance property for the Dynamics 365 Business Central customerFinancialDetail entity
-	Balance float64 `json:"balance,omitempty"`
 	// The id property for the Dynamics 365 Business Central customerFinancialDetail entity
 	Id string `json:"id,omitempty"`
 	// The number property for the Dynamics 365 Business Central customerFinancialDetail entity
 	Number string `json:"number,omitempty"`
-	// The overdueAmount property for the Dynamics 365 Business Central customerFinancialDetail entity
-	OverdueAmount float64 `json:"overdueAmount,omitempty"`
+	// The balance property for the Dynamics 365 Business Central customerFinancialDetail entity
+	Balance float64 `json:"balance,omitempty"`
 	// The totalSalesExcludingTax property for the Dynamics 365 Business Central customerFinancialDetail entity
 	TotalSalesExcludingTax float64 `json:"totalSalesExcludingTax,omitempty"`
+	// The overdueAmount property for the Dynamics 365 Business Central customerFinancialDetail entity
+	OverdueAmount float64 `json:"overdueAmount,omitempty"`
 }

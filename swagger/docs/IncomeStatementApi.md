@@ -44,7 +44,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListIncomeStatement**
-> InlineResponse20025 ListIncomeStatement(ctx, companyId, optional)
+> InlineResponse20039 ListIncomeStatement(ctx, companyId, optional)
 Returns a list of incomeStatement
 
 ### Required Parameters
@@ -68,7 +68,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20025**](inline_response_200_25.md)
+[**InlineResponse20039**](inline_response_200_39.md)
 
 ### Authorization
 

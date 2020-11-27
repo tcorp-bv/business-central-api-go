@@ -9,5 +9,5 @@
 package swagger
 
 type InlineResponse2001 struct {
-	Value []Account `json:"value,omitempty"`
+	Value []Item `json:"value,omitempty"`
 }

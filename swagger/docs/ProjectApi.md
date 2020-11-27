@@ -74,7 +74,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListProjects**
-> InlineResponse20033 ListProjects(ctx, companyId, optional)
+> InlineResponse20048 ListProjects(ctx, companyId, optional)
 Returns a list of projects
 
 ### Required Parameters
@@ -98,7 +98,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20033**](inline_response_200_33.md)
+[**InlineResponse20048**](inline_response_200_48.md)
 
 ### Authorization
 

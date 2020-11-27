@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Value** | [**[]PurchaseInvoice**](purchaseInvoice.md) |  | [optional] [default to null]
+**Value** | [**[]AgedAccountsReceivable**](agedAccountsReceivable.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -9,5 +9,5 @@
 package swagger
 
 type InlineResponse20020 struct {
-	Value []Dimension `json:"value,omitempty"`
+	Value []GeneralLedgerEntry `json:"value,omitempty"`
 }

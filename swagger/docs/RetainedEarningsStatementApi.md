@@ -44,7 +44,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListRetainedEarningsStatement**
-> InlineResponse20036 ListRetainedEarningsStatement(ctx, companyId, optional)
+> InlineResponse20033 ListRetainedEarningsStatement(ctx, companyId, optional)
 Returns a list of retainedEarningsStatement
 
 ### Required Parameters
@@ -68,7 +68,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20036**](inline_response_200_36.md)
+[**InlineResponse20033**](inline_response_200_33.md)
 
 ### Authorization
 

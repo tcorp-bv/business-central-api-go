@@ -147,7 +147,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListCustomerPayments**
-> InlineResponse20013 ListCustomerPayments(ctx, companyId, optional)
+> InlineResponse20012 ListCustomerPayments(ctx, companyId, optional)
 Returns a list of customerPayments
 
 ### Required Parameters
@@ -172,7 +172,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20013**](inline_response_200_13.md)
+[**InlineResponse20012**](inline_response_200_12.md)
 
 ### Authorization
 
@@ -186,7 +186,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListCustomerPaymentsForCustomerPaymentJournal**
-> InlineResponse20013 ListCustomerPaymentsForCustomerPaymentJournal(ctx, companyId, customerPaymentJournalId, optional)
+> InlineResponse20012 ListCustomerPaymentsForCustomerPaymentJournal(ctx, companyId, customerPaymentJournalId, optional)
 Returns a list of customerPayments
 
 ### Required Parameters
@@ -213,7 +213,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20013**](inline_response_200_13.md)
+[**InlineResponse20012**](inline_response_200_12.md)
 
 ### Authorization
 

@@ -8,27 +8,31 @@
  */
 package swagger
 
+import (
+	"time"
+)
+
 type AgedAccountsReceivable struct {
-	// The agedAsOfDate property for the Dynamics 365 Business Central agedAccountsReceivable entity
-	AgedAsOfDate string `json:"agedAsOfDate,omitempty"`
-	// The balanceDue property for the Dynamics 365 Business Central agedAccountsReceivable entity
-	BalanceDue float64 `json:"balanceDue,omitempty"`
-	// The currencyCode property for the Dynamics 365 Business Central agedAccountsReceivable entity
-	CurrencyCode string `json:"currencyCode,omitempty"`
-	// The currentAmount property for the Dynamics 365 Business Central agedAccountsReceivable entity
-	CurrentAmount float64 `json:"currentAmount,omitempty"`
 	// The customerId property for the Dynamics 365 Business Central agedAccountsReceivable entity
 	CustomerId string `json:"customerId,omitempty"`
 	// The customerNumber property for the Dynamics 365 Business Central agedAccountsReceivable entity
 	CustomerNumber string `json:"customerNumber,omitempty"`
 	// The name property for the Dynamics 365 Business Central agedAccountsReceivable entity
 	Name string `json:"name,omitempty"`
+	// The currencyCode property for the Dynamics 365 Business Central agedAccountsReceivable entity
+	CurrencyCode string `json:"currencyCode,omitempty"`
+	// The balanceDue property for the Dynamics 365 Business Central agedAccountsReceivable entity
+	BalanceDue float64 `json:"balanceDue,omitempty"`
+	// The currentAmount property for the Dynamics 365 Business Central agedAccountsReceivable entity
+	CurrentAmount float64 `json:"currentAmount,omitempty"`
 	// The period1Amount property for the Dynamics 365 Business Central agedAccountsReceivable entity
 	Period1Amount float64 `json:"period1Amount,omitempty"`
 	// The period2Amount property for the Dynamics 365 Business Central agedAccountsReceivable entity
 	Period2Amount float64 `json:"period2Amount,omitempty"`
 	// The period3Amount property for the Dynamics 365 Business Central agedAccountsReceivable entity
 	Period3Amount float64 `json:"period3Amount,omitempty"`
+	// The agedAsOfDate property for the Dynamics 365 Business Central agedAccountsReceivable entity
+	AgedAsOfDate time.Time `json:"agedAsOfDate,omitempty"`
 	// The periodLengthFilter property for the Dynamics 365 Business Central agedAccountsReceivable entity
 	PeriodLengthFilter string `json:"periodLengthFilter,omitempty"`
 }

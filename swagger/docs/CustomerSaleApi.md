@@ -48,7 +48,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListCustomerSales**
-> InlineResponse20014 ListCustomerSales(ctx, companyId, optional)
+> InlineResponse20050 ListCustomerSales(ctx, companyId, optional)
 Returns a list of customerSales
 
 ### Required Parameters
@@ -72,7 +72,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20014**](inline_response_200_14.md)
+[**InlineResponse20050**](inline_response_200_50.md)
 
 ### Authorization
 

@@ -1,4 +1,3 @@
-
 /*
  * Dynamics 365 Business Central
  *
@@ -11,12 +10,12 @@ package swagger
 
 import (
 	"context"
+	"fmt"
+	"github.com/antihax/optional"
 	"io/ioutil"
 	"net/http"
 	"net/url"
 	"strings"
-	"fmt"
-	"github.com/antihax/optional"
 )
 
 // Linger please
@@ -25,6 +24,7 @@ var (
 )
 
 type GeneralLedgerEntryAttachmentsApiService service
+
 /*
 GeneralLedgerEntryAttachmentsApiService Deletes an object of type generalLedgerEntryAttachments in Dynamics 365 Business Central
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
@@ -39,7 +39,6 @@ func (a *GeneralLedgerEntryAttachmentsApiService) DeleteGeneralLedgerEntryAttach
 		localVarPostBody   interface{}
 		localVarFileName   string
 		localVarFileBytes  []byte
-		
 	)
 
 	// create path and map variables
@@ -85,10 +84,9 @@ func (a *GeneralLedgerEntryAttachmentsApiService) DeleteGeneralLedgerEntryAttach
 		return localVarHttpResponse, err
 	}
 
-
 	if localVarHttpResponse.StatusCode >= 300 {
 		newErr := GenericSwaggerError{
-			body: localVarBody,
+			body:  localVarBody,
 			error: localVarHttpResponse.Status,
 		}
 		return localVarHttpResponse, newErr
@@ -96,6 +94,7 @@ func (a *GeneralLedgerEntryAttachmentsApiService) DeleteGeneralLedgerEntryAttach
 
 	return localVarHttpResponse, nil
 }
+
 /*
 GeneralLedgerEntryAttachmentsApiService Retrieve the properties and relationships of an object of type generalLedgerEntryAttachments for Dynamics 365 Business Central.
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
@@ -108,17 +107,17 @@ GeneralLedgerEntryAttachmentsApiService Retrieve the properties and relationship
 @return GeneralLedgerEntryAttachments
 */
 
-type GeneralLedgerEntryAttachmentsApiGetGeneralLedgerEntryAttachmentsOpts struct { 
-	Expand optional.Interface
+type GeneralLedgerEntryAttachmentsApiGetGeneralLedgerEntryAttachmentsOpts struct {
+	Expand  optional.Interface
 	Select_ optional.Interface
 }
 
 func (a *GeneralLedgerEntryAttachmentsApiService) GetGeneralLedgerEntryAttachments(ctx context.Context, companyId string, generalLedgerEntryAttachmentsGeneralLedgerEntryNumber int32, generalLedgerEntryAttachmentsId string, localVarOptionals *GeneralLedgerEntryAttachmentsApiGetGeneralLedgerEntryAttachmentsOpts) (GeneralLedgerEntryAttachments, *http.Response, error) {
 	var (
-		localVarHttpMethod = strings.ToUpper("Get")
-		localVarPostBody   interface{}
-		localVarFileName   string
-		localVarFileBytes  []byte
+		localVarHttpMethod  = strings.ToUpper("Get")
+		localVarPostBody    interface{}
+		localVarFileName    string
+		localVarFileBytes   []byte
 		localVarReturnValue GeneralLedgerEntryAttachments
 	)
 
@@ -173,32 +172,33 @@ func (a *GeneralLedgerEntryAttachmentsApiService) GetGeneralLedgerEntryAttachmen
 
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
-		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
+		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
+		if err == nil {
 			return localVarReturnValue, localVarHttpResponse, err
 		}
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
 		newErr := GenericSwaggerError{
-			body: localVarBody,
+			body:  localVarBody,
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
 			var v GeneralLedgerEntryAttachments
-			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-				if err != nil {
-					newErr.error = err.Error()
-					return localVarReturnValue, localVarHttpResponse, newErr
-				}
-				newErr.model = v
+			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
+			if err != nil {
+				newErr.error = err.Error()
 				return localVarReturnValue, localVarHttpResponse, newErr
+			}
+			newErr.model = v
+			return localVarReturnValue, localVarHttpResponse, newErr
 		}
 		return localVarReturnValue, localVarHttpResponse, newErr
 	}
 
 	return localVarReturnValue, localVarHttpResponse, nil
 }
+
 /*
 GeneralLedgerEntryAttachmentsApiService Returns a list of generalLedgerEntryAttachments
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
@@ -210,25 +210,25 @@ GeneralLedgerEntryAttachmentsApiService Returns a list of generalLedgerEntryAtta
      * @param "Filter" (optional.String) -  Filtering expression
      * @param "Expand" (optional.Interface of []string) -  Entities to expand
      * @param "Select_" (optional.Interface of []string) -  Selected properties to be retrieved
-@return InlineResponse20024
+@return InlineResponse20045
 */
 
-type GeneralLedgerEntryAttachmentsApiListGeneralLedgerEntryAttachmentsOpts struct { 
-	Top optional.Int32
-	Skip optional.Int32
-	Limit optional.Int32
-	Filter optional.String
-	Expand optional.Interface
+type GeneralLedgerEntryAttachmentsApiListGeneralLedgerEntryAttachmentsOpts struct {
+	Top     optional.Int32
+	Skip    optional.Int32
+	Limit   optional.Int32
+	Filter  optional.String
+	Expand  optional.Interface
 	Select_ optional.Interface
 }
 
-func (a *GeneralLedgerEntryAttachmentsApiService) ListGeneralLedgerEntryAttachments(ctx context.Context, companyId string, localVarOptionals *GeneralLedgerEntryAttachmentsApiListGeneralLedgerEntryAttachmentsOpts) (InlineResponse20024, *http.Response, error) {
+func (a *GeneralLedgerEntryAttachmentsApiService) ListGeneralLedgerEntryAttachments(ctx context.Context, companyId string, localVarOptionals *GeneralLedgerEntryAttachmentsApiListGeneralLedgerEntryAttachmentsOpts) (InlineResponse20045, *http.Response, error) {
 	var (
-		localVarHttpMethod = strings.ToUpper("Get")
-		localVarPostBody   interface{}
-		localVarFileName   string
-		localVarFileBytes  []byte
-		localVarReturnValue InlineResponse20024
+		localVarHttpMethod  = strings.ToUpper("Get")
+		localVarPostBody    interface{}
+		localVarFileName    string
+		localVarFileBytes   []byte
+		localVarReturnValue InlineResponse20045
 	)
 
 	// create path and map variables
@@ -292,32 +292,33 @@ func (a *GeneralLedgerEntryAttachmentsApiService) ListGeneralLedgerEntryAttachme
 
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
-		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
+		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
+		if err == nil {
 			return localVarReturnValue, localVarHttpResponse, err
 		}
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
 		newErr := GenericSwaggerError{
-			body: localVarBody,
+			body:  localVarBody,
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
-			var v InlineResponse20024
-			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-				if err != nil {
-					newErr.error = err.Error()
-					return localVarReturnValue, localVarHttpResponse, newErr
-				}
-				newErr.model = v
+			var v InlineResponse20045
+			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
+			if err != nil {
+				newErr.error = err.Error()
 				return localVarReturnValue, localVarHttpResponse, newErr
+			}
+			newErr.model = v
+			return localVarReturnValue, localVarHttpResponse, newErr
 		}
 		return localVarReturnValue, localVarHttpResponse, newErr
 	}
 
 	return localVarReturnValue, localVarHttpResponse, nil
 }
+
 /*
 GeneralLedgerEntryAttachmentsApiService Updates an object of type generalLedgerEntryAttachments in Dynamics 365 Business Central
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
@@ -331,10 +332,10 @@ GeneralLedgerEntryAttachmentsApiService Updates an object of type generalLedgerE
 */
 func (a *GeneralLedgerEntryAttachmentsApiService) PatchGeneralLedgerEntryAttachments(ctx context.Context, body interface{}, contentType string, ifMatch string, companyId string, generalLedgerEntryAttachmentsGeneralLedgerEntryNumber int32, generalLedgerEntryAttachmentsId string) (GeneralLedgerEntryAttachments, *http.Response, error) {
 	var (
-		localVarHttpMethod = strings.ToUpper("Patch")
-		localVarPostBody   interface{}
-		localVarFileName   string
-		localVarFileBytes  []byte
+		localVarHttpMethod  = strings.ToUpper("Patch")
+		localVarPostBody    interface{}
+		localVarFileName    string
+		localVarFileBytes   []byte
 		localVarReturnValue GeneralLedgerEntryAttachments
 	)
 
@@ -387,32 +388,33 @@ func (a *GeneralLedgerEntryAttachmentsApiService) PatchGeneralLedgerEntryAttachm
 
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
-		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
+		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
+		if err == nil {
 			return localVarReturnValue, localVarHttpResponse, err
 		}
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
 		newErr := GenericSwaggerError{
-			body: localVarBody,
+			body:  localVarBody,
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 200 {
 			var v GeneralLedgerEntryAttachments
-			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-				if err != nil {
-					newErr.error = err.Error()
-					return localVarReturnValue, localVarHttpResponse, newErr
-				}
-				newErr.model = v
+			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
+			if err != nil {
+				newErr.error = err.Error()
 				return localVarReturnValue, localVarHttpResponse, newErr
+			}
+			newErr.model = v
+			return localVarReturnValue, localVarHttpResponse, newErr
 		}
 		return localVarReturnValue, localVarHttpResponse, newErr
 	}
 
 	return localVarReturnValue, localVarHttpResponse, nil
 }
+
 /*
 GeneralLedgerEntryAttachmentsApiService Creates an object of type generalLedgerEntryAttachments in Dynamics 365 Business Central
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
@@ -423,10 +425,10 @@ GeneralLedgerEntryAttachmentsApiService Creates an object of type generalLedgerE
 */
 func (a *GeneralLedgerEntryAttachmentsApiService) PostGeneralLedgerEntryAttachments(ctx context.Context, body interface{}, contentType string, companyId string) (GeneralLedgerEntryAttachments, *http.Response, error) {
 	var (
-		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody   interface{}
-		localVarFileName   string
-		localVarFileBytes  []byte
+		localVarHttpMethod  = strings.ToUpper("Post")
+		localVarPostBody    interface{}
+		localVarFileName    string
+		localVarFileBytes   []byte
 		localVarReturnValue GeneralLedgerEntryAttachments
 	)
 
@@ -476,26 +478,26 @@ func (a *GeneralLedgerEntryAttachmentsApiService) PostGeneralLedgerEntryAttachme
 
 	if localVarHttpResponse.StatusCode < 300 {
 		// If we succeed, return the data, otherwise pass on to decode error.
-		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-		if err == nil { 
+		err = a.client.decode(&localVarReturnValue, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
+		if err == nil {
 			return localVarReturnValue, localVarHttpResponse, err
 		}
 	}
 
 	if localVarHttpResponse.StatusCode >= 300 {
 		newErr := GenericSwaggerError{
-			body: localVarBody,
+			body:  localVarBody,
 			error: localVarHttpResponse.Status,
 		}
 		if localVarHttpResponse.StatusCode == 201 {
 			var v GeneralLedgerEntryAttachments
-			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"));
-				if err != nil {
-					newErr.error = err.Error()
-					return localVarReturnValue, localVarHttpResponse, newErr
-				}
-				newErr.model = v
+			err = a.client.decode(&v, localVarBody, localVarHttpResponse.Header.Get("Content-Type"))
+			if err != nil {
+				newErr.error = err.Error()
 				return localVarReturnValue, localVarHttpResponse, newErr
+			}
+			newErr.model = v
+			return localVarReturnValue, localVarHttpResponse, newErr
 		}
 		return localVarReturnValue, localVarHttpResponse, newErr
 	}

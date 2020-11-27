@@ -76,7 +76,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListSalesOrders**
-> InlineResponse20042 ListSalesOrders(ctx, companyId, optional)
+> InlineResponse20031 ListSalesOrders(ctx, companyId, optional)
 Returns a list of salesOrders
 
 ### Required Parameters
@@ -101,7 +101,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20042**](inline_response_200_42.md)
+[**InlineResponse20031**](inline_response_200_31.md)
 
 ### Authorization
 

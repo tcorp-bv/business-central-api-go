@@ -44,7 +44,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListCashFlowStatement**
-> InlineResponse2007 ListCashFlowStatement(ctx, companyId, optional)
+> InlineResponse20029 ListCashFlowStatement(ctx, companyId, optional)
 Returns a list of cashFlowStatement
 
 ### Required Parameters
@@ -68,7 +68,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2007**](inline_response_200_7.md)
+[**InlineResponse20029**](inline_response_200_29.md)
 
 ### Authorization
 

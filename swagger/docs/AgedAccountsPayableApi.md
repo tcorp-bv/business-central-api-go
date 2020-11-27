@@ -44,7 +44,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ListAgedAccountsPayable**
-> InlineResponse2002 ListAgedAccountsPayable(ctx, companyId, optional)
+> InlineResponse20036 ListAgedAccountsPayable(ctx, companyId, optional)
 Returns a list of agedAccountsPayable
 
 ### Required Parameters
@@ -68,7 +68,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](inline_response_200_2.md)
+[**InlineResponse20036**](inline_response_200_36.md)
 
 ### Authorization
 
